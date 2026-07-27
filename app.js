@@ -221,7 +221,7 @@ contactForm?.addEventListener('submit', (e) => {
     if (!name || !email || !message) { alert('Please fill out all mandatory fields.'); return; }
     const subject = encodeURIComponent(`New Project Inquiry: ${project}`);
     const body = encodeURIComponent(`Name: ${name}\n\nEmail: ${email}\n\nProject Type: ${project}\n\nMessage:\n${message}`);
-    window.location.href = `mailto:bitupanborah1k@gmail.com?subject=${subject}&body=${body}`;
+    window.open(`mailto:bitupanborah1k@gmail.com?subject=${subject}&body=${body}`, '_blank');
     if (formSuccess) { formSuccess.classList.add('visible'); contactForm.reset(); setTimeout(() => formSuccess.classList.remove('visible'), 5000); }
 });
 
