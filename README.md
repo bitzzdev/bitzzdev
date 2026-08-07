@@ -1,53 +1,5 @@
 <p align="center" style="max-width:880px; margin:0 auto;">
-  <svg viewBox="0 0 880 310" width="100%" height="auto" role="img" aria-label="bitz.dev — Freelance Frontend Developer" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#A855F7" stop-opacity="0.6"/>
-        <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
-      </radialGradient>
-      <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#ff5c7a" stop-opacity="0.55"/>
-        <stop offset="100%" stop-color="#ff5c7a" stop-opacity="0"/>
-      </radialGradient>
-      <radialGradient id="blobC" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#fb923c" stop-opacity="0.5"/>
-        <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
-      </radialGradient>
-      <linearGradient id="wordGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#f3f2ef"/>
-        <stop offset="50%" stop-color="#ffffff"/>
-        <stop offset="100%" stop-color="#f3f2ef"/>
-        <animate attributeName="x1" values="0%;100%;0%" dur="12s" repeatCount="indefinite"/>
-      </linearGradient>
-    </defs>
-
-    <rect x="0" y="0" width="880" height="310" rx="22" fill="#0c0c0b"/>
-    <rect x="0.5" y="0.5" width="879" height="309" rx="21.5" fill="none" stroke="rgba(243,242,239,0.1)"/>
-
-    <circle cx="210" cy="90" r="160" fill="url(#blobA)">
-      <animate attributeName="cx" values="210;275;160;210" dur="18s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="90;140;55;90" dur="14s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="655" cy="115" r="145" fill="url(#blobB)">
-      <animate attributeName="cx" values="655;570;700;655" dur="16s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="115;60;165;115" dur="20s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="440" cy="265" r="135" fill="url(#blobC)">
-      <animate attributeName="cx" values="440;515;370;440" dur="22s" repeatCount="indefinite"/>
-      <animate attributeName="cy" values="265;215;290;265" dur="12s" repeatCount="indefinite"/>
-    </circle>
-
-    <text x="440" y="72" text-anchor="middle" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="12" letter-spacing="5" fill="rgba(243,242,239,0.55)">● FREELANCE FRONTEND DEVELOPER</text>
-
-    <text x="440" y="180" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" fill="url(#wordGrad)">bitz.dev</text>
-
-    <text x="440" y="226" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="16" fill="rgba(243,242,239,0.75)">Pixel-perfect, high-performance web experiences.</text>
-
-    <text x="440" y="272" text-anchor="middle" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, monospace" font-size="13" fill="rgba(243,242,239,0.85)">$ git commit -m "always shipping"</text>
-    <rect x="500" y="258" width="10" height="18" fill="#f3f2ef">
-      <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
-    </rect>
-  </svg>
+  <img src="profile-hero.svg" alt="bitz.dev — Freelance Frontend Developer" width="880" />
 </p>
 
 <div align="center" style="font-family:'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size:12px; margin-top:6px;">
@@ -57,12 +9,7 @@
 </div>
 
 <div align="center" style="margin:52px 0;">
-  <svg width="200" height="8" viewBox="0 0 200 8" aria-hidden="true">
-    <rect x="0" y="3.5" width="200" height="1" fill="rgba(243,242,239,0.12)"/>
-    <circle r="3" cy="4" fill="#f3f2ef">
-      <animate attributeName="cx" values="3;197;3" dur="5s" repeatCount="indefinite"/>
-    </circle>
-  </svg>
+  <img src="profile-divider.svg" alt="" width="200" height="8" />
 </div>
 
 <div style="max-width:860px; margin:0 auto;">
@@ -368,12 +315,7 @@ next.js · react · typescript · node
 </div>
 
 <div align="center" style="margin:56px 0 8px;">
-  <svg width="200" height="8" viewBox="0 0 200 8" aria-hidden="true">
-    <rect x="0" y="3.5" width="200" height="1" fill="rgba(243,242,239,0.12)"/>
-    <circle r="3" cy="4" fill="#f3f2ef">
-      <animate attributeName="cx" values="3;197;3" dur="5s" repeatCount="indefinite"/>
-    </circle>
-  </svg>
+  <img src="profile-divider.svg" alt="" width="200" height="8" />
 </div>
 
 <p align="center" style="font-family:'JetBrains Mono', 'SFMono-Regular', Consolas, monospace; font-size:11px; color:rgba(243,242,239,0.45); margin-top:16px;">
