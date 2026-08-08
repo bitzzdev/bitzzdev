@@ -6,8 +6,14 @@ import "./ColorBends.css";
 
 const MAX_COLORS = 8;
 
-const MAX_ACTIVE_CONTEXTS = 6;
-const activeCleanups: Array<() => void> = [];
+const MAX_ACTIVE_CONTEXTS = 16;
+
+interface ContextEntry {
+  dispose: () => void;
+  reinit: () => void;
+  isVisible: () => boolean;
+}
+const activeContexts: ContextEntry[] = [];
 
 const frag = `
 #define MAX_COLORS ${MAX_COLORS}
@@ -160,7 +166,9 @@ export default function ColorBends({
   const pointerCurrentRef = useRef(new THREE.Vector2(0, 0));
   const pointerSmoothRef = useRef(8);
   const disposedRef = useRef(false);
+  const isVisibleRef = useRef(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [generation, setGeneration] = useState(0);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -168,6 +176,7 @@ export default function ColorBends({
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
+        isVisibleRef.current = entry.isIntersecting;
         setIsVisible(entry.isIntersecting);
       },
       { threshold: 0.05 }
@@ -272,7 +281,7 @@ export default function ColorBends({
     };
     rafRef.current = requestAnimationFrame(loop);
 
-    const cleanup = () => {
+    const dispose = () => {
       disposedRef.current = true;
       if (rafRef.current !== null) {
         cancelAnimationFrame(rafRef.current);
@@ -295,19 +304,30 @@ export default function ColorBends({
       materialRef.current = null;
     };
 
-    activeCleanups.push(cleanup);
-    if (activeCleanups.length > MAX_ACTIVE_CONTEXTS) {
-      const oldest = activeCleanups.shift();
-      if (oldest) oldest();
+    const entry: ContextEntry = {
+      dispose,
+      reinit: () => {
+        if (isVisibleRef.current) setGeneration((g) => g + 1);
+      },
+      isVisible: () => isVisibleRef.current,
+    };
+
+    if (activeContexts.length >= MAX_ACTIVE_CONTEXTS) {
+      const offViewIdx = activeContexts.findIndex((e) => !e.isVisible());
+      const targetIdx = offViewIdx >= 0 ? offViewIdx : 0;
+      const [removed] = activeContexts.splice(targetIdx, 1);
+      removed.dispose();
+      removed.reinit();
     }
+    activeContexts.push(entry);
 
     return () => {
-      const idx = activeCleanups.indexOf(cleanup);
-      if (idx >= 0) activeCleanups.splice(idx, 1);
-      cleanup();
+      const idx = activeContexts.indexOf(entry);
+      if (idx >= 0) activeContexts.splice(idx, 1);
+      dispose();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isVisible]);
+  }, [isVisible, generation]);
 
   useEffect(() => {
     const material = materialRef.current;
