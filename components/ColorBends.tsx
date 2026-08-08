@@ -150,9 +150,9 @@ export default function ColorBends({
   bandWidth = 6,
 }: ColorBendsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
+  const rendererRef = useRef<any>(null);
   const rafRef = useRef<number | null>(null);
-  const materialRef = useRef<THREE.ShaderMaterial | null>(null);
+  const materialRef = useRef<any>(null);
   const resizeObserverRef = useRef<ResizeObserver | null>(null);
   const rotationRef = useRef(rotation);
   const autoRotateRef = useRef(autoRotate);
@@ -241,7 +241,7 @@ export default function ColorBends({
     handleResize();
 
     let usesResizeObserver = false;
-    if ("ResizeObserver" in window) {
+    if (typeof ResizeObserver !== "undefined") {
       const ro = new ResizeObserver(handleResize);
       ro.observe(container);
       resizeObserverRef.current = ro;
