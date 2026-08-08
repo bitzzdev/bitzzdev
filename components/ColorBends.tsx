@@ -1,301 +1,389 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
-import { Renderer, Program, Triangle, Mesh } from "ogl";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import * as THREE from "three";
 import "./ColorBends.css";
 
-const hexToRgb = (hex: string): [number, number, number] => {
-  let h = hex.replace("#", "").trim();
-  if (h.length === 3) h = h.split("").map((c) => c + c).join("");
-  const num = parseInt(h.slice(0, 6), 16);
-  return [((num >> 16) & 255) / 255, ((num >> 8) & 255) / 255, (num & 255) / 255];
-};
+const MAX_COLORS = 8;
+
+const MAX_ACTIVE_CONTEXTS = 6;
+const activeCleanups: Array<() => void> = [];
+
+const frag = `
+#define MAX_COLORS ${MAX_COLORS}
+uniform vec2 uCanvas;
+uniform float uTime;
+uniform float uSpeed;
+uniform vec2 uRot;
+uniform int uColorCount;
+uniform vec3 uColors[MAX_COLORS];
+uniform int uTransparent;
+uniform float uScale;
+uniform float uFrequency;
+uniform float uWarpStrength;
+uniform vec2 uPointer;
+uniform float uMouseInfluence;
+uniform float uParallax;
+uniform float uNoise;
+uniform int uIterations;
+uniform float uIntensity;
+uniform float uBandWidth;
+varying vec2 vUv;
+
+void main() {
+  float t = uTime * uSpeed;
+  vec2 p = vUv * 2.0 - 1.0;
+  p += uPointer * uParallax * 0.1;
+  vec2 rp = vec2(p.x * uRot.x - p.y * uRot.y, p.x * uRot.y + p.y * uRot.x);
+  vec2 q = vec2(rp.x * (uCanvas.x / uCanvas.y), rp.y);
+  q /= max(uScale, 0.0001);
+  q /= 0.5 + 0.2 * dot(q, q);
+  q += 0.2 * cos(t) - 7.56;
+  vec2 toward = (uPointer - rp);
+  q += toward * uMouseInfluence * 0.2;
+
+  for (int j = 0; j < 5; j++) {
+    if (j >= uIterations - 1) break;
+    vec2 rr = sin(1.5 * (q.yx * uFrequency) + 2.0 * cos(q * uFrequency));
+    q += (rr - q) * 0.15;
+  }
+
+  vec3 col = vec3(0.0);
+  float a = 1.0;
+
+  if (uColorCount > 0) {
+    vec2 s = q;
+    vec3 sumCol = vec3(0.0);
+    float cover = 0.0;
+    for (int i = 0; i < MAX_COLORS; ++i) {
+      if (i >= uColorCount) break;
+      s -= 0.01;
+      vec2 r = sin(1.5 * (s.yx * uFrequency) + 2.0 * cos(s * uFrequency));
+      float m0 = length(r + sin(5.0 * r.y * uFrequency - 3.0 * t + float(i)) / 4.0);
+      float kBelow = clamp(uWarpStrength, 0.0, 1.0);
+      float kMix = pow(kBelow, 0.3);
+      float gain = 1.0 + max(uWarpStrength - 1.0, 0.0);
+      vec2 disp = (r - s) * kBelow;
+      vec2 warped = s + disp * gain;
+      float m1 = length(warped + sin(5.0 * warped.y * uFrequency - 3.0 * t + float(i)) / 4.0);
+      float m = mix(m0, m1, kMix);
+      float w = 1.0 - exp(-uBandWidth / exp(uBandWidth * m));
+      sumCol += uColors[i] * w;
+      cover = max(cover, w);
+    }
+    col = clamp(sumCol, 0.0, 1.0);
+    a = uTransparent > 0 ? cover : 1.0;
+  } else {
+    vec2 s = q;
+    for (int k = 0; k < 3; ++k) {
+      s -= 0.01;
+      vec2 r = sin(1.5 * (s.yx * uFrequency) + 2.0 * cos(s * uFrequency));
+      float m0 = length(r + sin(5.0 * r.y * uFrequency - 3.0 * t + float(k)) / 4.0);
+      float kBelow = clamp(uWarpStrength, 0.0, 1.0);
+      float kMix = pow(kBelow, 0.3);
+      float gain = 1.0 + max(uWarpStrength - 1.0, 0.0);
+      vec2 disp = (r - s) * kBelow;
+      vec2 warped = s + disp * gain;
+      float m1 = length(warped + sin(5.0 * warped.y * uFrequency - 3.0 * t + float(k)) / 4.0);
+      float m = mix(m0, m1, kMix);
+      col[k] = 1.0 - exp(-uBandWidth / exp(uBandWidth * m));
+    }
+    a = uTransparent > 0 ? max(max(col.r, col.g), col.b) : 1.0;
+  }
+
+  col *= uIntensity;
+
+  if (uNoise > 0.0001) {
+    float n = fract(sin(dot(gl_FragCoord.xy + vec2(uTime), vec2(12.9898, 78.233))) * 43758.5453123);
+    col += (n - 0.5) * uNoise;
+    col = clamp(col, 0.0, 1.0);
+  }
+
+  vec3 rgb = (uTransparent > 0) ? col * a : col;
+  gl_FragColor = vec4(rgb, a);
+}
+`;
+
+const vert = `
+varying vec2 vUv;
+void main() {
+  vUv = uv;
+  gl_Position = vec4(position, 1.0);
+}
+`;
 
 interface ColorBendsProps {
-  colors?: string[];
+  className?: string;
+  style?: CSSProperties;
   rotation?: number;
+  autoRotate?: number;
   speed?: number;
+  colors?: string[];
+  transparent?: boolean;
   scale?: number;
   frequency?: number;
-  warp?: number;
+  warpStrength?: number;
+  mouseInfluence?: number;
+  parallax?: number;
+  noise?: number;
+  iterations?: number;
   intensity?: number;
-  className?: string;
+  bandWidth?: number;
 }
 
-const ColorBends = ({
-  colors = ["#ff5c7a", "#f97316"],
+export default function ColorBends({
+  className = "",
+  style,
   rotation = 90,
+  autoRotate = 0,
   speed = 0.2,
+  colors = [],
+  transparent = true,
   scale = 1,
   frequency = 1,
-  warp = 1,
+  warpStrength = 1,
+  mouseInfluence = 1,
+  parallax = 0.5,
+  noise = 0.15,
+  iterations = 1,
   intensity = 1.5,
-  className = "",
-}: ColorBendsProps) => {
+  bandWidth = 6,
+}: ColorBendsProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const uniformsRef = useRef<any>(null);
-  const rendererRef = useRef<any>(null);
-  const animationIdRef = useRef<number | null>(null);
-  const meshRef = useRef<any>(null);
-  const cleanupFunctionRef = useRef<(() => void) | null>(null);
+  const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const materialRef = useRef<THREE.ShaderMaterial | null>(null);
+  const resizeObserverRef = useRef<ResizeObserver | null>(null);
+  const rotationRef = useRef(rotation);
+  const autoRotateRef = useRef(autoRotate);
+  const pointerTargetRef = useRef(new THREE.Vector2(0, 0));
+  const pointerCurrentRef = useRef(new THREE.Vector2(0, 0));
+  const pointerSmoothRef = useRef(8);
+  const disposedRef = useRef(false);
   const [isVisible, setIsVisible] = useState(false);
-  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
-    observerRef.current = new IntersectionObserver(
+    const container = containerRef.current;
+    if (!container) return;
+    const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
-    observerRef.current.observe(containerRef.current);
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-        observerRef.current = null;
-      }
-    };
+    observer.observe(container);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     if (!isVisible || !containerRef.current) return;
-    if (cleanupFunctionRef.current) {
-      cleanupFunctionRef.current();
-      cleanupFunctionRef.current = null;
-    }
-    const initializeWebGL = async () => {
-      if (!containerRef.current) return;
-      await new Promise((resolve) => setTimeout(resolve, 10));
-      if (!containerRef.current) return;
+    disposedRef.current = false;
 
-      const renderer = new Renderer({
-        dpr: Math.min(window.devicePixelRatio, 2),
-        alpha: true,
-      });
-      rendererRef.current = renderer;
-      const gl = renderer.gl;
-      gl.canvas.style.width = "100%";
-      gl.canvas.style.height = "100%";
-      while (containerRef.current.firstChild) {
-        containerRef.current.removeChild(containerRef.current.firstChild);
-      }
-      containerRef.current.appendChild(gl.canvas);
+    const container = containerRef.current;
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
 
-      const vert = `
-        attribute vec2 position;
-        attribute vec2 uv;
-        varying vec2 vUv;
-        void main() {
-          vUv = uv;
-          gl_Position = vec4(position, 0.0, 1.0);
-        }
-      `;
-
-      const frag = `
-        precision highp float;
-        #define MAX_COLORS 8
-        varying vec2 vUv;
-        uniform vec2 uCanvas;
-        uniform float uTime;
-        uniform float uSpeed;
-        uniform vec2 uRot;
-        uniform int uColorCount;
-        uniform vec3 uColors[MAX_COLORS];
-        uniform int uTransparent;
-        uniform float uScale;
-        uniform float uFrequency;
-        uniform float uWarpStrength;
-        uniform vec2 uPointer;
-        uniform float uMouseInfluence;
-        uniform float uParallax;
-        uniform float uNoise;
-        uniform int uIterations;
-        uniform float uIntensity;
-        uniform float uBandWidth;
-
-        void main() {
-          float t = uTime * uSpeed;
-          vec2 p = vUv * 2.0 - 1.0;
-          p += uPointer * uParallax * 0.1;
-          vec2 rp = vec2(p.x * uRot.x - p.y * uRot.y, p.x * uRot.y + p.y * uRot.x);
-          vec2 q = vec2(rp.x * (uCanvas.x / uCanvas.y), rp.y);
-          q /= max(uScale, 0.0001);
-          q /= 0.5 + 0.2 * dot(q, q);
-          q += 0.2 * cos(t) - 7.56;
-          vec2 toward = (uPointer - rp);
-          q += toward * uMouseInfluence * 0.2;
-
-          for (int j = 0; j < 5; j++) {
-            if (j >= uIterations - 1) break;
-            vec2 rr = sin(1.5 * (q.yx * uFrequency) + 2.0 * cos(q * uFrequency));
-            q += (rr - q) * 0.15;
-          }
-
-          vec3 col = vec3(0.0);
-          float a = 1.0;
-
-          if (uColorCount > 0) {
-            vec2 s = q;
-            vec3 sumCol = vec3(0.0);
-            float cover = 0.0;
-            for (int i = 0; i < MAX_COLORS; ++i) {
-              if (i >= uColorCount) break;
-              s -= 0.01;
-              vec2 r = sin(1.5 * (s.yx * uFrequency) + 2.0 * cos(s * uFrequency));
-              float m0 = length(r + sin(5.0 * r.y * uFrequency - 3.0 * t + float(i)) / 4.0);
-              float kBelow = clamp(uWarpStrength, 0.0, 1.0);
-              float kMix = pow(kBelow, 0.3);
-              float gain = 1.0 + max(uWarpStrength - 1.0, 0.0);
-              vec2 disp = (r - s) * kBelow;
-              vec2 warped = s + disp * gain;
-              float m1 = length(warped + sin(5.0 * warped.y * uFrequency - 3.0 * t + float(i)) / 4.0);
-              float m = mix(m0, m1, kMix);
-              float w = 1.0 - exp(-uBandWidth / exp(uBandWidth * m));
-              sumCol += uColors[i] * w;
-              cover = max(cover, w);
-            }
-            col = clamp(sumCol, 0.0, 1.0);
-            a = uTransparent > 0 ? cover : 1.0;
-          } else {
-            vec2 s = q;
-            for (int k = 0; k < 3; ++k) {
-              s -= 0.01;
-              vec2 r = sin(1.5 * (s.yx * uFrequency) + 2.0 * cos(s * uFrequency));
-              float m0 = length(r + sin(5.0 * r.y * uFrequency - 3.0 * t + float(k)) / 4.0);
-              float kBelow = clamp(uWarpStrength, 0.0, 1.0);
-              float kMix = pow(kBelow, 0.3);
-              float gain = 1.0 + max(uWarpStrength - 1.0, 0.0);
-              vec2 disp = (r - s) * kBelow;
-              vec2 warped = s + disp * gain;
-              float m1 = length(warped + sin(5.0 * warped.y * uFrequency - 3.0 * t + float(k)) / 4.0);
-              float m = mix(m0, m1, kMix);
-              col[k] = 1.0 - exp(-uBandWidth / exp(uBandWidth * m));
-            }
-            a = uTransparent > 0 ? max(max(col.r, col.g), col.b) : 1.0;
-          }
-
-          col *= uIntensity;
-
-          if (uNoise > 0.0001) {
-            float n = fract(sin(dot(gl_FragCoord.xy + vec2(uTime), vec2(12.9898, 78.233))) * 43758.5453123);
-            col += (n - 0.5) * uNoise;
-            col = clamp(col, 0.0, 1.0);
-          }
-
-          vec3 rgb = (uTransparent > 0) ? col * a : col;
-          gl_FragColor = vec4(rgb, a);
-        }
-      `;
-
-      const parsedColors = colors.map(hexToRgb);
-      const rotationRad = (rotation * Math.PI) / 180;
-      const uniforms = {
-        uCanvas: { value: [1, 1] },
+    const geometry = new THREE.PlaneGeometry(2, 2);
+    const uColorsArray = Array.from({ length: MAX_COLORS }, () => new THREE.Vector3(0, 0, 0));
+    const material = new THREE.ShaderMaterial({
+      vertexShader: vert,
+      fragmentShader: frag,
+      uniforms: {
+        uCanvas: { value: new THREE.Vector2(1, 1) },
         uTime: { value: 0 },
         uSpeed: { value: speed },
-        uRot: { value: [Math.cos(rotationRad), Math.sin(rotationRad)] },
-        uColorCount: { value: parsedColors.length },
-        uColors: { value: parsedColors },
-        uTransparent: { value: 0 },
+        uRot: { value: new THREE.Vector2(1, 0) },
+        uColorCount: { value: 0 },
+        uColors: { value: uColorsArray },
+        uTransparent: { value: transparent ? 1 : 0 },
         uScale: { value: scale },
         uFrequency: { value: frequency },
-        uWarpStrength: { value: warp },
-        uPointer: { value: [0, 0] },
-        uMouseInfluence: { value: 1 },
-        uParallax: { value: 0.5 },
-        uNoise: { value: 0.15 },
-        uIterations: { value: 1 },
+        uWarpStrength: { value: warpStrength },
+        uPointer: { value: new THREE.Vector2(0, 0) },
+        uMouseInfluence: { value: mouseInfluence },
+        uParallax: { value: parallax },
+        uNoise: { value: noise },
+        uIterations: { value: iterations },
         uIntensity: { value: intensity },
-        uBandWidth: { value: 6 },
-      };
-      uniformsRef.current = uniforms;
+        uBandWidth: { value: bandWidth },
+      },
+      premultipliedAlpha: true,
+      transparent: true,
+    });
+    materialRef.current = material;
 
-      const geometry = new Triangle(gl);
-      const program = new Program(gl, { vertex: vert, fragment: frag, uniforms });
-      const mesh = new Mesh(gl, { geometry, program });
-      meshRef.current = mesh;
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
 
-      const pointer = { x: 0, y: 0 };
-      const smoothPointer = { x: 0, y: 0 };
+    const renderer = new THREE.WebGLRenderer({
+      antialias: false,
+      powerPreference: "high-performance",
+      alpha: true,
+    });
+    rendererRef.current = renderer;
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setClearColor(0x000000, transparent ? 0 : 1);
+    renderer.domElement.style.width = "100%";
+    renderer.domElement.style.height = "100%";
+    renderer.domElement.style.display = "block";
+    container.appendChild(renderer.domElement);
 
-      const updateSize = () => {
-        if (!containerRef.current || !renderer) return;
-        renderer.dpr = Math.min(window.devicePixelRatio, 2);
-        const { clientWidth: w, clientHeight: h } = containerRef.current;
-        renderer.setSize(w, h);
-        uniforms.uCanvas.value = [w * renderer.dpr, h * renderer.dpr];
-      };
+    const clock = new THREE.Clock();
 
-      const onPointerMove = (e: PointerEvent) => {
-        const canvas = renderer.gl.canvas;
-        const rect = canvas.getBoundingClientRect();
-        pointer.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-        pointer.y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
-      };
-      gl.canvas.addEventListener("pointermove", onPointerMove);
-
-      let lastTime = 0;
-      const loop = (t: number) => {
-        if (!rendererRef.current || !uniformsRef.current || !meshRef.current) return;
-        const now = t * 0.001;
-        const dt = now - lastTime;
-        lastTime = now;
-        uniforms.uTime.value = now;
-
-        const smooth = 8;
-        const amt = Math.min(1, dt * smooth);
-        smoothPointer.x += (pointer.x - smoothPointer.x) * amt;
-        smoothPointer.y += (pointer.y - smoothPointer.y) * amt;
-        uniforms.uPointer.value = [smoothPointer.x, smoothPointer.y];
-
-        try {
-          renderer.render({ scene: mesh });
-          animationIdRef.current = requestAnimationFrame(loop);
-        } catch (e) {
-          return;
-        }
-      };
-
-      window.addEventListener("resize", updateSize);
-      const resizeObserver = new ResizeObserver(updateSize);
-      if (containerRef.current) resizeObserver.observe(containerRef.current);
-
-      updateSize();
-      animationIdRef.current = requestAnimationFrame(loop);
-
-      cleanupFunctionRef.current = () => {
-        if (animationIdRef.current) {
-          cancelAnimationFrame(animationIdRef.current);
-          animationIdRef.current = null;
-        }
-        window.removeEventListener("resize", updateSize);
-        resizeObserver.disconnect();
-        gl.canvas.removeEventListener("pointermove", onPointerMove);
-        if (renderer) {
-          try {
-            const loseCtx = renderer.gl.getExtension("WEBGL_lose_context");
-            if (loseCtx) loseCtx.loseContext();
-            const canvas = renderer.gl.canvas;
-            if (canvas && canvas.parentNode) canvas.parentNode.removeChild(canvas);
-          } catch (e) {}
-        }
-        rendererRef.current = null;
-        uniformsRef.current = null;
-        meshRef.current = null;
-      };
+    const handleResize = () => {
+      const w = container.clientWidth || 1;
+      const h = container.clientHeight || 1;
+      renderer.setSize(w, h, false);
+      material.uniforms.uCanvas.value.set(w, h);
     };
-    initializeWebGL();
-    return () => {
-      if (cleanupFunctionRef.current) {
-        cleanupFunctionRef.current();
-        cleanupFunctionRef.current = null;
+    handleResize();
+
+    let usesResizeObserver = false;
+    if ("ResizeObserver" in window) {
+      const ro = new ResizeObserver(handleResize);
+      ro.observe(container);
+      resizeObserverRef.current = ro;
+      usesResizeObserver = true;
+    } else {
+      window.addEventListener("resize", handleResize);
+    }
+
+    const loop = () => {
+      if (disposedRef.current) return;
+      const dt = clock.getDelta();
+      const elapsed = clock.elapsedTime;
+      material.uniforms.uTime.value = elapsed;
+
+      const deg = (rotationRef.current % 360) + autoRotateRef.current * elapsed;
+      const rad = (deg * Math.PI) / 180;
+      const c = Math.cos(rad);
+      const s = Math.sin(rad);
+      material.uniforms.uRot.value.set(c, s);
+
+      const cur = pointerCurrentRef.current;
+      const tgt = pointerTargetRef.current;
+      const amt = Math.min(1, dt * pointerSmoothRef.current);
+      cur.lerp(tgt, amt);
+      material.uniforms.uPointer.value.copy(cur);
+      renderer.render(scene, camera);
+      rafRef.current = requestAnimationFrame(loop);
+    };
+    rafRef.current = requestAnimationFrame(loop);
+
+    const cleanup = () => {
+      disposedRef.current = true;
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
       }
+      if (resizeObserverRef.current) {
+        resizeObserverRef.current.disconnect();
+        resizeObserverRef.current = null;
+      } else if (!usesResizeObserver) {
+        window.removeEventListener("resize", handleResize);
+      }
+      geometry.dispose();
+      material.dispose();
+      renderer.dispose();
+      renderer.forceContextLoss();
+      if (renderer.domElement.parentElement === container) {
+        container.removeChild(renderer.domElement);
+      }
+      rendererRef.current = null;
+      materialRef.current = null;
     };
-  }, [isVisible, colors, rotation, speed, scale, frequency, warp, intensity]);
 
-  return <div ref={containerRef} className={`color-bends-container ${className}`.trim()} />;
-};
+    activeCleanups.push(cleanup);
+    if (activeCleanups.length > MAX_ACTIVE_CONTEXTS) {
+      const oldest = activeCleanups.shift();
+      if (oldest) oldest();
+    }
 
-export default ColorBends;
+    return () => {
+      const idx = activeCleanups.indexOf(cleanup);
+      if (idx >= 0) activeCleanups.splice(idx, 1);
+      cleanup();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isVisible]);
+
+  useEffect(() => {
+    const material = materialRef.current;
+    const renderer = rendererRef.current;
+    if (!material) return;
+
+    rotationRef.current = rotation;
+    autoRotateRef.current = autoRotate;
+    material.uniforms.uSpeed.value = speed;
+    material.uniforms.uScale.value = scale;
+    material.uniforms.uFrequency.value = frequency;
+    material.uniforms.uWarpStrength.value = warpStrength;
+    material.uniforms.uMouseInfluence.value = mouseInfluence;
+    material.uniforms.uParallax.value = parallax;
+    material.uniforms.uNoise.value = noise;
+    material.uniforms.uIterations.value = iterations;
+    material.uniforms.uIntensity.value = intensity;
+    material.uniforms.uBandWidth.value = bandWidth;
+
+    const toVec3 = (hex: string) => {
+      const h = hex.replace("#", "").trim();
+      const v =
+        h.length === 3
+          ? [parseInt(h[0] + h[0], 16), parseInt(h[1] + h[1], 16), parseInt(h[2] + h[2], 16)]
+          : [
+              parseInt(h.slice(0, 2), 16),
+              parseInt(h.slice(2, 4), 16),
+              parseInt(h.slice(4, 6), 16),
+            ];
+      return new THREE.Vector3(v[0] / 255, v[1] / 255, v[2] / 255);
+    };
+
+    const arr = (colors || []).filter(Boolean).slice(0, MAX_COLORS).map(toVec3);
+    for (let i = 0; i < MAX_COLORS; i++) {
+      const vec = material.uniforms.uColors.value[i];
+      if (i < arr.length) vec.copy(arr[i]);
+      else vec.set(0, 0, 0);
+    }
+    material.uniforms.uColorCount.value = arr.length;
+
+    material.uniforms.uTransparent.value = transparent ? 1 : 0;
+    if (renderer) renderer.setClearColor(0x000000, transparent ? 0 : 1);
+  }, [
+    rotation,
+    autoRotate,
+    speed,
+    scale,
+    frequency,
+    warpStrength,
+    mouseInfluence,
+    parallax,
+    noise,
+    iterations,
+    intensity,
+    bandWidth,
+    colors,
+    transparent,
+  ]);
+
+  useEffect(() => {
+    const material = materialRef.current;
+    const container = containerRef.current;
+    if (!material || !container) return;
+
+    const handlePointerMove = (e: PointerEvent) => {
+      const rect = container.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / (rect.width || 1)) * 2 - 1;
+      const y = -(((e.clientY - rect.top) / (rect.height || 1)) * 2 - 1);
+      pointerTargetRef.current.set(x, y);
+    };
+
+    container.addEventListener("pointermove", handlePointerMove);
+    return () => {
+      container.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, [isVisible]);
+
+  return <div ref={containerRef} className={`color-bends-container ${className}`} style={style} />;
+}

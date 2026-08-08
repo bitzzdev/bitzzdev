@@ -4,15 +4,120 @@ import { useEffect, useState } from "react";
 import ColorBends from "@/components/ColorBends";
 import { GITHUB_USERNAME, filterRepos, type GithubRepo } from "@/lib/github";
 
-const PALETTES: Array<{ colors: string[]; rotation?: number; speed?: number; scale?: number; frequency?: number; warp?: number; intensity?: number }> = [
-  { colors: ["#A855F7"], rotation: 90, speed: 0.12, intensity: 2.5 },
-  { colors: ["#ff5c7a", "#f97316"], rotation: 30, speed: 0.25, frequency: 1.5, scale: 0.7 },
-  { colors: ["#ff5c7a", "#fb923c"], rotation: 15, speed: 0.3, frequency: 1.2, scale: 0.9 },
-  { colors: ["#fb923c", "#fef08a"], rotation: 90, speed: 0.12, intensity: 2.5 },
-  { colors: ["#22d3ee", "#818cf8"], rotation: 45, speed: 0.2, frequency: 1.1 },
-  { colors: ["#34d399", "#10b981"], rotation: 120, speed: 0.15, intensity: 2 },
-  { colors: ["#f472b6", "#a78bfa"], rotation: 60, speed: 0.28, scale: 0.8 },
-  { colors: ["#facc15", "#f97316"], rotation: 100, speed: 0.18, frequency: 1.4 },
+interface Palette {
+  colors: string[];
+  rotation?: number;
+  autoRotate?: number;
+  speed?: number;
+  scale?: number;
+  frequency?: number;
+  warpStrength?: number;
+  mouseInfluence?: number;
+  parallax?: number;
+  noise?: number;
+  iterations?: number;
+  intensity?: number;
+  bandWidth?: number;
+}
+
+const PALETTES: Palette[] = [
+  {
+    colors: ["#ff5c7a", "#8a5cff"],
+    rotation: 90,
+    speed: 0.18,
+    scale: 0.9,
+    frequency: 1.1,
+    intensity: 1.6,
+  },
+  {
+    colors: ["#00ffd1", "#8a5cff"],
+    rotation: 45,
+    speed: 0.25,
+    frequency: 1.4,
+    warpStrength: 1.4,
+    iterations: 2,
+    intensity: 1.8,
+  },
+  {
+    colors: ["#f97316", "#facc15"],
+    rotation: 15,
+    speed: 0.3,
+    scale: 0.7,
+    frequency: 1.2,
+    parallax: 0.6,
+    noise: 0.1,
+  },
+  {
+    colors: ["#22d3ee", "#818cf8", "#a78bfa"],
+    rotation: 120,
+    speed: 0.15,
+    autoRotate: 5,
+    bandWidth: 8,
+  },
+  {
+    colors: ["#34d399", "#10b981"],
+    rotation: 90,
+    speed: 0.2,
+    warpStrength: 0.8,
+    intensity: 2,
+    mouseInfluence: 1.4,
+  },
+  {
+    colors: ["#f472b6", "#fb7185"],
+    rotation: 60,
+    speed: 0.28,
+    scale: 0.85,
+    frequency: 1.6,
+    iterations: 3,
+  },
+  {
+    colors: ["#facc15", "#fbbf24"],
+    rotation: 100,
+    speed: 0.12,
+    autoRotate: 8,
+    noise: 0.2,
+    intensity: 1.4,
+  },
+  {
+    colors: ["#a855f7", "#d946ef"],
+    rotation: 30,
+    speed: 0.22,
+    frequency: 1.3,
+    bandWidth: 5,
+    parallax: 0.4,
+  },
+  {
+    colors: ["#0ea5e9", "#6366f1"],
+    rotation: 150,
+    speed: 0.16,
+    scale: 1.1,
+    iterations: 2,
+    warpStrength: 1.6,
+  },
+  {
+    colors: ["#fb923c", "#ef4444"],
+    rotation: 75,
+    speed: 0.26,
+    frequency: 0.9,
+    noise: 0.05,
+    mouseInfluence: 0.8,
+  },
+  {
+    colors: ["#2dd4bf", "#f472b6"],
+    rotation: 45,
+    speed: 0.2,
+    autoRotate: 4,
+    intensity: 2.2,
+    bandWidth: 7,
+  },
+  {
+    colors: ["#eab308", "#22d3ee"],
+    rotation: 20,
+    speed: 0.32,
+    scale: 0.75,
+    frequency: 1.5,
+    warpStrength: 1.2,
+  },
 ];
 
 export default function WorkGrid({ initialRepos }: { initialRepos: GithubRepo[] }) {
@@ -71,7 +176,7 @@ export default function WorkGrid({ initialRepos }: { initialRepos: GithubRepo[] 
             href={repo.html_url}
             target="_blank"
             rel="noreferrer"
-            className="work-item reveal"
+            className="work-item"
           >
             <ColorBends {...palette} />
             <div className="work-item-shape-2" />
