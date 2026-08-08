@@ -96,6 +96,13 @@ img { max-width: 100%; display: block; }
 .side-rays {
     position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden;
 }
+.hero .side-rays-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
 .hero-title {
     font-family: var(--serif); font-size: clamp(4rem, 14vw, 12rem); line-height: 1; letter-spacing: -0.04em; text-align: center; font-weight: 400; position: relative; z-index: 2;
 }
@@ -141,6 +148,13 @@ img { max-width: 100%; display: block; }
 }
 .color-bends {
     position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
+}
+.work-item .color-bends-container {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 .work-item-shape-2 {
     position: absolute; z-index: 0; pointer-events: none; opacity: 0.15;

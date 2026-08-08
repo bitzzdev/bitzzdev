@@ -4,15 +4,15 @@ import { useEffect, useState } from "react";
 import ColorBends from "@/components/ColorBends";
 import { GITHUB_USERNAME, filterRepos, type GithubRepo } from "@/lib/github";
 
-const PALETTES: Array<{ colors: string; rotation?: number; speed?: number; scale?: number; frequency?: number; warp?: number; intensity?: number }> = [
-  { colors: "#A855F7", rotation: 90, speed: 0.12, intensity: 2.5 },
-  { colors: "#ff5c7a,#f97316", rotation: 30, speed: 0.25, frequency: 1.5, scale: 0.7 },
-  { colors: "#ff5c7a,#fb923c", rotation: 15, speed: 0.3, frequency: 1.2, scale: 0.9 },
-  { colors: "#fb923c,#fef08a", rotation: 90, speed: 0.12, intensity: 2.5 },
-  { colors: "#22d3ee,#818cf8", rotation: 45, speed: 0.2, frequency: 1.1 },
-  { colors: "#34d399,#10b981", rotation: 120, speed: 0.15, intensity: 2 },
-  { colors: "#f472b6,#a78bfa", rotation: 60, speed: 0.28, scale: 0.8 },
-  { colors: "#facc15,#f97316", rotation: 100, speed: 0.18, frequency: 1.4 },
+const PALETTES: Array<{ colors: string[]; rotation?: number; speed?: number; scale?: number; frequency?: number; warp?: number; intensity?: number }> = [
+  { colors: ["#A855F7"], rotation: 90, speed: 0.12, intensity: 2.5 },
+  { colors: ["#ff5c7a", "#f97316"], rotation: 30, speed: 0.25, frequency: 1.5, scale: 0.7 },
+  { colors: ["#ff5c7a", "#fb923c"], rotation: 15, speed: 0.3, frequency: 1.2, scale: 0.9 },
+  { colors: ["#fb923c", "#fef08a"], rotation: 90, speed: 0.12, intensity: 2.5 },
+  { colors: ["#22d3ee", "#818cf8"], rotation: 45, speed: 0.2, frequency: 1.1 },
+  { colors: ["#34d399", "#10b981"], rotation: 120, speed: 0.15, intensity: 2 },
+  { colors: ["#f472b6", "#a78bfa"], rotation: 60, speed: 0.28, scale: 0.8 },
+  { colors: ["#facc15", "#f97316"], rotation: 100, speed: 0.18, frequency: 1.4 },
 ];
 
 export default function WorkGrid({ initialRepos }: { initialRepos: GithubRepo[] }) {
