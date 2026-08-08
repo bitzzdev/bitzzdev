@@ -5,7 +5,6 @@ import ColorBends from "@/components/ColorBends";
 import { GITHUB_USERNAME, filterRepos, type GithubRepo } from "@/lib/github";
 
 interface Palette {
-  colors: string[];
   rotation?: number;
   autoRotate?: number;
   speed?: number;
@@ -21,139 +20,42 @@ interface Palette {
 }
 
 const PALETTES: Palette[] = [
-  {
-    colors: ["#a855f7", "#7c3aed"],
-    rotation: 90,
-    speed: 0.16,
-    scale: 0.95,
-    frequency: 1.2,
-    bandWidth: 6,
-    intensity: 1.8,
-  },
-  {
-    colors: ["#ef4444", "#dc2626"],
-    rotation: 45,
-    speed: 0.22,
-    frequency: 1.1,
-    bandWidth: 7,
-    mouseInfluence: 1.3,
-    intensity: 1.6,
-  },
-  {
-    colors: ["#ec4899", "#db2777"],
-    rotation: 15,
-    speed: 0.28,
-    scale: 0.85,
-    frequency: 1.4,
-    bandWidth: 5,
-    intensity: 2,
-  },
-  {
-    colors: ["#8b5cf6", "#6366f1"],
-    rotation: 120,
-    speed: 0.14,
-    frequency: 1,
-    bandWidth: 8,
-    autoRotate: 4,
-    intensity: 1.7,
-  },
-  {
-    colors: ["#f43f5e", "#e11d48"],
-    rotation: 60,
-    speed: 0.2,
-    scale: 1.05,
-    frequency: 1.3,
-    bandWidth: 6,
-    parallax: 0.6,
-    intensity: 1.9,
-  },
-  {
-    colors: ["#c026d3", "#9333ea"],
-    rotation: 30,
-    speed: 0.24,
-    frequency: 1.2,
-    bandWidth: 7,
-    intensity: 1.6,
-  },
-  {
-    colors: ["#e11d48", "#f472b6"],
-    rotation: 100,
-    speed: 0.18,
-    scale: 0.9,
-    frequency: 1.5,
-    bandWidth: 5,
-    noise: 0.1,
-    intensity: 1.8,
-  },
-  {
-    colors: ["#6366f1", "#8b5cf6"],
-    rotation: 75,
-    speed: 0.26,
-    frequency: 1.1,
-    bandWidth: 8,
-    autoRotate: 6,
-    intensity: 1.5,
-  },
-  {
-    colors: ["#d946ef", "#a855f7"],
-    rotation: 15,
-    speed: 0.2,
-    scale: 1.1,
-    frequency: 1.4,
-    bandWidth: 6,
-    intensity: 1.7,
-  },
-  {
-    colors: ["#f97316", "#ef4444"],
-    rotation: 135,
-    speed: 0.3,
-    scale: 0.8,
-    frequency: 1.2,
-    bandWidth: 6,
-    noise: 0.05,
-    intensity: 2,
-  },
-  {
-    colors: ["#7c3aed", "#ec4899"],
-    rotation: 50,
-    speed: 0.17,
-    frequency: 1.3,
-    bandWidth: 7,
-    mouseInfluence: 1.5,
-    intensity: 1.8,
-  },
-  {
-    colors: ["#ef4444", "#f43f5e"],
-    rotation: 95,
-    speed: 0.23,
-    scale: 0.9,
-    frequency: 1,
-    bandWidth: 9,
-    autoRotate: 3,
-    intensity: 1.6,
-  },
-  {
-    colors: ["#9333ea", "#6366f1"],
-    rotation: 40,
-    speed: 0.19,
-    frequency: 1.5,
-    bandWidth: 6,
-    intensity: 2,
-  },
-  {
-    colors: ["#db2777", "#e11d48"],
-    rotation: 110,
-    speed: 0.25,
-    scale: 1,
-    frequency: 1.2,
-    bandWidth: 7,
-    parallax: 0.5,
-    intensity: 1.7,
-  },
+  { rotation: 90, speed: 0.16, scale: 0.95, frequency: 1.2, bandWidth: 6, intensity: 1.8 },
+  { rotation: 45, speed: 0.22, frequency: 1.1, bandWidth: 7, mouseInfluence: 1.3, intensity: 1.6 },
+  { rotation: 15, speed: 0.28, scale: 0.85, frequency: 1.4, bandWidth: 5, intensity: 2 },
+  { rotation: 120, speed: 0.14, frequency: 1, bandWidth: 8, autoRotate: 4, intensity: 1.7 },
+  { rotation: 60, speed: 0.2, scale: 1.05, frequency: 1.3, bandWidth: 6, parallax: 0.6, intensity: 1.9 },
+  { rotation: 30, speed: 0.24, frequency: 1.2, bandWidth: 7, intensity: 1.6 },
+  { rotation: 100, speed: 0.18, scale: 0.9, frequency: 1.5, bandWidth: 5, noise: 0.1, intensity: 1.8 },
+  { rotation: 75, speed: 0.26, frequency: 1.1, bandWidth: 8, autoRotate: 6, intensity: 1.5 },
+  { rotation: 15, speed: 0.2, scale: 1.1, frequency: 1.4, bandWidth: 6, intensity: 1.7 },
+  { rotation: 135, speed: 0.3, scale: 0.8, frequency: 1.2, bandWidth: 6, noise: 0.05, intensity: 2 },
+  { rotation: 50, speed: 0.17, frequency: 1.3, bandWidth: 7, mouseInfluence: 1.5, intensity: 1.8 },
+  { rotation: 95, speed: 0.23, scale: 0.9, frequency: 1, bandWidth: 9, autoRotate: 3, intensity: 1.6 },
+  { rotation: 40, speed: 0.19, frequency: 1.5, bandWidth: 6, intensity: 2 },
+  { rotation: 110, speed: 0.25, scale: 1, frequency: 1.2, bandWidth: 7, parallax: 0.5, intensity: 1.7 },
 ];
 
-const bannerGradient = (colors: string[]) =>
-  `linear-gradient(160deg, ${colors[0]}cc, ${colors[Math.min(1, colors.length - 1)]}cc)`;
+const HUES = [
+  268, 0, 330, 255, 348, 292, 338, 260, 312, 20, 274, 352, 262, 322, 283, 6, 305, 344, 250, 320,
+];
+
+const hslToHex = (h: number, s: number, l: number) => {
+  const a = s * Math.min(l, 1 - l);
+  const f = (n: number) => {
+    const k = (n + h / 30) % 12;
+    const c = l - a * Math.max(-1, Math.min(k - 3, Math.min(9 - k, 1)));
+    return Math.round(255 * c)
+      .toString(16)
+      .padStart(2, "0");
+  };
+  return `#${f(0)}${f(8)}${f(4)}`;
+};
+
+const colorsFor = (index: number): [string, string] => {
+  const hue = HUES[index % HUES.length];
+  return [hslToHex(hue, 85, 55), hslToHex((hue + 30) % 360, 85, 62)];
+};
 
 export default function WorkGrid({ initialRepos }: { initialRepos: GithubRepo[] }) {
   const [repos, setRepos] = useState<GithubRepo[]>(initialRepos);
@@ -213,7 +115,7 @@ export default function WorkGrid({ initialRepos }: { initialRepos: GithubRepo[] 
             rel="noreferrer"
             className="work-item"
           >
-            <ColorBends {...palette} style={{ background: bannerGradient(palette.colors) }} />
+            <ColorBends {...palette} colors={colorsFor(index)} />
             <div className="work-item-shape-2" />
             <div className="work-item-inner">
               <h3 className="work-item-title">{repo.name.replace(/-/g, " ")}</h3>
