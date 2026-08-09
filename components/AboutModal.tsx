@@ -1,7 +1,6 @@
 "use client";
 
 import { useSite } from "@/components/site-context";
-import AboutScene from "@/components/AboutScene";
 import Reveal from "@/components/Reveal";
 
 export default function AboutModal() {
@@ -15,9 +14,6 @@ export default function AboutModal() {
         <span>Close</span>
         <span className="esc">esc</span>
       </button>
-      <div className="about-scene">
-        <AboutScene />
-      </div>
       <div className="about-content">
         <Reveal>
           <div className="about-eyebrow">
