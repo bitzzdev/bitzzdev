@@ -199,7 +199,17 @@ bitz@arch ~ $ _
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=bitzzdev&theme=flat&no-frame=true&no-bg=true&margin-w=10&column=7" width="95%"/>
+<img src="https://github.com/bitzzdev.png?size=160" width="120" height="120" alt="bitzzdev"/>
+
+<br><br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=bitzzdev&theme=transparent&hide_border=true" width="70%" alt="GitHub streak"/>
+
+<br><br>
+
+### Contribution Graph
+
+[![Bitz's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=00000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true)](https://github.com/bitzzdev)
 
 </div>
 
