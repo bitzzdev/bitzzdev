@@ -2,16 +2,18 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Bitupan Borah",
-  "alternateName": ["bitz", "bitz.dev", "bitzdev", "bitzzdev", "bitz.is-a.dev"],
+  "alternateName": ["bitz", "bitz.is-a.dev", "bitzdev", "bitzzdev", "bitzdev.vercel.app", "bitzzdev.vercel.app"],
   "url": "https://bitz.is-a.dev",
   "image": "https://bitz.is-a.dev/favicon.png",
   "jobTitle": "Software Developer & Web Developer",
   "worksFor": {
     "@type": "Organization",
-    "name": "bitz.dev"
+    "name": "bitz.is-a.dev"
   },
   "sameAs": [
-    "https://github.com/bitzzdev"
+    "https://github.com/bitzzdev",
+    "https://bitzzdev.vercel.app",
+    "https://bitzdev.vercel.app"
   ],
   "knowsAbout": [
     "Software Development",
@@ -24,5 +26,5 @@
     "UI/UX Design",
     "Full Stack Development"
   ],
-  "description": "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev / bitz.is-a.dev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences."
+  "description": "Bitupan Borah (bitz / bitz.is-a.dev / bitzdev.vercel.app / bitzzdev.vercel.app / bitzdev / bitzzdev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences."
 }
