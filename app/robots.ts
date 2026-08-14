@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://bitz.dev/sitemap.xml",
+    sitemap: "https://bitz.is-a.dev/sitemap.xml",
   };
 }

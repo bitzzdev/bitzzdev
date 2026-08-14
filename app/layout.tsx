@@ -25,9 +25,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Bitupan Borah",
-  "alternateName": ["bitz", "bitz.dev", "bitzdev", "bitzzdev"],
-  "url": "https://bitz.dev",
-  "image": "https://bitz.dev/favicon.png",
+  "alternateName": ["bitz", "bitz.dev", "bitzdev", "bitzzdev", "bitz.is-a.dev"],
+  "url": "https://bitz.is-a.dev",
+  "image": "https://bitz.is-a.dev/favicon.png",
   "jobTitle": "Software Developer & Web Developer",
   "worksFor": {
     "@type": "Organization",
@@ -46,20 +46,21 @@ const jsonLd = {
     "UI/UX Engineering",
   ],
   "description":
-    "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
+    "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev / bitz.is-a.dev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bitz.dev"),
+  metadataBase: new URL("https://bitz.is-a.dev"),
   title: {
     default: "bitz.dev | Bitupan Borah — Software Developer & Web Developer",
     template: "%s | bitz.dev",
   },
   description:
-    "bitz.dev (bitz / bitzdev / bitzzdev) - Bitupan Borah is a freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
+    "bitz.dev (bitz / bitzdev / bitzzdev / bitz.is-a.dev) - Bitupan Borah is a freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
   keywords: [
     "bitz",
     "bitz.dev",
+    "bitz.is-a.dev",
     "bitzdev",
     "bitzzdev",
     "software developer",
@@ -70,6 +71,7 @@ export const metadata: Metadata = {
     "bitz web developer",
     "bitz.dev software developer",
     "bitz.dev web developer",
+    "bitz.is-a.dev web developer",
     "bitzzdev developer",
     "bitzdev software developer",
     "bitzdev web developer",
@@ -80,11 +82,11 @@ export const metadata: Metadata = {
     "typescript developer",
     "Bitupan Borah",
   ],
-  authors: [{ name: "Bitupan Borah", url: "https://bitz.dev" }],
+  authors: [{ name: "Bitupan Borah", url: "https://bitz.is-a.dev" }],
   creator: "Bitupan Borah",
   publisher: "bitz.dev",
   alternates: {
-    canonical: "https://bitz.dev",
+    canonical: "https://bitz.is-a.dev",
   },
   robots: {
     index: true,
@@ -100,11 +102,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bitz.dev",
+    url: "https://bitz.is-a.dev",
     siteName: "bitz.dev",
     title: "bitz.dev | Bitupan Borah — Software Developer & Web Developer",
     description:
-      "Portfolio of Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev), a freelance Software Developer & Web Developer crafting high-performance digital products.",
+      "Portfolio of Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev / bitz.is-a.dev), a freelance Software Developer & Web Developer crafting high-performance digital products.",
     images: [
       {
         url: "/favicon.png",
@@ -118,7 +120,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "bitz.dev | Bitupan Borah — Software Developer & Web Developer",
     description:
-      "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev) - Freelance Software Developer & Web Developer crafting pixel-perfect web applications.",
+      "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev / bitz.is-a.dev) - Freelance Software Developer & Web Developer crafting pixel-perfect web applications.",
     images: ["/favicon.png"],
   },
   icons: {

@@ -2,9 +2,9 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Bitupan Borah",
-  "alternateName": ["bitz", "bitz.dev", "bitzdev", "bitzzdev"],
-  "url": "https://bitz.dev",
-  "image": "https://bitz.dev/favicon.png",
+  "alternateName": ["bitz", "bitz.dev", "bitzdev", "bitzzdev", "bitz.is-a.dev"],
+  "url": "https://bitz.is-a.dev",
+  "image": "https://bitz.is-a.dev/favicon.png",
   "jobTitle": "Software Developer & Web Developer",
   "worksFor": {
     "@type": "Organization",
@@ -24,5 +24,5 @@
     "UI/UX Design",
     "Full Stack Development"
   ],
-  "description": "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences."
+  "description": "Bitupan Borah (bitz / bitz.dev / bitzdev / bitzzdev / bitz.is-a.dev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences."
 }
