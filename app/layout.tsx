@@ -4,14 +4,14 @@ import "./globals.css";
 
 const syne = Syne({
   subsets: ["latin"],
-  weight: ["700", "800"],
   variable: "--font-syne",
+  display: "swap",
 });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
   variable: "--font-space",
+  display: "swap",
 });
 
 const instrument = Instrument_Serif({
@@ -19,18 +19,19 @@ const instrument = Instrument_Serif({
   subsets: ["latin"],
   style: ["normal", "italic"],
   variable: "--font-instrument",
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
   variable: "--font-jetbrains",
+  display: "swap",
 });
 
 const jsonLd = {
@@ -169,6 +170,8 @@ export default function RootLayout({
       className={`${syne.variable} ${spaceGrotesk.variable} ${instrument.variable} ${inter.variable} ${jetbrains.variable}`}
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
