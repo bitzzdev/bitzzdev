@@ -163,7 +163,8 @@ img { max-width: 100%; display: block; }
 .color-bends {
     position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden;
 }
-.work-item .color-bends-container {
+.work-item .color-bends-container,
+.work-item .molten-metal-container {
     position: absolute;
     inset: 0;
     z-index: 0;
