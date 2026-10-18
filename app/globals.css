@@ -145,6 +145,38 @@ img { max-width: 100%; display: block; }
     display: block;
 }
 
+/* ═══ CPU ASCII ART ═══ */
+.cpu-ascii-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem 5rem;
+    overflow-x: auto;
+}
+.cpu-ascii-container {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border);
+    background: rgba(243, 242, 239, 0.02);
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+}
+.cpu-ascii-container pre {
+    margin: 0;
+    font-family: var(--mono);
+    line-height: 1.25;
+    font-size: clamp(0.65rem, 1.2vw, 0.85rem);
+    color: var(--text);
+    overflow-x: auto;
+}
+.cpu-ascii-container canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ═══ WORK ═══ */
 .work { padding: 8rem 2rem; }
 .work-header { margin-bottom: 4rem; }
