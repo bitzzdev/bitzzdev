@@ -273,7 +273,7 @@ export default async function Home() {
           </div>
           <div className="lede">
             <p>
-              Hey, I&apos;m Bitupan. I started bitz.dev because I watched businesses struggle with sluggish,
+              Hey, I&apos;m Dev. I started bitz.dev because I watched businesses struggle with sluggish,
               over-engineered websites that never converted despite the quality of their underlying products.
             </p>
             <br />
