@@ -1,24 +1,12 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
-const instrument = Instrument_Serif({
-  weight: "400",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-instrument",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-inter",
-});
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600"],
   variable: "--font-jetbrains",
+  display: "swap",
 });
 
 const jsonLd = {
@@ -57,61 +45,29 @@ const jsonLd = {
     "UI/UX Engineering",
   ],
   "description":
-    "Bitupan Borah (bitz / bitz.is-a.dev / bitzdev / bitzzdev / bitzzdev.vercel.app / bitzdev.vercel.app) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
+    "Bitupan Borah (bitz / bitz.is-a.dev / bitzdev / bitzzdev) - Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bitz.is-a.dev"),
-  title: {
-    default: "bitz.is-a.dev | Bitupan Borah — Software Developer & Web Developer",
-    template: "%s | bitz.is-a.dev",
-  },
+  title: "bitz.is-a.dev: Bitupan Borah — Software Developer & Web Developer",
   description:
-    "bitz.is-a.dev (bitz / bitzdev / bitzzdev / bitzzdev.vercel.app / bitzdev.vercel.app) - Bitupan Borah is a freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences.",
+    "Software Developer & Web Developer crafting high-performance, pixel-perfect web experiences. Text and ASCII-first portfolio.",
   keywords: [
     "bitz",
     "bitz.is-a.dev",
-    "bitzzdev.vercel.app",
-    "bitzdev.vercel.app",
+    "Bitupan Borah",
     "bitzdev",
     "bitzzdev",
-    "software developer",
-    "web developer",
-    "freelance web developer",
-    "freelance software developer",
-    "bitz software developer",
-    "bitz web developer",
-    "bitz.is-a.dev software developer",
-    "bitz.is-a.dev web developer",
-    "bitzzdev.vercel.app software developer",
-    "bitzdev.vercel.app web developer",
-    "bitzzdev developer",
-    "bitzdev software developer",
-    "bitzdev web developer",
-    "frontend developer",
-    "full stack developer",
-    "react developer",
-    "next.js developer",
-    "typescript developer",
-    "Bitupan Borah",
+    "Software Developer",
+    "Web Developer",
+    "Full Stack Developer",
+    "Next.js",
+    "React",
+    "TypeScript",
   ],
   authors: [{ name: "Bitupan Borah", url: "https://bitz.is-a.dev" }],
   creator: "Bitupan Borah",
-  publisher: "bitz.is-a.dev",
-  alternates: {
-    canonical: "https://bitz.is-a.dev",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -119,7 +75,7 @@ export const metadata: Metadata = {
     siteName: "bitz.is-a.dev",
     title: "bitz.is-a.dev | Bitupan Borah — Software Developer & Web Developer",
     description:
-      "Portfolio of Bitupan Borah (bitz / bitz.is-a.dev / bitzdev / bitzzdev / bitzzdev.vercel.app / bitzdev.vercel.app), a freelance Software Developer & Web Developer crafting high-performance digital products.",
+      "Portfolio of Bitupan Borah, a software developer crafting high-performance digital products.",
     images: [
       {
         url: "/favicon.png",
@@ -130,10 +86,10 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "bitz.is-a.dev | Bitupan Borah — Software Developer & Web Developer",
     description:
-      "Bitupan Borah (bitz / bitz.is-a.dev / bitzdev / bitzzdev / bitzzdev.vercel.app / bitzdev.vercel.app) - Freelance Software Developer & Web Developer crafting pixel-perfect web applications.",
+      "Bitupan Borah - Software Developer & Web Developer crafting pixel-perfect web applications.",
     images: ["/favicon.png"],
   },
   icons: {
@@ -152,11 +108,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${instrument.variable} ${inter.variable} ${jetbrains.variable}`}
-    >
+    <html lang="en" className={jetbrains.variable}>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var r=document.documentElement,s=null;try{s=localStorage.getItem("theme")}catch(e){}var t=s==="light"||s==="dark"?s:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");r.dataset.theme=t;})();`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
