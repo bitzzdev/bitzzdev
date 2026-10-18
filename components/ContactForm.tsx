@@ -6,33 +6,24 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus("sending");
-    setErrorMessage("");
-
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    try {
-      const res = await fetch("https://formspree.io/f/xzzdbrze", {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      });
+    const name = (formData.get("name") as string)?.trim() || "";
+    const email = (formData.get("email") as string)?.trim() || "";
+    const message = (formData.get("message") as string)?.trim() || "";
 
-      if (res.ok) {
-        setStatus("success");
-        form.reset();
-      } else {
-        const data = await res.json().catch(() => null);
-        setStatus("error");
-        setErrorMessage(data?.error || "Failed to deliver transmission. Try again.");
-      }
-    } catch {
-      setStatus("error");
-      setErrorMessage("Network error occurred. Try again.");
-    }
+    const subject = encodeURIComponent(`Project Inquiry from ${name}`);
+    const bodyContent = encodeURIComponent(
+      `Hi Dev,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`
+    );
+
+    const mailtoUrl = `mailto:bitupanborah1k@gmail.com?subject=${subject}&body=${bodyContent}`;
+
+    window.location.href = mailtoUrl;
+    setStatus("success");
   };
 
   return (
@@ -105,11 +96,10 @@ export default function ContactForm() {
         </div>
 
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: "0.5rem" }}>
-          <button type="submit" className="button" disabled={status === "sending"}>
-            <span>{status === "sending" ? "[transmitting...]" : "[transmit message]"}</span>
+          <button type="submit" className="button">
+            <span>[transmit message]</span>
           </button>
-          {status === "success" && <span style={{ color: "var(--ink)" }}>[message sent successfully]</span>}
-          {status === "error" && <span style={{ color: "var(--muted)" }}>[{errorMessage}]</span>}
+          {status === "success" && <span style={{ color: "var(--ink)" }}>[opening email client...]</span>}
         </div>
       </form>
     </div>
