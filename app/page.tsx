@@ -73,7 +73,7 @@ export default async function Home() {
 
         {/* Top title & tools */}
         <div className="top">
-          <h1>Bitupan Borah — Software &amp; Web Developer</h1>
+          <h1>Bitupan/Dev Borah — Software &amp; Web Developer</h1>
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <ThemeToggle />
