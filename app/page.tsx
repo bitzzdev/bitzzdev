@@ -15,7 +15,22 @@ export default async function Home() {
           bitz.is-a.dev
         </a>
         <p className="by">
-          by <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">@bitzzdev</a>
+          by{" "}
+          <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">
+            @bitzzdev
+          </a>
+          /
+          <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">
+            @bitz.dev
+          </a>
+          /
+          <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">
+            Dev
+          </a>
+          /
+          <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">
+            Bitupan
+          </a>
         </p>
 
         <div className="quick-links">
