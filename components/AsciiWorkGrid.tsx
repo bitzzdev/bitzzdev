@@ -90,6 +90,8 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
       {repos.map((repo, idx) => {
         const key = PIECE_KEYS[idx % PIECE_KEYS.length];
         const piece = PIECE_MAP[key];
+        const cols = piece?.meta?.cols || 64;
+        const rows = piece?.meta?.rows || 20;
 
         return (
           <a
@@ -99,7 +101,13 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
             rel="noreferrer"
             className="card"
           >
-            <div className="well">
+            <div
+              className="well"
+              style={{
+                "--cols": cols,
+                "--rows": rows,
+              } as React.CSSProperties}
+            >
               <Ascii piece={piece} />
             </div>
             <span className="name">{repo.name.replace(/-/g, " ")}</span>

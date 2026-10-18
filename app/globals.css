@@ -1,9 +1,10 @@
 :root {
-  --bg: #f5f6f7;
-  --ink: #1e2125;
-  --text: #3b4149;
-  --muted: #5f6873;
-  --well: #eceef0;
+  --bg: #ffffff;
+  --ink: #000000;
+  --text: #1a1a1a;
+  --muted: #666666;
+  --well: #f4f4f4;
+  --border: #e2e2e2;
   --pad: 0.5ch;
   --mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --art: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -11,21 +12,23 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #131518;
-  --ink: #e8ebef;
-  --text: #c3c9d1;
-  --muted: #8c95a1;
-  --well: #1a1d21;
+  --bg: #000000;
+  --ink: #ffffff;
+  --text: #e0e0e0;
+  --muted: #888888;
+  --well: #0c0c0c;
+  --border: #222222;
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #131518;
-    --ink: #e8ebef;
-    --text: #c3c9d1;
-    --muted: #8c95a1;
-    --well: #1a1d21;
+    --bg: #000000;
+    --ink: #ffffff;
+    --text: #e0e0e0;
+    --muted: #888888;
+    --well: #0c0c0c;
+    --border: #222222;
     color-scheme: dark;
   }
 }
@@ -275,23 +278,27 @@ a:focus-visible, .button:focus-visible > span {
 .well {
   aspect-ratio: 4 / 3;
   background: var(--well);
+  border: 1px solid var(--border);
   place-items: center;
   display: grid;
   overflow: hidden;
   position: relative;
+  container-type: size;
 }
 
 .well.big {
   aspect-ratio: auto;
   height: auto;
-  min-height: 18rem;
-  padding: 2.5rem 1.5rem;
+  min-height: 16rem;
+  padding: 2rem 1rem;
+  container-type: inline-size;
 }
 
-pre.art {
+.well pre,
+.well pre.art {
   color: var(--ink);
   font-family: var(--art);
-  font-size: min(13px, calc(92vw / var(--cols, 64) / 0.6));
+  font-size: min(13px, calc(92cqi / var(--cols, 64) / 0.6), calc(88cqb / var(--rows, 20) / 1.2));
   letter-spacing: 0;
   white-space: pre;
   font-variant-ligatures: none;
@@ -300,15 +307,14 @@ pre.art {
   line-height: 1.2;
 }
 
-.well pre.art {
-  font-size: clamp(0.5rem, 0.95vw, 0.75rem);
-}
-
+.well.big pre,
 .well.big pre.art {
-  font-size: clamp(0.65rem, 1.25vw, 0.95rem);
+  font-size: min(16px, calc(96cqi / var(--cols, 66) / 0.6));
+  line-height: 1.2;
 }
 
 .well canvas {
+  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
