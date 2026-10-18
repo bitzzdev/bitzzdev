@@ -48,7 +48,6 @@ export default function Footer() {
           <h4 className="footer-heading">Connect</h4>
           <div className="footer-links">
             <a href="mailto:bitupanborah1k@gmail.com">bitupanborah1k@gmail.com</a>
-            <a href="tel:+916002128705">+91 60021 28705</a>
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">Instagram</a>
           </div>
