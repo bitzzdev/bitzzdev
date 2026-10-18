@@ -108,7 +108,7 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
                 "--rows": rows,
               } as React.CSSProperties}
             >
-              <Ascii piece={piece} />
+              <Ascii piece={piece} className="art" />
             </div>
             <span className="name">{repo.name.replace(/-/g, " ")}</span>
             <span className="note">{repo.description || repo.language || "Public repository on GitHub"}</span>

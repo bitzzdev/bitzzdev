@@ -282,7 +282,6 @@ a:focus-visible, .button:focus-visible > span {
   place-items: center;
   display: grid;
   overflow: hidden;
-  position: relative;
   container-type: size;
 }
 
@@ -294,6 +293,7 @@ a:focus-visible, .button:focus-visible > span {
   container-type: inline-size;
 }
 
+pre.art,
 .well pre,
 .well pre.art {
   color: var(--ink);
@@ -307,16 +307,24 @@ a:focus-visible, .button:focus-visible > span {
   line-height: 1.2;
 }
 
+.well .art {
+  --fit: min(calc(var(--cols, 64) * 7.8px), 92cqi, calc(88cqb * var(--cols, 64) / var(--rows, 20) / 2));
+}
+
 .well.big pre,
 .well.big pre.art {
   font-size: min(16px, calc(96cqi / var(--cols, 66) / 0.6));
   line-height: 1.2;
 }
 
+.big .art {
+  --fit: min(calc(var(--cols, 66) * 10.2px), 96cqi);
+}
+
 .well canvas {
-  width: 100%;
+  width: 100% !important;
   max-width: 100%;
-  height: auto;
+  height: auto !important;
   display: block;
 }
 

@@ -7,6 +7,7 @@ export default function CpuAsciiArt() {
   return (
     <Ascii
       piece={cpuMeters}
+      className="art"
       options={{
         commands: [
           "build",
