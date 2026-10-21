@@ -629,6 +629,92 @@ table.data-table td:first-child {
   flex-wrap: wrap;
 }
 
+/* ═══ LANYARD OVERLAY & UNLEASH ANIMATION ═══ */
+.lanyard-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lanyard-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.lanyard-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  cursor: pointer;
+  z-index: 1;
+}
+
+[data-theme="light"] .lanyard-backdrop {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.lanyard-stage {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-110%);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  pointer-events: auto;
+}
+
+.lanyard-overlay.open .lanyard-stage {
+  transform: translateY(0);
+}
+
+.lanyard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg);
+  border-bottom: 1px dotted var(--border);
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.lanyard-tag {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.lanyard-canvas-wrap {
+  width: 100%;
+  height: min(720px, 78vh);
+  position: relative;
+  background: radial-gradient(circle at center top, var(--well) 0%, transparent 70%);
+}
+
+.lanyard-footer {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: var(--bg);
+  border-top: 1px dotted var(--border);
+  width: 100%;
+}
+
 /* ═══ RESPONSIVE ═══ */
 @media (width <= 860px) {
   .frame {

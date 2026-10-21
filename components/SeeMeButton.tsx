@@ -28,9 +28,9 @@ export default function SeeMeButton({ className = "" }: { className?: string }) 
       type="button"
       onClick={toggle}
       className={`button see-me-btn ${active ? "active" : ""} ${className}`.trim()}
-      aria-label="Toggle Lanyard ID Card"
+      aria-label={active ? "Close Lanyard ID Card" : "Toggle Lanyard ID Card"}
     >
-      <span className="see-me-glint">[see me!]</span>
+      <span className="see-me-glint">{active ? "[close card]" : "[see me!]"}</span>
     </button>
   );
 }
