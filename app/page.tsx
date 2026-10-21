@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import CpuAsciiArt from "@/components/CpuAsciiArt";
 import SeeMeButton from "@/components/SeeMeButton";
 import LanyardSection from "@/components/LanyardSection";
+import SidebarAsciiShowcase from "@/components/SidebarAsciiShowcase";
 
 export default async function Home() {
   const repos = await getPublicRepos();
@@ -50,6 +51,9 @@ export default async function Home() {
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
           <SeeMeButton />
         </div>
+
+        {/* 7 Left Sidebar ASCII Art Scenes */}
+        <SidebarAsciiShowcase />
 
         <nav aria-label="Index">
           <h2>navigation</h2>

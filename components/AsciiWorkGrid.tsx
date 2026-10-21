@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Ascii } from "ascii.rest/react";
-import { CURATED_PIECES } from "@/lib/ascii-pieces";
+import AsciiScene from "@/components/AsciiScene";
+import { PROJECT_BANNER_PIECES } from "@/lib/ascii-pieces";
 import { GITHUB_USERNAME, filterRepos, type GithubRepo } from "@/lib/github";
 
 export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRepo[] }) {
@@ -50,9 +50,11 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
   return (
     <div className="grid">
       {repos.map((repo, idx) => {
-        const pieceModule = CURATED_PIECES[idx % CURATED_PIECES.length];
+        const pieceModule = PROJECT_BANNER_PIECES[idx % PROJECT_BANNER_PIECES.length];
         const cols = pieceModule?.meta?.cols || 200;
         const rows = pieceModule?.meta?.rows || 100;
+        const cell = pieceModule?.meta?.cell || 1;
+        const ground = pieceModule?.meta?.ground || "#000000";
         const pieceTitle = pieceModule?.meta?.name || "scene";
 
         return (
@@ -64,13 +66,15 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
             className="card"
           >
             <div
-              className="well"
+              className="well scene"
               style={{
                 "--cols": cols,
                 "--rows": rows,
+                "--cell": cell,
+                "--ground": ground,
               } as React.CSSProperties}
             >
-              <Ascii piece={pieceModule as any} className="art" label={pieceTitle} />
+              <AsciiScene piece={pieceModule} label={pieceTitle} />
             </div>
             <span className="name">{repo.name.replace(/-/g, " ")}</span>
             <span className="note">{repo.description || repo.language || "Public repository on GitHub"}</span>

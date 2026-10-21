@@ -1,4 +1,4 @@
-// Export all 10 curated pieces requested by the user from ascii.rest
+// 10 Curated Scenes for Project Banners
 import * as alpineDawnModule from "./alpine-dawn.js";
 import * as auroraFjordModule from "./aurora-fjord.js";
 import * as blackPrismModule from "./black-prism.js";
@@ -10,7 +10,16 @@ import * as edgeOrbitModule from "./edge-orbit.js";
 import * as kyotoDuskModule from "./kyoto-dusk.js";
 import * as tokyoRainModule from "./tokyo-rain.js";
 
-export const CURATED_PIECES = [
+// 7 Curated Scenes for Left Sidebar / Accent Art
+import * as saturnRiseModule from "./saturn-rise.js";
+import * as greenStormModule from "./green-storm.js";
+import * as jungleFallsModule from "./jungle-falls.js";
+import * as lanternLakeModule from "./lantern-lake.js";
+import * as marineDriveModule from "./marine-drive.js";
+import * as mistyForestModule from "./misty-forest.js";
+import * as nightCoastModule from "./night-coast.js";
+
+export const PROJECT_BANNER_PIECES = [
   alpineDawnModule,
   auroraFjordModule,
   blackPrismModule,
@@ -23,15 +32,12 @@ export const CURATED_PIECES = [
   tokyoRainModule,
 ];
 
-export const PIECE_BY_SLUG: Record<string, any> = {
-  "alpine-dawn": alpineDawnModule,
-  "aurora-fjord": auroraFjordModule,
-  "black-prism": blackPrismModule,
-  "cloud-sea": cloudSeaModule,
-  "deep-reef": deepReefModule,
-  "desert-night": desertNightModule,
-  "earthrise": earthriseModule,
-  "edge-orbit": edgeOrbitModule,
-  "kyoto-dusk": kyotoDuskModule,
-  "tokyo-rain": tokyoRainModule,
-};
+export const SIDEBAR_LEFT_PIECES = [
+  saturnRiseModule,
+  greenStormModule,
+  jungleFallsModule,
+  lanternLakeModule,
+  marineDriveModule,
+  mistyForestModule,
+  nightCoastModule,
+];

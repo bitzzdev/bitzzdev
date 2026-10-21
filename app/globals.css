@@ -424,6 +424,28 @@ pre.art,
   display: block;
 }
 
+/* ═══ SCENE COMPATIBILITY (ascii.rest) ═══ */
+.well.scene {
+  aspect-ratio: auto;
+  background: var(--ground, #000000);
+  min-height: 0;
+  padding: 0;
+  display: block;
+  container-type: inline-size;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.well.scene canvas {
+  width: 100% !important;
+  display: block !important;
+  aspect-ratio: calc(var(--cols, 200) / (var(--rows, 100) * var(--cell, 1)));
+}
+
+.side-ascii-widget .well.scene {
+  border: 1px dotted var(--muted);
+}
+
 /* ═══ CONTENT SECTIONS ═══ */
 .section {
   margin-top: 4.5rem;
