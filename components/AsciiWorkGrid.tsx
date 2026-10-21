@@ -50,7 +50,12 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
   return (
     <div className="grid">
       {repos.map((repo, idx) => {
-        const pieceModule = PROJECT_BANNER_PIECES[idx % PROJECT_BANNER_PIECES.length];
+        // Unique piece for each card without repetition
+        const pieceModule =
+          idx < PROJECT_BANNER_PIECES.length
+            ? PROJECT_BANNER_PIECES[idx]
+            : PROJECT_BANNER_PIECES[idx % PROJECT_BANNER_PIECES.length];
+
         const cols = pieceModule?.meta?.cols || 200;
         const rows = pieceModule?.meta?.rows || 100;
         const cell = pieceModule?.meta?.cell || 1;

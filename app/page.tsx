@@ -3,9 +3,6 @@ import AsciiWorkGrid from "@/components/AsciiWorkGrid";
 import ThemeToggle from "@/components/ThemeToggle";
 import ContactForm from "@/components/ContactForm";
 import CpuAsciiArt from "@/components/CpuAsciiArt";
-import SeeMeButton from "@/components/SeeMeButton";
-import LanyardSection from "@/components/LanyardSection";
-import SidebarAsciiShowcase from "@/components/SidebarAsciiShowcase";
 
 export default async function Home() {
   const repos = await getPublicRepos();
@@ -49,11 +46,7 @@ export default async function Home() {
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
           <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
-          <SeeMeButton />
         </div>
-
-        {/* 7 Left Sidebar ASCII Art Scenes */}
-        <SidebarAsciiShowcase />
 
         <nav aria-label="Index">
           <h2>navigation</h2>
@@ -82,14 +75,10 @@ export default async function Home() {
         <div className="top">
           <h1>Bitupan/Dev Borah — Software &amp; Web Developer</h1>
           <span className="tools">
-            <SeeMeButton />
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <ThemeToggle />
           </span>
         </div>
-
-        {/* Interactive Lanyard Badge (toggled via [see me!]) */}
-        <LanyardSection />
 
         {/* Big ascii hero banner */}
         <div className="hero-link">
@@ -331,7 +320,6 @@ export default async function Home() {
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
-            <SeeMeButton />
             <a href="#work">[top]</a>
           </div>
         </footer>
