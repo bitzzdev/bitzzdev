@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import AsciiScene from "@/components/AsciiScene";
-import { PROJECT_BANNER_PIECES } from "@/lib/ascii-pieces";
+import { PROJECT_BANNER_CONFIGS } from "@/lib/ascii-pieces";
 import { GITHUB_USERNAME, filterRepos, type GithubRepo } from "@/lib/github";
 
 export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRepo[] }) {
@@ -51,16 +51,10 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
     <div className="grid">
       {repos.map((repo, idx) => {
         // Unique piece for each card without repetition
-        const pieceModule =
-          idx < PROJECT_BANNER_PIECES.length
-            ? PROJECT_BANNER_PIECES[idx]
-            : PROJECT_BANNER_PIECES[idx % PROJECT_BANNER_PIECES.length];
-
-        const cols = pieceModule?.meta?.cols || 200;
-        const rows = pieceModule?.meta?.rows || 100;
-        const cell = pieceModule?.meta?.cell || 1;
-        const ground = pieceModule?.meta?.ground || "#000000";
-        const pieceTitle = pieceModule?.meta?.name || "scene";
+        const sceneConfig =
+          idx < PROJECT_BANNER_CONFIGS.length
+            ? PROJECT_BANNER_CONFIGS[idx]
+            : PROJECT_BANNER_CONFIGS[idx % PROJECT_BANNER_CONFIGS.length];
 
         return (
           <a
@@ -70,16 +64,8 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
             rel="noreferrer"
             className="card"
           >
-            <div
-              className="well scene"
-              style={{
-                "--cols": cols,
-                "--rows": rows,
-                "--cell": cell,
-                "--ground": ground,
-              } as React.CSSProperties}
-            >
-              <AsciiScene piece={pieceModule} label={pieceTitle} />
+            <div className="well scene">
+              <AsciiScene config={sceneConfig} label={sceneConfig.name} />
             </div>
             <span className="name">{repo.name.replace(/-/g, " ")}</span>
             <span className="note">{repo.description || repo.language || "Public repository on GitHub"}</span>

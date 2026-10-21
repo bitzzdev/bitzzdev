@@ -1,42 +1,26 @@
-// Exactly the 17 requested scenes from ascii.rest for project banners
-// The original 10 requested scenes:
-import * as alpineDawnModule from "./alpine-dawn.js";
-import * as auroraFjordModule from "./aurora-fjord.js";
-import * as blackPrismModule from "./black-prism.js";
-import * as cloudSeaModule from "./cloud-sea.js";
-import * as deepReefModule from "./deep-reef.js";
-import * as desertNightModule from "./desert-night.js";
-import * as earthriseModule from "./earthrise.js";
-import * as edgeOrbitModule from "./edge-orbit.js";
-import * as kyotoDuskModule from "./kyoto-dusk.js";
-import * as tokyoRainModule from "./tokyo-rain.js";
+// Dynamic piece loaders for lazy-loading on demand (only when animating in viewport)
+export interface SceneConfig {
+  name: string;
+  slug: string;
+  load: () => Promise<any>;
+}
 
-// The 7 requested scenes:
-import * as saturnRiseModule from "./saturn-rise.js";
-import * as greenStormModule from "./green-storm.js";
-import * as jungleFallsModule from "./jungle-falls.js";
-import * as lanternLakeModule from "./lantern-lake.js";
-import * as marineDriveModule from "./marine-drive.js";
-import * as mistyForestModule from "./misty-forest.js";
-import * as nightCoastModule from "./night-coast.js";
-
-// Ordered so each project repo banner gets a unique, non-repeated scene!
-export const PROJECT_BANNER_PIECES = [
-  saturnRiseModule,
-  greenStormModule,
-  jungleFallsModule,
-  lanternLakeModule,
-  marineDriveModule,
-  mistyForestModule,
-  nightCoastModule,
-  alpineDawnModule,
-  auroraFjordModule,
-  blackPrismModule,
-  cloudSeaModule,
-  deepReefModule,
-  desertNightModule,
-  earthriseModule,
-  edgeOrbitModule,
-  kyotoDuskModule,
-  tokyoRainModule,
+export const PROJECT_BANNER_CONFIGS: SceneConfig[] = [
+  { name: "saturn rise", slug: "saturn-rise", load: () => import("./saturn-rise.js") },
+  { name: "green storm", slug: "green-storm", load: () => import("./green-storm.js") },
+  { name: "jungle falls", slug: "jungle-falls", load: () => import("./jungle-falls.js") },
+  { name: "lantern lake", slug: "lantern-lake", load: () => import("./lantern-lake.js") },
+  { name: "marine drive", slug: "marine-drive", load: () => import("./marine-drive.js") },
+  { name: "misty forest", slug: "misty-forest", load: () => import("./misty-forest.js") },
+  { name: "night coast", slug: "night-coast", load: () => import("./night-coast.js") },
+  { name: "alpine dawn", slug: "alpine-dawn", load: () => import("./alpine-dawn.js") },
+  { name: "aurora fjord", slug: "aurora-fjord", load: () => import("./aurora-fjord.js") },
+  { name: "black prism", slug: "black-prism", load: () => import("./black-prism.js") },
+  { name: "cloud sea", slug: "cloud-sea", load: () => import("./cloud-sea.js") },
+  { name: "deep reef", slug: "deep-reef", load: () => import("./deep-reef.js") },
+  { name: "desert night", slug: "desert-night", load: () => import("./desert-night.js") },
+  { name: "earthrise", slug: "earthrise", load: () => import("./earthrise.js") },
+  { name: "edge orbit", slug: "edge-orbit", load: () => import("./edge-orbit.js") },
+  { name: "kyoto dusk", slug: "kyoto-dusk", load: () => import("./kyoto-dusk.js") },
+  { name: "tokyo rain", slug: "tokyo-rain", load: () => import("./tokyo-rain.js") },
 ];

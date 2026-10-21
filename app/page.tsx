@@ -35,10 +35,10 @@ export default async function Home() {
 
         <div className="quick-links">
           <a href="#work">[work]</a>
+          <a href="#about">[about]</a>
           <a href="#services">[services]</a>
           <a href="#process">[process]</a>
           <a href="#metrics">[metrics]</a>
-          <a href="#about">[about]</a>
           <a href="#contact">[contact]</a>
         </div>
 
@@ -52,11 +52,11 @@ export default async function Home() {
           <h2>navigation</h2>
           <ul>
             <li><a href="#work">selected projects ({repos.length})</a></li>
+            <li><a href="#about">developer story</a></li>
             <li><a href="#services">capabilities &amp; offerings</a></li>
             <li><a href="#process">engineering process</a></li>
             <li><a href="#metrics">performance benchmarks</a></li>
             <li><a href="#testimonials">client feedback</a></li>
-            <li><a href="#about">developer story</a></li>
             <li><a href="#contact">transmission terminal</a></li>
           </ul>
         </nav>
@@ -107,6 +107,39 @@ export default async function Home() {
             <span className="count">{repos.length} repositories</span>
           </div>
           <AsciiWorkGrid initialRepos={repos} />
+        </section>
+
+        {/* ═══ ABOUT SECTION (Moved directly after projects) ═══ */}
+        <section className="section" id="about">
+          <div className="section-head">
+            <h2>about the developer</h2>
+            <span className="count">origin &amp; bio</span>
+          </div>
+          <div className="lede">
+            <p>
+              Hey, I&apos;m Dev (Bitupan Borah). Honestly, I became a developer because I just really love computer stuff.
+              Ever since I first touched a computer, tinkering with software, understanding how systems work under the hood,
+              and building things from scratch has been what excites me every day. That&apos;s the simple truth.
+            </p>
+            <br />
+            <p>
+              I love clean code, lightning-fast interfaces, and getting rid of unnecessary bloat. Whether it&apos;s
+              crafting responsive web applications, designing system tools, or optimizing performance so things load instantly,
+              I treat every project as something to build with genuine care and craft.
+            </p>
+            <br />
+            <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
+              <div><strong>Name:</strong> Bitupan Borah (Dev / Dev Borah)</div>
+              <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
+              <div><strong>Origin &amp; Location:</strong> Assam, India</div>
+              <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a></div>
+              <div><strong>Instagram:</strong> <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a></div>
+              <div><strong>What I Do:</strong> Software &amp; Web Development, Frontend Engineering, Systems &amp; Performance</div>
+            </div>
+            <p className="muted">
+              Based in Assam, India &mdash; open for collaboration, freelance contracts, and cool projects worldwide.
+            </p>
+          </div>
         </section>
 
         {/* ═══ SERVICES SECTION ═══ */}
@@ -262,39 +295,6 @@ export default async function Home() {
               </p>
               <div className="quote-author">— Marcus Thorne, CTO, FinTech Global</div>
             </div>
-          </div>
-        </section>
-
-        {/* ═══ ABOUT SECTION ═══ */}
-        <section className="section" id="about">
-          <div className="section-head">
-            <h2>about the developer</h2>
-            <span className="count">dossier</span>
-          </div>
-          <div className="lede">
-            <p>
-              Hey, I&apos;m Dev (Bitupan Borah). Born August 25, 2008 in Assam, India. I started bitz.dev because I watched businesses struggle with sluggish,
-              over-engineered websites that never converted despite the quality of their underlying products.
-            </p>
-            <br />
-            <p>
-              That gap became an obsession. I&apos;ve spent years breaking down what separates a forgettable
-              digital presence from work that actually commands attention. When we work together, I&apos;m immersed
-              in your story, ruthless about eliminating friction, and dedicated to closing the gap between who you are
-              and how the world perceives you.
-            </p>
-            <br />
-            <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
-              <div><strong>Name:</strong> Bitupan Borah (Dev / Dev Borah)</div>
-              <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
-              <div><strong>Nationality / Origin:</strong> Assam, India</div>
-              <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a></div>
-              <div><strong>Instagram:</strong> <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a></div>
-              <div><strong>Specialization:</strong> High-Performance Web Applications, Systems Architecture, Frontend &amp; Fullstack Engineering</div>
-            </div>
-            <p className="muted">
-              Location: Assam, India (Available globally for contracts &amp; client engineering)
-            </p>
           </div>
         </section>
 
