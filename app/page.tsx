@@ -3,6 +3,8 @@ import AsciiWorkGrid from "@/components/AsciiWorkGrid";
 import ThemeToggle from "@/components/ThemeToggle";
 import ContactForm from "@/components/ContactForm";
 import CpuAsciiArt from "@/components/CpuAsciiArt";
+import SeeMeButton from "@/components/SeeMeButton";
+import LanyardSection from "@/components/LanyardSection";
 
 export default async function Home() {
   const repos = await getPublicRepos();
@@ -46,6 +48,7 @@ export default async function Home() {
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
           <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
+          <SeeMeButton />
         </div>
 
         <nav aria-label="Index">
@@ -79,6 +82,9 @@ export default async function Home() {
             <ThemeToggle />
           </span>
         </div>
+
+        {/* Interactive Lanyard Badge (toggled via [see me!]) */}
+        <LanyardSection />
 
         {/* Big ascii hero banner */}
         <div className="hero-link">
@@ -312,6 +318,7 @@ export default async function Home() {
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
+            <SeeMeButton />
             <a href="#work">[top]</a>
           </div>
         </footer>

@@ -130,6 +130,97 @@ a:focus-visible, .button:focus-visible > span {
   outline: none;
 }
 
+/* ═══ SEE ME GLINT BUTTON ═══ */
+.see-me-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.see-me-btn.active > span {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.see-me-glint {
+  display: inline-block;
+  background: linear-gradient(
+    110deg,
+    var(--ink) 0%,
+    var(--ink) 35%,
+    #888888 45%,
+    #ffffff 50%,
+    #888888 55%,
+    var(--ink) 65%,
+    var(--ink) 100%
+  ) 100% 0 / 250% 100% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  animation: 3.5s ease-in-out infinite see-me-shimmer;
+}
+
+:root[data-theme="dark"] .see-me-glint {
+  background: linear-gradient(
+    110deg,
+    #ffffff 0%,
+    #ffffff 35%,
+    #666666 45%,
+    #000000 50%,
+    #666666 55%,
+    #ffffff 65%,
+    #ffffff 100%
+  ) 100% 0 / 250% 100% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .see-me-glint {
+    background: linear-gradient(
+      110deg,
+      #ffffff 0%,
+      #ffffff 35%,
+      #666666 45%,
+      #000000 50%,
+      #666666 55%,
+      #ffffff 65%,
+      #ffffff 100%
+    ) 100% 0 / 250% 100% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+  }
+}
+
+@keyframes see-me-shimmer {
+  0%, 20% {
+    background-position: 100% 0;
+  }
+  80%, 100% {
+    background-position: 0 0;
+  }
+}
+
+@media (hover: hover) {
+  .see-me-btn:hover > span {
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .see-me-glint {
+    animation: none;
+    color: var(--ink) !important;
+    background: none !important;
+  }
+}
+
 /* ═══ TWO-COLUMN FRAME ═══ */
 .frame {
   grid-template-columns: 24ch minmax(0, 1fr);
