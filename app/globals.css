@@ -557,6 +557,35 @@ table.data-table td:first-child {
   flex-wrap: wrap;
 }
 
+/* ═══ ABOUT HALFTONE IMAGE ═══ */
+.about-image-wrap {
+  width: 100%;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-image-card {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--well);
+  overflow: hidden;
+}
+
+@media (width <= 860px) {
+  .about-image-wrap {
+    justify-content: center;
+  }
+  .about-image-card {
+    max-width: min(100%, 360px);
+    margin-inline: auto;
+  }
+}
+
 /* ═══ RESPONSIVE ═══ */
 @media (width <= 860px) {
   .frame {
