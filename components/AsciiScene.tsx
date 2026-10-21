@@ -16,7 +16,7 @@ interface AsciiSceneProps {
 export default function AsciiScene({ config, label, className = "art", style }: AsciiSceneProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [hasRenderedFrame, setHasRenderedFrame] = useState(false);
   const mountedInstanceRef = useRef<any>(null);
   const isLoadedRef = useRef(false);
 
@@ -27,8 +27,6 @@ export default function AsciiScene({ config, label, className = "art", style }: 
     // Register with viewport manager
     const unregister = registerScene(el, async (active) => {
       if (active) {
-        setIsAnimating(true);
-
         // Load piece code dynamically only when it enters active viewport
         if (!isLoadedRef.current) {
           try {
@@ -36,6 +34,10 @@ export default function AsciiScene({ config, label, className = "art", style }: 
             isLoadedRef.current = true;
             if (canvasRef.current && !mountedInstanceRef.current) {
               mountedInstanceRef.current = mount(canvasRef.current, pieceModule);
+              // Wait until canvas has drawn at least one full frame before revealing
+              requestAnimationFrame(() => {
+                setHasRenderedFrame(true);
+              });
             }
           } catch (err) {
             console.error("Failed to load scene module:", config.slug, err);
@@ -44,7 +46,6 @@ export default function AsciiScene({ config, label, className = "art", style }: 
 
         mountedInstanceRef.current?.setActive?.(true);
       } else {
-        setIsAnimating(false);
         mountedInstanceRef.current?.setActive?.(false);
       }
     });
@@ -71,8 +72,8 @@ export default function AsciiScene({ config, label, className = "art", style }: 
       }}
     >
       {/* 
-        Instant WebP Poster: Zero JS execution time on page refresh!
-        2GB RAM phones render the poster in <15ms without freezing the main thread.
+        Instant WebP Poster:
+        Always remains visible as a solid fallback under the canvas so it NEVER flashes black.
       */}
       <Image
         src={posterSrc}
@@ -82,15 +83,15 @@ export default function AsciiScene({ config, label, className = "art", style }: 
         priority
         style={{
           objectFit: "fill",
-          opacity: isAnimating ? 0 : 1,
-          transition: "opacity 0.25s ease-out",
+          opacity: hasRenderedFrame ? 0 : 1,
+          transition: "opacity 0.2s ease-out",
           pointerEvents: "none",
         }}
       />
 
       {/* 
-        Interactive Live Animated Canvas:
-        Only initialized and animated when in the active viewport (max 1 phone, max 2 desktop).
+        Live Canvas:
+        Only fades in after the first frame has successfully painted, preventing any blank/black flash.
       */}
       <canvas
         ref={canvasRef}
@@ -103,9 +104,8 @@ export default function AsciiScene({ config, label, className = "art", style }: 
           width: "100%",
           height: "100%",
           display: "block",
-          opacity: isAnimating ? 1 : 0,
-          transition: "opacity 0.25s ease-in",
-          pointerEvents: isAnimating ? "auto" : "none",
+          opacity: hasRenderedFrame ? 1 : 0,
+          transition: "opacity 0.2s ease-in",
         }}
       />
     </div>
