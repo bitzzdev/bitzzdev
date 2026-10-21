@@ -42,6 +42,7 @@ export default async function Home() {
           <a href="#metrics">[metrics]</a>
           <a href="#about">[about]</a>
           <a href="#contact">[contact]</a>
+          <SeeMeButton />
         </div>
 
         <div className="asks">
@@ -78,6 +79,7 @@ export default async function Home() {
         <div className="top">
           <h1>Bitupan/Dev Borah — Software &amp; Web Developer</h1>
           <span className="tools">
+            <SeeMeButton />
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <ThemeToggle />
           </span>
