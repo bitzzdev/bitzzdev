@@ -681,38 +681,32 @@ table.data-table td:first-child {
   transform: translateY(0);
 }
 
-.lanyard-header {
+.lanyard-close-bar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
-  background: var(--bg);
-  border-bottom: 1px dotted var(--border);
-  color: var(--muted);
-  font-size: 0.8125rem;
+  justify-content: flex-end;
+  padding: 1.25rem 2rem 0;
+  pointer-events: auto;
 }
 
-.lanyard-tag {
-  color: var(--ink);
-  font-weight: 500;
+.lanyard-close-btn {
+  background: var(--bg) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--border) !important;
+  padding: 0.35rem 0.85rem !important;
+  font-size: 0.8125rem !important;
+  cursor: pointer;
+}
+
+.lanyard-close-btn:hover {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
 }
 
 .lanyard-canvas-wrap {
   width: 100%;
-  height: min(720px, 78vh);
+  height: min(760px, 86vh);
   position: relative;
-  background: radial-gradient(circle at center top, var(--well) 0%, transparent 70%);
-}
-
-.lanyard-footer {
-  text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
-  color: var(--muted);
-  background: var(--bg);
-  border-top: 1px dotted var(--border);
-  width: 100%;
 }
 
 /* ═══ RESPONSIVE ═══ */

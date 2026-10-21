@@ -2,46 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Ascii } from "ascii.rest/react";
-import {
-  matrixRain,
-  synthwave,
-  starfield,
-  galaxy,
-  aurora,
-  plasma,
-  radar,
-  candlesticks,
-  equalizer,
-  earth,
-  blackHole,
-  lorenz,
-  donut,
-  fireworks,
-  bootLog,
-  digitalClock,
-} from "ascii.rest/pieces";
+import { CURATED_PIECES } from "@/lib/ascii-pieces";
 import { GITHUB_USERNAME, filterRepos, type GithubRepo } from "@/lib/github";
-
-const PIECE_MAP: Record<string, any> = {
-  "matrixRain": matrixRain,
-  "synthwave": synthwave,
-  "starfield": starfield,
-  "galaxy": galaxy,
-  "aurora": aurora,
-  "plasma": plasma,
-  "radar": radar,
-  "candlesticks": candlesticks,
-  "equalizer": equalizer,
-  "earth": earth,
-  "blackHole": blackHole,
-  "lorenz": lorenz,
-  "donut": donut,
-  "fireworks": fireworks,
-  "bootLog": bootLog,
-  "digitalClock": digitalClock,
-};
-
-const PIECE_KEYS = Object.keys(PIECE_MAP);
 
 export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRepo[] }) {
   const [repos, setRepos] = useState<GithubRepo[]>(initialRepos);
@@ -88,10 +50,10 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
   return (
     <div className="grid">
       {repos.map((repo, idx) => {
-        const key = PIECE_KEYS[idx % PIECE_KEYS.length];
-        const piece = PIECE_MAP[key];
-        const cols = piece?.meta?.cols || 64;
-        const rows = piece?.meta?.rows || 20;
+        const pieceModule = CURATED_PIECES[idx % CURATED_PIECES.length];
+        const cols = pieceModule?.meta?.cols || 200;
+        const rows = pieceModule?.meta?.rows || 100;
+        const pieceTitle = pieceModule?.meta?.name || "scene";
 
         return (
           <a
@@ -108,7 +70,7 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
                 "--rows": rows,
               } as React.CSSProperties}
             >
-              <Ascii piece={piece} className="art" />
+              <Ascii piece={pieceModule as any} className="art" label={pieceTitle} />
             </div>
             <span className="name">{repo.name.replace(/-/g, " ")}</span>
             <span className="note">{repo.description || repo.language || "Public repository on GitHub"}</span>

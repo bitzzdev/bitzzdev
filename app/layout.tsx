@@ -13,6 +13,9 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Bitupan Borah",
+  "givenName": "Bitupan",
+  "familyName": "Borah",
+  "additionalName": "Dev",
   "alternateName": [
     "Dev",
     "Dev Borah",
@@ -26,8 +29,16 @@ const jsonLd = {
     "bitzzdev.vercel.app",
     "bitzdev.vercel.app",
   ],
+  "birthDate": "2008-08-25",
+  "gender": "Male",
+  "nationality": "Indian",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Assam",
+    "addressCountry": "India"
+  },
   "url": "https://bitz.is-a.dev",
-  "image": "https://bitz.is-a.dev/favicon.png",
+  "image": "https://bitz.is-a.dev/me.png",
   "jobTitle": "Software Developer & Web Developer",
   "worksFor": {
     "@type": "Organization",
@@ -51,7 +62,7 @@ const jsonLd = {
     "UI/UX Engineering",
   ],
   "description":
-    "Bitupan Borah (Dev / Bitupan / Dev Borah / bitz.dev / bitz / bitzzdev) - Software Developer & Web Developer in Assam, India crafting pixel-perfect, high-performance web experiences.",
+    "Bitupan Borah, known as Dev or Dev Borah (born August 25, 2008 in Assam, India; handle @bitz.dev / @bitzzdev), is a Software Developer & Web Developer creating high-performance, resilient web platforms and software architecture.",
 };
 
 export const metadata: Metadata = {

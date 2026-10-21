@@ -276,11 +276,11 @@ export default async function Home() {
         <section className="section" id="about">
           <div className="section-head">
             <h2>about the developer</h2>
-            <span className="count">background</span>
+            <span className="count">dossier</span>
           </div>
           <div className="lede">
             <p>
-              Hey, I&apos;m Dev. I started bitz.dev because I watched businesses struggle with sluggish,
+              Hey, I&apos;m Dev (Bitupan Borah). Born August 25, 2008 in Assam, India. I started bitz.dev because I watched businesses struggle with sluggish,
               over-engineered websites that never converted despite the quality of their underlying products.
             </p>
             <br />
@@ -291,8 +291,16 @@ export default async function Home() {
               and how the world perceives you.
             </p>
             <br />
+            <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
+              <div><strong>Name:</strong> Bitupan Borah (Dev / Dev Borah)</div>
+              <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
+              <div><strong>Nationality / Origin:</strong> Assam, India</div>
+              <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a></div>
+              <div><strong>Instagram:</strong> <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a></div>
+              <div><strong>Specialization:</strong> High-Performance Web Applications, Systems Architecture, Frontend &amp; Fullstack Engineering</div>
+            </div>
             <p className="muted">
-              Location: Assam, India (Available globally for remote contracts)
+              Location: Assam, India (Available globally for contracts &amp; client engineering)
             </p>
           </div>
         </section>

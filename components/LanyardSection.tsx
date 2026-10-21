@@ -21,7 +21,6 @@ export default function LanyardSection() {
       if (nextOpen) {
         if (timerRef.current) clearTimeout(timerRef.current);
         setAnimating(true);
-        // Small delay to trigger transition
         requestAnimationFrame(() => {
           setOpen(true);
         });
@@ -30,7 +29,7 @@ export default function LanyardSection() {
         if (timerRef.current) clearTimeout(timerRef.current);
         timerRef.current = setTimeout(() => {
           setAnimating(false);
-        }, 500); // Wait for transition out
+        }, 450);
       }
     };
 
@@ -48,7 +47,7 @@ export default function LanyardSection() {
     if (timerRef.current) clearTimeout(timerRef.current);
     timerRef.current = setTimeout(() => {
       setAnimating(false);
-    }, 500);
+    }, 450);
   };
 
   // Close on Escape key
@@ -74,14 +73,13 @@ export default function LanyardSection() {
 
       {/* Floating lanyard container dropping from the top */}
       <div className="lanyard-stage">
-        {/* Top header bar */}
-        <div className="lanyard-header">
-          <span className="lanyard-tag">$ lanyard --unleashed --gravity</span>
+        {/* Only the [close card] button at the top */}
+        <div className="lanyard-close-bar">
           <button
             type="button"
-            className="button"
+            className="button lanyard-close-btn"
             onClick={handleClose}
-            aria-label="Close lanyard card"
+            aria-label="Close card"
           >
             <span>[close card &times;]</span>
           </button>
@@ -90,19 +88,14 @@ export default function LanyardSection() {
         {/* 3D Lanyard Canvas */}
         <div className="lanyard-canvas-wrap">
           <Lanyard
-            frontImage="/me.png"
-            backImage="/me.png"
+            frontImage="/me-bw.png"
+            backImage="/card-back.png"
             cardColor="#000000"
             strapColor="#ffffff"
             metal="silver"
             finish="glossy"
             imageFit="cover"
           />
-        </div>
-
-        {/* Floating guidance caption */}
-        <div className="lanyard-footer">
-          <span>&uarr; drag or toss card to test physics / click [close card] to retract &uarr;</span>
         </div>
       </div>
     </div>
