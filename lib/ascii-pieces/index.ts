@@ -1,4 +1,5 @@
 // Dynamic piece loaders for lazy-loading on demand (only when animating in viewport)
+// Removed green storm and using tokyo rain (Tokyo Night street scene)
 export interface SceneConfig {
   name: string;
   slug: string;
@@ -6,8 +7,8 @@ export interface SceneConfig {
 }
 
 export const PROJECT_BANNER_CONFIGS: SceneConfig[] = [
+  { name: "tokyo rain", slug: "tokyo-rain", load: () => import("./tokyo-rain.js") },
   { name: "saturn rise", slug: "saturn-rise", load: () => import("./saturn-rise.js") },
-  { name: "green storm", slug: "green-storm", load: () => import("./green-storm.js") },
   { name: "jungle falls", slug: "jungle-falls", load: () => import("./jungle-falls.js") },
   { name: "lantern lake", slug: "lantern-lake", load: () => import("./lantern-lake.js") },
   { name: "marine drive", slug: "marine-drive", load: () => import("./marine-drive.js") },
@@ -22,5 +23,5 @@ export const PROJECT_BANNER_CONFIGS: SceneConfig[] = [
   { name: "earthrise", slug: "earthrise", load: () => import("./earthrise.js") },
   { name: "edge orbit", slug: "edge-orbit", load: () => import("./edge-orbit.js") },
   { name: "kyoto dusk", slug: "kyoto-dusk", load: () => import("./kyoto-dusk.js") },
-  { name: "tokyo rain", slug: "tokyo-rain", load: () => import("./tokyo-rain.js") },
+  { name: "amer fort", slug: "amer-fort", load: () => import("./amer-fort.js") },
 ];

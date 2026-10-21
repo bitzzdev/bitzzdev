@@ -3,6 +3,7 @@ import AsciiWorkGrid from "@/components/AsciiWorkGrid";
 import ThemeToggle from "@/components/ThemeToggle";
 import ContactForm from "@/components/ContactForm";
 import CpuAsciiArt from "@/components/CpuAsciiArt";
+import AboutHalftoneImage from "@/components/AboutHalftoneImage";
 
 export default async function Home() {
   const repos = await getPublicRepos();
@@ -128,6 +129,8 @@ export default async function Home() {
               I treat every project as something to build with genuine care and craft.
             </p>
             <br />
+            {/* Interactive Halftone Reveal Effect for me.png */}
+            <AboutHalftoneImage />
             <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
               <div><strong>Name:</strong> Bitupan Borah (Dev / Dev Borah)</div>
               <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
