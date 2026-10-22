@@ -132,7 +132,7 @@ a:focus-visible, .button:focus-visible > span {
 
 /* ═══ TWO-COLUMN FRAME ═══ */
 .frame {
-  grid-template-columns: 24ch minmax(0, 1fr);
+  grid-template-columns: 28ch minmax(0, 1fr);
   gap: 5ch;
   width: min(100% - 2.5rem, 150ch);
   margin-inline: auto;
@@ -149,18 +149,23 @@ a:focus-visible, .button:focus-visible > span {
   position: sticky;
   top: 0;
   overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .side .brand {
   font-weight: 500;
   display: inline-block;
   font-size: 1rem;
+  word-break: break-word;
 }
 
 .side .by {
   color: var(--muted);
   margin: 0.25rem 0 0;
   font-size: 0.875em;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .side .quick-links {
@@ -210,6 +215,8 @@ a:focus-visible, .button:focus-visible > span {
 .side nav ul a {
   color: var(--text);
   display: inline-block;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .side nav ul a.active {
