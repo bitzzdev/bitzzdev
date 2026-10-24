@@ -1,126 +1,141 @@
 <div align="center">
 
-# `bitzzdev`
+```text
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄ 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░▌       ▐░▌
+▐░█▀▀▀▀▀▀▀▀█▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌
+▐░▌        ▐░▌▐░▌          ▐░▌▐░▌    ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌   ▄   ▐░▌
+▐░▌        ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▌   ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░▌  ▐░▌  ▐░▌
+▐░▌        ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░▌ ▐░▌░▌ ▐░▌
+▐░▌        ▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌   ▐░▌ ▐░▌▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌▐░▌▐░▌ ▐░▌▐░▌
+▐░▌        ▐░▌▐░▌          ▐░▌    ▐░▌▐░▌▐░▌       ▐░▌          ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌▐░▌  ▐░▐░▌
+▐░█▄▄▄▄▄▄▄▄█▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▐░▌   ▐░▐░▌
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌      ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░▌    ▐░░░▌
+ ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀      ▀▀▀ 
+```
 
-### `building things that probably shouldn't exist`
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=900&color=FFFFFF&center=true&vCenter=true&width=600&lines=Developer+%7C+Builder+%7C+Open+Source;AI+tools+%7C+Android+%7C+Minecraft+%7C+Linux;Turning+random+ideas+into+working+software;Currently+building+something+interesting..." alt="Typing SVG" />
+### `DEV BORAH` • `BITUPAN BORAH` • `bitz.dev`
+**Software Developer & Open Source Creator**
 
 <br>
 
-[![GitHub](https://img.shields.io/badge/GitHub-bitzzdev-000000?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bitzzdev)
-[![Website](https://img.shields.io/badge/Website-bitzdev.vercel.app-000000?style=for-the-badge\&logo=vercel\&logoColor=white)](https://bitzdev.vercel.app/)
-[![Profile Views](https://komarev.com/ghpvc/?username=bitzzdev\&style=for-the-badge\&color=000000\&label=PROFILE+VIEWS)](https://github.com/bitzzdev)
+<a href="https://bitz.is-a.dev"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=FFFFFF&center=true&vCenter=true&width=620&lines=Dev+Borah+(Bitupan+Borah);Full-Stack+%26+Systems+Engineering;Building+Pulse%2C+NexUI%2C+and+open-source+tools;archlinux+%2B+neovim+%2B+typescript;https%3A%2F%2Fbitz.is-a.dev" alt="Typing SVG" /></a>
+
+<br><br>
+
+[![Website](https://img.shields.io/badge/PORTFOLIO-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev/)
+[![GitHub](https://img.shields.io/badge/GITHUB-bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
+[![Instagram](https://img.shields.io/badge/INSTAGRAM-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
+[![Profile Views](https://komarev.com/ghpvc/?username=bitzzdev&style=for-the-badge&color=000000&labelColor=111111&label=SYS_HITS)](https://github.com/bitzzdev)
 
 </div>
 
----
+<br>
 
-## `$ whoami`
-
-```text
-╭──────────────────────────────────────────────────────────────╮
-│                                                              │
-│  bitz@github ~ $ ./about-me                                  │
-│                                                              │
-│  Name       → Bitupan Borah                                  │
-│  Alias      → bitz                                           │
-│  Location   → Assam, India                                   │
-│  Role       → Developer / Builder                            │
-│                                                              │
-│  Focus      → AI tooling                                     │
-│             → Android                                        │
-│             → Minecraft                                      │
-│             → Linux                                          │
-│             → Developer tools                                │
-│                                                              │
-│  Status     → building                                       │
-│                                                              │
-╰──────────────────────────────────────────────────────────────╯
+```console
+bitz@archlinux ~ $ fastfetch --pipe
+                  -`                    bitz@bitz.is-a.dev
+                 .o+`                   ------------------
+                `ooo/                   IDENTITY : Dev Borah (Bitupan Borah)
+               `+oooo:                  ALIASES  : bitz.dev / bitzzdev
+              `+oooooo:                 ROLE     : Software Developer & Builder
+              -+oooooo+:                ORIGIN   : Assam, India
+            `/:-:++oooo+:               STACK    : TypeScript, Next.js, Java, Linux
+           `/++++/+++++++:              KERNEL   : x86_64 Linux (Arch)
+          `/++++++++++++++:             EDITOR   : Neovim / Zed / Cursor
+         `/+++ooooooooooooo/`           STATUS   : Compiling ideas into production
+        ./ooosssso++osssssso+`          UPTIME   : 24/7 building mode
+       .oossssso-````/ossssss+`         
+      -osssssso.      :ssssssso.        "Turning 'what if' into 'wait, it works.'"
+     :osssssss/        ossso+++.        
+    /ossssssss/        +ssssooo/-       
+  `/ossssso+/:-        -:/+osssso+-     
+ `+sso+:-`                 `.-/+oso:    
+`++:.                           `-/+/   
 ```
 
-I like taking ideas from **"this would be cool"** to **"wait, this actually works."**
+<br>
 
-Most of my projects sit somewhere between developer tooling, creative software, experiments, and things I personally wanted to use.
+## `// 01. DOSSIER & IDENTITY`
 
----
+```text
+┌───────────────────────────┬────────────────────────────────────────────────────────┐
+│ KEY                       │ VALUE                                                  │
+├───────────────────────────┼────────────────────────────────────────────────────────┤
+│ Primary Name              │ Dev Borah                                              │
+│ Legal / Alternate Name    │ Bitupan Borah                                          │
+│ Online Handles            │ @bitz.dev (Instagram) • @bitzzdev (GitHub)            │
+│ Canonical Website         │ https://bitz.is-a.dev                                  │
+│ Location                  │ Assam, India                                           │
+│ Core Competencies         │ Full-Stack Web, Systems Tooling, UI/UX, Performance    │
+│ Primary Focus             │ Developer Experience, Low-Latency Web, Native Mods     │
+└───────────────────────────┴────────────────────────────────────────────────────────┘
+```
 
-## `./stack`
+<br>
+
+## `// 02. HARDWARE & ARSENAL`
 
 <div align="center">
 
-### Languages
+```text
+[LANGUAGES]    TypeScript  •  JavaScript  •  Java  •  Kotlin  •  Python  •  Bash  •  GLSL
+[FRAMEWORKS]   Next.js 15  •  React 19    •  Node.js •  TailwindCSS  •  Fabric API
+[ECOSYSTEM]    Arch Linux  •  Hyprland    •  Docker  •  Git / GitHub •  Vercel
+```
 
-![TypeScript](https://img.shields.io/badge/TypeScript-111111?style=for-the-badge\&logo=typescript\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-111111?style=for-the-badge\&logo=javascript\&logoColor=white)
-![Java](https://img.shields.io/badge/Java-111111?style=for-the-badge\&logo=openjdk\&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-111111?style=for-the-badge\&logo=kotlin\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-111111?style=for-the-badge\&logo=python\&logoColor=white)
+<br>
 
-### Tools & Platforms
-
-![Node.js](https://img.shields.io/badge/Node.js-111111?style=for-the-badge\&logo=node.js\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-111111?style=for-the-badge\&logo=git\&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-111111?style=for-the-badge\&logo=github\&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-111111?style=for-the-badge\&logo=linux\&logoColor=white)
-![Android](https://img.shields.io/badge/Android-111111?style=for-the-badge\&logo=android\&logoColor=white)
-![Minecraft](https://img.shields.io/badge/Minecraft-111111?style=for-the-badge\&logo=minecraft\&logoColor=white)
+<img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,nodejs,java,kotlin,py,bash,linux,docker,git,neovim,vscode&theme=dark" alt="Tech Stack" />
 
 </div>
 
----
+<br>
 
-## `./projects`
+## `// 03. FEATURED WORK & REPOSITORIES`
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### ⚙️ Cognautic
+### ⚡ [Pulse](https://github.com/bitzzdev/Pulse)
+> **Real-Time Adaptive Performance Engine**
 
-Open-source AI-powered developer tooling.
+Dynamic rendering and resource management architecture designed to keep frame pacing butter-smooth across constrained hardware environments.
 
-A collection of tools built around making agentic coding workflows more useful, accessible, and customizable.
-
-`AI` `CLI` `Desktop` `Developer Tools`
+`Java` `Fabric` `Systems` `Performance`
 
 </td>
-
 <td width="50%" valign="top">
 
-### 🎨 Pixora
+### 🧩 [NexUI](https://github.com/bitzzdev/NexUI)
+> **Next-Generation Dynamic UI Framework**
 
-Pixel-art generation made simple.
+Re-architecting client HUDs and menu ecosystems with fluid transitions, modular layouts, and modern design semantics.
 
-A lightweight web experience for generating and experimenting with pixel-art assets.
-
-`AI` `React` `Web` `Creative Tools`
+`Java` `Fabric` `UI/UX` `Client Mod`
 
 </td>
 </tr>
-
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ Pulse
+### 🌐 [bitz.is-a.dev](https://github.com/bitzzdev/bitzzdev)
+> **The Cyber-Minimalist Terminal Portfolio**
 
-Adaptive Minecraft performance tooling.
+High-performance Next.js 15 portfolio featuring ASCII rendering, halftone shaders, zero-layout-shift micro-interactions, and JSON-LD Knowledge Graph indexing.
 
-Designed around dynamically managing rendering quality to keep gameplay smooth on lower-end hardware.
-
-`Java` `Fabric` `Minecraft` `Performance`
+`Next.js 15` `React 19` `Tailwind` `TypeScript`
 
 </td>
-
 <td width="50%" valign="top">
 
-### 🧩 NexUI
+### 🧊 [Stasis](https://github.com/bitzzdev)
+> **State Management & Freeze Utilities**
 
-A Minecraft UI-focused Fabric mod.
+Deterministic runtime snapshotting and freeze hooks for asynchronous pipelines and client state boundaries.
 
-Built around improving and experimenting with the modern Minecraft interface.
-
-`Java` `Fabric` `Minecraft` `UI`
+`TypeScript` `State Machine` `Architecture`
 
 </td>
 </tr>
@@ -128,146 +143,62 @@ Built around improving and experimenting with the modern Minecraft interface.
 
 <div align="center">
 
-[**View all repositories →**](https://github.com/bitzzdev?tab=repositories)
+[**EXPLORE ALL PUBLIC REPOSITORIES ON GITHUB →**](https://github.com/bitzzdev?tab=repositories)
 
 </div>
-
----
-
-## `./github`
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bitzzdev&theme=github_dark" width="95%" />
-
-<br><br>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=bitzzdev&theme=github_dark" width="45%" />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=bitzzdev&theme=github_dark" width="45%" />
-
-</div>
-<br>
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=bitzzdev&hide_border=true&background=00000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=aaaaaa&dates=777777&sideNums=ffffff&currStreakNum=ffffff" />
-
-</div>
-
----
-
-## `./contributions`
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=00000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="95%"/>
-
-</div>
-
----
-
-## `./terminal`
-
-```console
-bitz@arch ~ $ fastfetch
-
-                 .--.                    bitz@github
-                |o_o |                   ───────────
-                |:_/ |                   OS       Arch Linux
-               //   \ \                  Shell    fish
-              (|     | )                 Editor   whatever works
-             /'\_   _/`\                 Focus    building
-             \___)=(___/                 Status   online
-
-bitz@arch ~ $ git status
-
-On branch main
-
-nothing to commit, working tree clean.
-
-bitz@arch ~ $ echo $CURRENT_PROJECT
-
-"something I probably started at 2 AM"
-
-bitz@arch ~ $ _
-```
-
----
-
-## `./activity`
-
-<div align="center">
-
-<img src="https://github.com/bitzzdev.png?size=160" width="120" height="120" alt="bitzzdev"/>
-
-<br><br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=bitzzdev&theme=transparent&hide_border=true" width="70%" alt="GitHub streak"/>
-
-<br><br>
-
-### Contribution Graph
-
-[![Bitz's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=00000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true)](https://github.com/bitzzdev)
-
-</div>
-
----
-
-## `./currently`
-
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  [01] Building        AI-powered developer tools            │
-│  [02] Exploring       Android & native UI                    │
-│  [03] Modding         Minecraft / Fabric                     │
-│  [04] Running         Arch Linux                             │
-│  [05] Learning        whatever breaks next                   │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## `./philosophy`
-
-<div align="center">
-
-```text
-BUILD
-  ↓
-BREAK
-  ↓
-FIX
-  ↓
-SHIP
-  ↓
-REPEAT
-```
-
-**Less talking. More shipping.**
-
-</div>
-
----
-
-## `./contact`
-
-<div align="center">
-
-If you found something useful here, feel free to steal the idea.
-
-Just make it better.
 
 <br>
 
-[![GitHub](https://img.shields.io/badge/github-000000?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/bitzzdev)
-[![Website](https://img.shields.io/badge/website-000000?style=for-the-badge\&logo=vercel\&logoColor=white)](https://bitzdev.vercel.app/)
+## `// 04. TELEMETRY & GITHUB METRICS`
+
+<div align="center">
+
+<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=bitzzdev&show_icons=true&theme=tokyonight&bg_color=000000&border_color=222222&text_color=aaaaaa&title_color=ffffff&icon_color=ffffff&hide_border=false" width="48%" alt="GitHub Stats" />
+<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=bitzzdev&layout=compact&theme=tokyonight&bg_color=000000&border_color=222222&text_color=aaaaaa&title_color=ffffff&hide_border=false" width="48%" alt="Top Languages" />
 
 <br><br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=100&section=footer" width="100%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=bitzzdev&hide_border=false&border=222222&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=aaaaaa&dates=777777&sideNums=ffffff&currStreakNum=ffffff" width="96%" alt="Streak Stats" />
+
+<br><br>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=false&border_color=222222" width="96%" alt="Activity Graph" />
+
+</div>
+
+<br>
+
+## `// 05. CORE PHILOSOPHY`
+
+```text
+ ┌───┐       ┌────┐       ┌───┐       ┌──────┐
+ │ 01 │ ───> │ 02 │ ───> │ 03│ ───> │  04  │
+ └───┘       └────┘       └───┘       └──────┘
+ CONCEIVE    PROTOTYPE    OPTIMIZE    SHIP IT
+```
+
+> *"Minimalism isn't the lack of something. It's the perfect amount of everything."*
+
+<br>
+
+## `// 06. UPLINK & VERIFICATION`
+
+<div align="center">
+
+Have an inquiry, an open-source collaboration idea, or an interesting engineering problem?
+
+<br>
+
+[![Official Website](https://img.shields.io/badge/Website-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-@bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
+[![Instagram](https://img.shields.io/badge/Instagram-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
+
+<br><br>
+
+```text
+──────────────────────────────────────────────────────────────────────────────────────────
+[SYSTEM LOG] HOST: bitz.is-a.dev | SIGNATURE: 0xDEV_BORAH | END TRANSMISSION
+──────────────────────────────────────────────────────────────────────────────────────────
+```
 
 </div>
