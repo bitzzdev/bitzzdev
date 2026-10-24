@@ -8,7 +8,10 @@ const HalftoneReveal = dynamic(() => import("@/components/HalftoneReveal"), {
 
 export default function AboutHalftoneImage() {
   return (
-    <div className="about-image-wrap">
+    <figure
+      className="about-image-wrap"
+      aria-label="Portrait of Bitupan Borah (Dev Borah)"
+    >
       <div className="about-image-card">
         <HalftoneReveal
           src="/me.png"
@@ -20,7 +23,20 @@ export default function AboutHalftoneImage() {
           paperColor="#120f17"
           revealRadius={160}
         />
+        {/* Semantic fallback image for search crawlers and screen readers */}
+        <noscript>
+          <img
+            src="/me.png"
+            alt="Bitupan Borah (Dev Borah) — Software & Web Developer"
+            width={460}
+            height={460}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+        </noscript>
       </div>
-    </div>
+      <figcaption className="sr-only">
+        Portrait photograph of software developer Bitupan Borah (Dev Borah)
+      </figcaption>
+    </figure>
   );
 }

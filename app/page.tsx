@@ -74,7 +74,7 @@ export default async function Home() {
 
         {/* Top title & tools */}
         <div className="top">
-          <h1>Bitupan/Dev Borah — Software &amp; Web Developer</h1>
+          <h1>Bitupan Borah (Dev Borah) — Software &amp; Web Developer</h1>
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <ThemeToggle />
@@ -118,29 +118,31 @@ export default async function Home() {
           </div>
           <div className="lede">
             <p>
-              Hey, I&apos;m Dev (Bitupan Borah). Honestly, I became a developer because I just really love computer stuff.
+              Hey, I&apos;m Bitupan Borah, also known online and professionally as Dev Borah (or simply Dev). Honestly, I became a developer because I just really love computer stuff.
               Ever since I first touched a computer, tinkering with software, understanding how systems work under the hood,
-              and building things from scratch has been what excites me every day. That&apos;s the simple truth.
+              and building open-source projects from scratch has been what excites me every day. That&apos;s the simple truth.
             </p>
             <br />
             <p>
               I love clean code, lightning-fast interfaces, and getting rid of unnecessary bloat. Whether it&apos;s
-              crafting responsive web applications, designing system tools, or optimizing performance so things load instantly,
-              I treat every project as something to build with genuine care and craft.
+              crafting responsive web applications, designing developer tools, or optimizing performance so things load instantly,
+              I treat every project as something to build with genuine care, technical discipline, and craft.
             </p>
             <br />
             {/* Interactive Halftone Reveal Effect for me.png */}
             <AboutHalftoneImage />
             <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
-              <div><strong>Name:</strong> Bitupan Borah (Dev / Dev Borah)</div>
+              <div><strong>Primary Name:</strong> Bitupan Borah</div>
+              <div><strong>Alternate / Known As:</strong> Dev Borah (Dev)</div>
               <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
               <div><strong>Origin &amp; Location:</strong> Assam, India</div>
-              <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a></div>
+              <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a> (@bitzzdev)</div>
               <div><strong>Instagram:</strong> <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a></div>
-              <div><strong>What I Do:</strong> Software &amp; Web Development, Frontend Engineering, Systems &amp; Performance</div>
+              <div><strong>Official Site:</strong> <a href="https://bitz.is-a.dev">https://bitz.is-a.dev</a></div>
+              <div><strong>Specialization:</strong> Software &amp; Web Development, Open Source, Frontend Engineering &amp; Web Performance</div>
             </div>
             <p className="muted">
-              Based in Assam, India &mdash; open for collaboration, freelance contracts, and cool projects worldwide.
+              Based in Assam, India &mdash; open for collaboration, open-source work, freelance contracts, and software engineering worldwide.
             </p>
           </div>
         </section>

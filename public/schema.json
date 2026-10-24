@@ -1,30 +1,71 @@
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Bitupan Borah",
-  "alternateName": ["bitz", "bitz.is-a.dev", "bitzdev", "bitzzdev", "bitzdev.vercel.app", "bitzzdev.vercel.app"],
-  "url": "https://bitz.is-a.dev",
-  "image": "https://bitz.is-a.dev/favicon.png",
-  "jobTitle": "Software Developer & Web Developer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "bitz.is-a.dev"
-  },
-  "sameAs": [
-    "https://github.com/bitzzdev",
-    "https://bitzzdev.vercel.app",
-    "https://bitzdev.vercel.app"
-  ],
-  "knowsAbout": [
-    "Software Development",
-    "Web Development",
-    "Frontend Engineering",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "JavaScript",
-    "UI/UX Design",
-    "Full Stack Development"
-  ],
-  "description": "Bitupan Borah (bitz / bitz.is-a.dev / bitzdev.vercel.app / bitzzdev.vercel.app / bitzdev / bitzzdev) - Freelance Software Developer & Web Developer crafting pixel-perfect, high-performance web experiences."
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://bitz.is-a.dev/#person",
+      "name": "Bitupan Borah",
+      "givenName": "Bitupan",
+      "familyName": "Borah",
+      "alternateName": [
+        "Dev Borah",
+        "Dev",
+        "bitz.dev",
+        "bitzzdev"
+      ],
+      "birthDate": "2008-08-25",
+      "gender": "Male",
+      "nationality": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Assam, India"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Assam",
+        "addressCountry": "India"
+      },
+      "url": "https://bitz.is-a.dev",
+      "image": "https://bitz.is-a.dev/me.png",
+      "jobTitle": "Software Developer & Web Developer",
+      "description": "Bitupan Borah, also known as Dev Borah (@bitz.dev / @bitzzdev), is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
+      "sameAs": [
+        "https://github.com/bitzzdev",
+        "https://instagram.com/bitz.dev",
+        "https://bitzzdev.vercel.app",
+        "https://bitzdev.vercel.app"
+      ],
+      "knowsAbout": [
+        "Software Development",
+        "Web Development",
+        "Frontend Engineering",
+        "Full Stack Development",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Open Source Software",
+        "Performance Optimization"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://bitz.is-a.dev"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bitz.is-a.dev/#website",
+      "url": "https://bitz.is-a.dev",
+      "name": "bitz.is-a.dev — Bitupan Borah (Dev Borah)",
+      "alternateName": ["bitz.is-a.dev", "Bitupan Borah Portfolio", "Dev Borah Portfolio"],
+      "description": "Official personal portfolio of Bitupan Borah (Dev Borah), software developer & web developer in Assam, India.",
+      "publisher": {
+        "@id": "https://bitz.is-a.dev/#person"
+      },
+      "inLanguage": "en"
+    }
+  ]
 }
