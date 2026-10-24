@@ -42,7 +42,7 @@ const personJsonLd = {
   "url": CANONICAL_URL,
   "image": `${CANONICAL_URL}/me.png`,
   "jobTitle": "Software Developer & Web Developer",
-  "description": "Bitupan Borah, also known as Dev Borah (@bitz.dev / @bitzzdev), is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
+  "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
   "sameAs": [
     "https://github.com/bitzzdev",
     "https://instagram.com/bitz.dev",
@@ -72,9 +72,9 @@ const websiteJsonLd = {
   "@type": "WebSite",
   "@id": `${CANONICAL_URL}/#website`,
   "url": CANONICAL_URL,
-  "name": "bitz.is-a.dev — Bitupan Borah (Dev Borah)",
-  "alternateName": ["bitz.is-a.dev", "Bitupan Borah Portfolio", "Dev Borah Portfolio"],
-  "description": "Official personal portfolio of Bitupan Borah (Dev Borah), software developer & web developer in Assam, India.",
+  "name": "bitz.is-a.dev — Dev Borah (Bitupan Borah)",
+  "alternateName": ["bitz.is-a.dev", "Dev Borah Portfolio", "Bitupan Borah Portfolio"],
+  "description": "Official personal portfolio of Dev Borah (Bitupan Borah), software developer & web developer in Assam, India.",
   "publisher": {
     "@id": `${CANONICAL_URL}/#person`
   },
@@ -86,7 +86,7 @@ const profilePageJsonLd = {
   "@type": "ProfilePage",
   "@id": `${CANONICAL_URL}/#profilepage`,
   "url": CANONICAL_URL,
-  "name": "Bitupan Borah (Dev Borah) — Software Developer Profile",
+  "name": "Dev Borah (Bitupan Borah) — Software Developer Profile",
   "isPartOf": {
     "@id": `${CANONICAL_URL}/#website`
   },
@@ -103,11 +103,11 @@ const schemaGraph = {
 export const metadata: Metadata = {
   metadataBase: new URL(CANONICAL_URL),
   title: {
-    default: "Bitupan Borah (Dev Borah) — Software & Web Developer | Assam, India",
-    template: "%s | Bitupan Borah",
+    default: "Dev Borah (Bitupan Borah) — Software & Web Developer | Assam, India",
+    template: "%s | Dev Borah",
   },
   description:
-    "Official website of Bitupan Borah (also known as Dev Borah / @bitz.dev / @bitzzdev), a software developer and open-source creator from Assam, India building high-performance web applications.",
+    "Official website of Dev Borah (Bitupan Borah / @bitz.dev / @bitzzdev), a software developer and open-source creator from Assam, India building high-performance web applications.",
   keywords: [
     "Bitupan Borah",
     "Dev Borah",
@@ -128,9 +128,9 @@ export const metadata: Metadata = {
     "react developer",
     "open source creator",
   ],
-  authors: [{ name: "Bitupan Borah", url: CANONICAL_URL }],
-  creator: "Bitupan Borah",
-  publisher: "Bitupan Borah",
+  authors: [{ name: "Dev Borah", url: CANONICAL_URL }],
+  creator: "Dev Borah",
+  publisher: "Dev Borah",
   alternates: {
     canonical: CANONICAL_URL,
   },
@@ -139,10 +139,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: CANONICAL_URL,
     siteName: "bitz.is-a.dev",
-    title: "Bitupan Borah (Dev Borah) — Software & Web Developer",
+    title: "Dev Borah (Bitupan Borah) — Software & Web Developer",
     description:
-      "Official website and portfolio of Bitupan Borah (Dev Borah / @bitz.dev / @bitzzdev) — software developer and open-source creator based in Assam, India.",
-    firstName: "Bitupan",
+      "Official website and portfolio of Dev Borah (Bitupan Borah / @bitz.dev / @bitzzdev) — software developer and open-source creator based in Assam, India.",
+    firstName: "Dev",
     lastName: "Borah",
     username: "bitzzdev",
     gender: "male",
@@ -151,15 +151,15 @@ export const metadata: Metadata = {
         url: "/me.png",
         width: 1215,
         height: 1295,
-        alt: "Bitupan Borah (Dev Borah) — Software & Web Developer",
+        alt: "Dev Borah (Bitupan Borah) — Software & Web Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bitupan Borah (Dev Borah) — Software & Web Developer",
+    title: "Dev Borah (Bitupan Borah) — Software & Web Developer",
     description:
-      "Official portfolio of Bitupan Borah (Dev Borah / @bitz.dev / @bitzzdev) — software developer in Assam, India.",
+      "Official portfolio of Dev Borah (Bitupan Borah / @bitz.dev / @bitzzdev) — software developer in Assam, India.",
     images: ["/me.png"],
   },
   icons: {

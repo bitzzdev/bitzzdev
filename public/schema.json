@@ -31,7 +31,7 @@
       "url": "https://bitz.is-a.dev",
       "image": "https://bitz.is-a.dev/me.png",
       "jobTitle": "Software Developer & Web Developer",
-      "description": "Bitupan Borah, also known as Dev Borah (@bitz.dev / @bitzzdev), is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
+      "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
       "sameAs": [
         "https://github.com/bitzzdev",
         "https://instagram.com/bitz.dev",
@@ -59,9 +59,9 @@
       "@type": "WebSite",
       "@id": "https://bitz.is-a.dev/#website",
       "url": "https://bitz.is-a.dev",
-      "name": "bitz.is-a.dev — Bitupan Borah (Dev Borah)",
-      "alternateName": ["bitz.is-a.dev", "Bitupan Borah Portfolio", "Dev Borah Portfolio"],
-      "description": "Official personal portfolio of Bitupan Borah (Dev Borah), software developer & web developer in Assam, India.",
+      "name": "bitz.is-a.dev — Dev Borah (Bitupan Borah)",
+      "alternateName": ["bitz.is-a.dev", "Dev Borah Portfolio", "Bitupan Borah Portfolio"],
+      "description": "Official personal portfolio of Dev Borah (Bitupan Borah), software developer & web developer in Assam, India.",
       "publisher": {
         "@id": "https://bitz.is-a.dev/#person"
       },

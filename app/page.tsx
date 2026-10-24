@@ -74,7 +74,7 @@ export default async function Home() {
 
         {/* Top title & tools */}
         <div className="top">
-          <h1>Bitupan Borah (Dev Borah) — Software &amp; Web Developer</h1>
+          <h1>Dev Borah (Bitupan Borah) — Software &amp; Web Developer</h1>
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <ThemeToggle />
@@ -118,7 +118,7 @@ export default async function Home() {
           </div>
           <div className="lede">
             <p>
-              Hey, I&apos;m Bitupan Borah, also known online and professionally as Dev Borah (or simply Dev). Honestly, I became a developer because I just really love computer stuff.
+              Hey, I&apos;m Dev Borah (legally Bitupan Borah, known online as @bitz.dev and @bitzzdev). Honestly, I became a developer because I just really love computer stuff.
               Ever since I first touched a computer, tinkering with software, understanding how systems work under the hood,
               and building open-source projects from scratch has been what excites me every day. That&apos;s the simple truth.
             </p>
@@ -132,8 +132,8 @@ export default async function Home() {
             {/* Interactive Halftone Reveal Effect for me.png */}
             <AboutHalftoneImage />
             <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
-              <div><strong>Primary Name:</strong> Bitupan Borah</div>
-              <div><strong>Alternate / Known As:</strong> Dev Borah (Dev)</div>
+              <div><strong>Primary / Professional Name:</strong> Dev Borah (Dev)</div>
+              <div><strong>Legal / Alternate Name:</strong> Bitupan Borah</div>
               <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
               <div><strong>Origin &amp; Location:</strong> Assam, India</div>
               <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a> (@bitzzdev)</div>
