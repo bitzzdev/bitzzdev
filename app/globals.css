@@ -864,11 +864,25 @@ table.data-table td:first-child {
   border-color: var(--ink);
 }
 
+.mini-skill-picture {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 .mini-skill-icon {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
+  max-width: 14px;
+  max-height: 14px;
   object-fit: contain;
-  display: inline-block;
+  display: block;
+  flex-shrink: 0;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .mini-skill-name {

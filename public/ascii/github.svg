@@ -1,35 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 542 522" width="542" height="522" role="img" aria-label="github, in ascii" xml:space="preserve">
-<title>github, in ascii</title>
-<style>text { font: 14px "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #000000; white-space: pre; }</style>
-<text x="0" y="0">
-  <tspan x="0" dy="16">.__pppqq88888qqqqq__,</tspan>
-  <tspan x="0" dy="16">                 __p88888888888888888888888q__</tspan>
-  <tspan x="0" dy="16">              _p8888888888888888888888888888888q_</tspan>
-  <tspan x="0" dy="16">           .p8888888888888888888888888888888888888_,</tspan>
-  <tspan x="0" dy="16">         .p88888888888888888888888888888888888888888q,</tspan>
-  <tspan x="0" dy="16">        _888888888888888888888888888888888888888888888_</tspan>
-  <tspan x="0" dy="16">      _p8888888P'&quot;&quot;Y8888888888888888888888P&quot;&quot;''88888888q,</tspan>
-  <tspan x="0" dy="16">     _888888888|      &quot;YPP&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;Y8P&quot;      |888888888,</tspan>
-  <tspan x="0" dy="16">    _8888888888.                               .8888888888,</tspan>
-  <tspan x="0" dy="16">   .88888888888|                               |88888888888,</tspan>
-  <tspan x="0" dy="16">   q88888888888&quot;                               &quot;88888888888p</tspan>
-  <tspan x="0" dy="16">  |8888888888P                                  '88888888888,</tspan>
-  <tspan x="0" dy="16">  d8888888888'                                   '8888888888p</tspan>
-  <tspan x="0" dy="16">  88888888888                                     88888888888</tspan>
-  <tspan x="0" dy="16">  8888888888b                                     d8888888888</tspan>
-  <tspan x="0" dy="16">  88888888888                                     88888888888</tspan>
-  <tspan x="0" dy="16">  88888888888,                                   |88888888888</tspan>
-  <tspan x="0" dy="16">  d8888888888b,                                  d8888888888P</tspan>
-  <tspan x="0" dy="16">  '88888888888q,                               _p88888888888'</tspan>
-  <tspan x="0" dy="16">   )888888888888q,                           _p888888888888P</tspan>
-  <tspan x="0" dy="16">    888888PP888888qq_,                   __pp8888888888888P</tspan>
-  <tspan x="0" dy="16">     88888q_&quot;\/888888888qp           qp888888888888888888P</tspan>
-  <tspan x="0" dy="16">      O888888,:(88888888P             O88888888888888888P</tspan>
-  <tspan x="0" dy="16">       &quot;888888, Y&quot;Y888PY'             |8888888888888888&quot;</tspan>
-  <tspan x="0" dy="16">        'O88888_, ' &quot;&quot; &quot;              :88888888888888P'</tspan>
-  <tspan x="0" dy="16">          &quot;888888qqqqqpp,             |888888888888P&quot;</tspan>
-  <tspan x="0" dy="16">            'Y8888888888,             |8888888888P'</tspan>
-  <tspan x="0" dy="16">               &quot;Y8888888|             |8888888P&quot;</tspan>
-  <tspan x="0" dy="16">                  '&quot;Y88P'             '888P&quot;'</tspan>
-</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 496" width="536" height="496" role="img" aria-label="github, in ascii" xml:space="preserve">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 14px; fill: #000000; white-space: pre; dominant-baseline: text-before-edge; }
+  </style>
+  <text x="0" y="0">
+    <tspan x="0" y="0">                     .__pppqq88888qqqqq__,</tspan>
+    <tspan x="0" y="16">                 __p88888888888888888888888q__</tspan>
+    <tspan x="0" y="32">              _p8888888888888888888888888888888q_</tspan>
+    <tspan x="0" y="48">           .p8888888888888888888888888888888888888_,</tspan>
+    <tspan x="0" y="64">         .p88888888888888888888888888888888888888888q,</tspan>
+    <tspan x="0" y="80">        _888888888888888888888888888888888888888888888_</tspan>
+    <tspan x="0" y="96">      _p8888888P'&quot;&quot;Y8888888888888888888888P&quot;&quot;''88888888q,</tspan>
+    <tspan x="0" y="112">     _888888888|      &quot;YPP&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;Y8P&quot;      |888888888,</tspan>
+    <tspan x="0" y="128">    _8888888888.                               .8888888888,</tspan>
+    <tspan x="0" y="144">   .88888888888|                               |88888888888,</tspan>
+    <tspan x="0" y="160">   q88888888888&quot;                               &quot;88888888888p</tspan>
+    <tspan x="0" y="176">  |8888888888P                                  '88888888888,</tspan>
+    <tspan x="0" y="192">  d8888888888'                                   '8888888888p</tspan>
+    <tspan x="0" y="208">  88888888888                                     88888888888</tspan>
+    <tspan x="0" y="224">  8888888888b                                     d8888888888</tspan>
+    <tspan x="0" y="240">  88888888888                                     88888888888</tspan>
+    <tspan x="0" y="256">  88888888888,                                   |88888888888</tspan>
+    <tspan x="0" y="272">  d8888888888b,                                  d8888888888P</tspan>
+    <tspan x="0" y="288">  '88888888888q,                               _p88888888888'</tspan>
+    <tspan x="0" y="304">   )888888888888q,                           _p888888888888P</tspan>
+    <tspan x="0" y="320">    888888PP888888qq_,                   __pp8888888888888P</tspan>
+    <tspan x="0" y="336">     88888q_&quot;\/888888888qp           qp888888888888888888P</tspan>
+    <tspan x="0" y="352">      O888888,:(88888888P             O88888888888888888P</tspan>
+    <tspan x="0" y="368">       &quot;888888, Y&quot;Y888PY'             |8888888888888888&quot;</tspan>
+    <tspan x="0" y="384">        'O88888_, ' &quot;&quot; &quot;              :88888888888888P'</tspan>
+    <tspan x="0" y="400">          &quot;888888qqqqqpp,             |888888888888P&quot;</tspan>
+    <tspan x="0" y="416">            'Y8888888888,             |8888888888P'</tspan>
+    <tspan x="0" y="432">               &quot;Y8888888|             |8888888P&quot;</tspan>
+    <tspan x="0" y="448">                  '&quot;Y88P'             '888P&quot;'</tspan>
+  </text>
 </svg>

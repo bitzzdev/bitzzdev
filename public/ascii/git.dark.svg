@@ -1,36 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 538" width="550" height="538" role="img" aria-label="git, in ascii" xml:space="preserve">
-<title>git, in ascii</title>
-<style>text { font: 14px "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #ffffff; white-space: pre; }</style>
-<text x="0" y="0">
-  <tspan x="0" dy="16">_p8888q,</tspan>
-  <tspan x="0" dy="16">                          _p88888888q,</tspan>
-  <tspan x="0" dy="16">                        _p888888888888q,</tspan>
-  <tspan x="0" dy="16">                        Y888888888888888q,</tspan>
-  <tspan x="0" dy="16">                    __   'Y888888888888888q,</tspan>
-  <tspan x="0" dy="16">                  _p88q,   'Y888888888888888q,</tspan>
-  <tspan x="0" dy="16">                _p888888q,   'YPY8888888888888q,</tspan>
-  <tspan x="0" dy="16">              _p8888888888q,       &quot;888888888888q,</tspan>
-  <tspan x="0" dy="16">            _p8888888888888P        &quot;8888888888888q,</tspan>
-  <tspan x="0" dy="16">          _p8888888888888888        )888888888888888q,</tspan>
-  <tspan x="0" dy="16">        _p888888888888888888q_       'Y888888888888888q,</tspan>
-  <tspan x="0" dy="16">      _p8888888888888888888888|   q,   'Y888888888888888q,</tspan>
-  <tspan x="0" dy="16">    _p888888888888888888888888|   88q,   'Y888888888888888q,</tspan>
-  <tspan x="0" dy="16">  .p88888888888888888888888888|   8888q,       &quot;888888888888q,</tspan>
-  <tspan x="0" dy="16">  d888888888888888888888888888|   888888(        888888888888b</tspan>
-  <tspan x="0" dy="16">  8888888888888888888888888888|   888888,        d888888888888</tspan>
-  <tspan x="0" dy="16">   Y88888888888888888888888888|   8888888_     .q88888888888P</tspan>
-  <tspan x="0" dy="16">    'Y888888888888888888888888|   888888888qqpp88888888888P'</tspan>
-  <tspan x="0" dy="16">      'Y8888888888888888888888|   8888888888888888888888P'</tspan>
-  <tspan x="0" dy="16">        'Y8888888888888888888P'   &quot;8888888888888888888P'</tspan>
-  <tspan x="0" dy="16">          'Y8888888888888888'       )888888888888888P'</tspan>
-  <tspan x="0" dy="16">            'Y8888888888888b        .8888888888888P'</tspan>
-  <tspan x="0" dy="16">              'Y888888888888_      .p88888888888P'</tspan>
-  <tspan x="0" dy="16">                'Y88888888888qq___p88888888888P'</tspan>
-  <tspan x="0" dy="16">                  'Y888888888888888888888888P'</tspan>
-  <tspan x="0" dy="16">                    'Y88888888888888888888P'</tspan>
-  <tspan x="0" dy="16">                      'Y8888888888888888P'</tspan>
-  <tspan x="0" dy="16">                        'Y888888888888P'</tspan>
-  <tspan x="0" dy="16">                          'Y88888888P'</tspan>
-  <tspan x="0" dy="16">                            'Y8888P'</tspan>
-</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 544 512" width="544" height="512" role="img" aria-label="git, in ascii" xml:space="preserve">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 14px; fill: #ffffff; white-space: pre; dominant-baseline: text-before-edge; }
+  </style>
+  <text x="0" y="0">
+    <tspan x="0" y="0">                            _p8888q,</tspan>
+    <tspan x="0" y="16">                          _p88888888q,</tspan>
+    <tspan x="0" y="32">                        _p888888888888q,</tspan>
+    <tspan x="0" y="48">                        Y888888888888888q,</tspan>
+    <tspan x="0" y="64">                    __   'Y888888888888888q,</tspan>
+    <tspan x="0" y="80">                  _p88q,   'Y888888888888888q,</tspan>
+    <tspan x="0" y="96">                _p888888q,   'YPY8888888888888q,</tspan>
+    <tspan x="0" y="112">              _p8888888888q,       &quot;888888888888q,</tspan>
+    <tspan x="0" y="128">            _p8888888888888P        &quot;8888888888888q,</tspan>
+    <tspan x="0" y="144">          _p8888888888888888        )888888888888888q,</tspan>
+    <tspan x="0" y="160">        _p888888888888888888q_       'Y888888888888888q,</tspan>
+    <tspan x="0" y="176">      _p8888888888888888888888|   q,   'Y888888888888888q,</tspan>
+    <tspan x="0" y="192">    _p888888888888888888888888|   88q,   'Y888888888888888q,</tspan>
+    <tspan x="0" y="208">  .p88888888888888888888888888|   8888q,       &quot;888888888888q,</tspan>
+    <tspan x="0" y="224">  d888888888888888888888888888|   888888(        888888888888b</tspan>
+    <tspan x="0" y="240">  8888888888888888888888888888|   888888,        d888888888888</tspan>
+    <tspan x="0" y="256">   Y88888888888888888888888888|   8888888_     .q88888888888P</tspan>
+    <tspan x="0" y="272">    'Y888888888888888888888888|   888888888qqpp88888888888P'</tspan>
+    <tspan x="0" y="288">      'Y8888888888888888888888|   8888888888888888888888P'</tspan>
+    <tspan x="0" y="304">        'Y8888888888888888888P'   &quot;8888888888888888888P'</tspan>
+    <tspan x="0" y="320">          'Y8888888888888888'       )888888888888888P'</tspan>
+    <tspan x="0" y="336">            'Y8888888888888b        .8888888888888P'</tspan>
+    <tspan x="0" y="352">              'Y888888888888_      .p88888888888P'</tspan>
+    <tspan x="0" y="368">                'Y88888888888qq___p88888888888P'</tspan>
+    <tspan x="0" y="384">                  'Y888888888888888888888888P'</tspan>
+    <tspan x="0" y="400">                    'Y88888888888888888888P'</tspan>
+    <tspan x="0" y="416">                      'Y8888888888888888P'</tspan>
+    <tspan x="0" y="432">                        'Y888888888888P'</tspan>
+    <tspan x="0" y="448">                          'Y88888888P'</tspan>
+    <tspan x="0" y="464">                            'Y8888P'</tspan>
+  </text>
 </svg>

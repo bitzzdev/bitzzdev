@@ -50,8 +50,10 @@ const SKILL_CATEGORIES: SkillCategory[] = [
 
 export default function MinimalSkillsList() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const getStoredTheme = () => {
       const root = document.documentElement;
       const t = root.dataset.theme;
@@ -89,14 +91,33 @@ export default function MinimalSkillsList() {
                     ? `/ascii/${skill.slug}.dark.svg`
                     : `/ascii/${skill.slug}.svg`;
 
+                const darkSrc = `/ascii/${skill.slug}.dark.svg`;
+                const lightSrc = `/ascii/${skill.slug}.svg`;
+                const currentSrc = mounted ? (theme === "dark" ? darkSrc : lightSrc) : darkSrc;
+
                 return (
                   <span key={skill.slug} className="mini-skill-pill">
-                    <img
-                      src={svgPath}
-                      alt={skill.name}
-                      className="mini-skill-icon"
-                      loading="lazy"
-                    />
+                    <picture className="mini-skill-picture">
+                      <source srcSet={darkSrc} media="(prefers-color-scheme: dark)" />
+                      <source srcSet={lightSrc} media="(prefers-color-scheme: light)" />
+                      <img
+                        src={currentSrc}
+                        alt=""
+                        width={14}
+                        height={14}
+                        className="mini-skill-icon"
+                        loading="eager"
+                        decoding="async"
+                        onError={(e) => {
+                          // Fallback to light or dark if one network hit fails
+                          const target = e.currentTarget;
+                          if (!target.dataset.tried) {
+                            target.dataset.tried = "true";
+                            target.src = darkSrc;
+                          }
+                        }}
+                      />
+                    </picture>
                     <span className="mini-skill-name">{skill.name}</span>
                   </span>
                 );
