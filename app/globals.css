@@ -729,7 +729,7 @@ table.data-table td:first-child {
 /* ═══ ABOUT TWO-COLUMN ROW (me.png & dossier side-by-side) ═══ */
 .about-hero-row {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 40% calc(60% - 1.5rem);
   gap: 1.5rem;
   align-items: stretch;
   margin: 1.75rem 0 1.5rem;
@@ -739,8 +739,8 @@ table.data-table td:first-child {
 .about-image-column {
   display: flex;
   flex-direction: column;
-  width: 240px;
-  flex-shrink: 0;
+  width: 100%;
+  min-width: 0;
 }
 
 .about-image-column .about-image-wrap {
