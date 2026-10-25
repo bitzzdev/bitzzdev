@@ -32,7 +32,7 @@ export async function getPublicRepos(): Promise<GithubRepo[]> {
   }
 }
 
-export const CURATED_REPO_NAMES = ["tiv", "oha", "bitzdots", "hyprconfig", "minegpt"];
+export const CURATED_REPO_NAMES = ["tiv", "oha", "bitzdots", "hyprconfig", "minegpt", "nexui"];
 
 export function filterRepos(data: GithubRepo[]): GithubRepo[] {
   // Filter for curated repos specified: tiv, oha, bitzdots, hyprconfig, minegpt

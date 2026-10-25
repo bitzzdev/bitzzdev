@@ -864,25 +864,15 @@ table.data-table td:first-child {
   border-color: var(--ink);
 }
 
-.mini-skill-picture {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-}
-
 .mini-skill-icon {
   width: 14px;
   height: 14px;
   max-width: 14px;
   max-height: 14px;
   object-fit: contain;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
   flex-shrink: 0;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
 }
 
 .mini-skill-name {
@@ -936,5 +926,21 @@ table.data-table td:first-child {
   .about-dossier-column .dossier-box {
     max-height: none;
     height: auto;
+  }
+}
+
+:root[data-theme="dark"] .mini-skill-icon[src*="github"],
+:root[data-theme="dark"] .mini-skill-icon[src*="zed"],
+:root[data-theme="dark"] .mini-skill-icon[src*="fish"],
+:root[data-theme="dark"] .mini-skill-icon[src*="hyprland"] {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .mini-skill-icon[src*="github"],
+  :root:not([data-theme="light"]) .mini-skill-icon[src*="zed"],
+  :root:not([data-theme="light"]) .mini-skill-icon[src*="fish"],
+  :root:not([data-theme="light"]) .mini-skill-icon[src*="hyprland"] {
+    filter: invert(1);
   }
 }
