@@ -4,6 +4,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import ContactForm from "@/components/ContactForm";
 import CpuAsciiArt from "@/components/CpuAsciiArt";
 import AboutHalftoneImage from "@/components/AboutHalftoneImage";
+import SkillsAsciiGrid from "@/components/SkillsAsciiGrid";
 
 export default async function Home() {
   const repos = await getPublicRepos();
@@ -37,6 +38,7 @@ export default async function Home() {
         <div className="quick-links">
           <a href="#work">[work]</a>
           <a href="#about">[about]</a>
+          <a href="#skills">[skills]</a>
           <a href="#services">[services]</a>
           <a href="#process">[process]</a>
           <a href="#metrics">[metrics]</a>
@@ -55,6 +57,7 @@ export default async function Home() {
           <ul>
             <li><a href="#work">selected projects ({repos.length})</a></li>
             <li><a href="#about">developer story</a></li>
+            <li><a href="#skills">skills &amp; environment</a></li>
             <li><a href="#services">capabilities &amp; offerings</a></li>
             <li><a href="#process">engineering process</a></li>
             <li><a href="#metrics">performance benchmarks</a></li>
@@ -133,22 +136,79 @@ export default async function Home() {
             <br />
             {/* Interactive Halftone Reveal Effect for me.png */}
             <AboutHalftoneImage />
-            <div className="snippet" style={{ margin: "1.5rem 0", padding: "1rem 1.5rem" }}>
-              <div><strong>Primary / Professional Name:</strong> Dev Borah (Dev)</div>
-              <div><strong>Legal / Alternate Name:</strong> Bitupan Borah</div>
-              <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
-              <div><strong>Origin &amp; Location:</strong> Lakhimpur, Assam, India</div>
-              <div><strong>Education:</strong> High School (Completed Feb 2026, Lakhimpur, Assam) &bull; Currently Pursuing Higher Secondary with Computer Science (CS) in Lakhimpur</div>
-              <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a> (@bitzzdev)</div>
-              <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">linkedin.com/in/dev-borah-39a37242b</a></div>
-              <div><strong>Instagram:</strong> <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a></div>
-              <div><strong>Official Site:</strong> <a href="https://bitz.is-a.dev">https://bitz.is-a.dev</a></div>
-              <div><strong>Specialization:</strong> Software &amp; Web Development, Open Source, Frontend Engineering &amp; Web Performance</div>
+            <div className="dossier-box">
+              <p className="dossier-lead">
+                <strong>Dev Borah</strong> (legal identity: <em>Bitupan Borah</em>) is a software engineer and builder based in Lakhimpur, Assam, India. Combining low-level systems appreciation with modern interface design, he architects resilient, zero-bloat digital software and open-source tooling.
+              </p>
+
+              <div className="dossier-grid">
+                <div className="dossier-item">
+                  <span className="dossier-label">Primary Name</span>
+                  <span className="dossier-val">Dev Borah (Dev)</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Legal Name</span>
+                  <span className="dossier-val">Bitupan Borah</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Location</span>
+                  <span className="dossier-val">Lakhimpur, Assam, India</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Date of Birth</span>
+                  <span className="dossier-val">August 25, 2008 (25/08/2008)</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Code &amp; Repos</span>
+                  <span className="dossier-val">
+                    <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">@bitzzdev</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Professional Network</span>
+                  <span className="dossier-val">
+                    <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">dev-borah-39a37242b</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Social &amp; Dispatch</span>
+                  <span className="dossier-val">
+                    <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Verified Origin</span>
+                  <span className="dossier-val">
+                    <a href="https://bitz.is-a.dev">bitz.is-a.dev</a>
+                  </span>
+                </div>
+              </div>
+
+              <div className="dossier-edu">
+                <span className="dossier-label">Academic Path</span>
+                <div className="edu-entry">
+                  <span className="edu-badge">Completed Feb 2026</span>
+                  <span>High School &mdash; Lakhimpur, Assam, India</span>
+                </div>
+                <div className="edu-entry">
+                  <span className="edu-badge">Current Status</span>
+                  <span>Higher Secondary with Computer Science (CS) &mdash; Lakhimpur, Assam</span>
+                </div>
+              </div>
             </div>
             <p className="muted">
               Based in Assam, India &mdash; open for collaboration, open-source work, freelance contracts, and software engineering worldwide.
             </p>
           </div>
+        </section>
+
+        {/* ═══ SKILLS & ENVIRONMENT SECTION ═══ */}
+        <section className="section" id="skills">
+          <div className="section-head">
+            <h2>skills &amp; environment</h2>
+            <span className="count">16 competencies</span>
+          </div>
+          <SkillsAsciiGrid />
         </section>
 
         {/* ═══ SERVICES SECTION ═══ */}

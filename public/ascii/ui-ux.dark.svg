@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301 175" width="301" height="175" role="img" aria-label="UI / UX Design, in ascii" xml:space="preserve">
+<title>UI / UX Design, in ascii</title>
+<style>text { font: 14px "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #ffffff; white-space: pre; }</style>
+<text x="0" y="0">
+  <tspan x="0" dy="16">.-------------------.      </tspan>
+  <tspan x="0" dy="16">     | [UI/UX] [DESIGN]  |      </tspan>
+  <tspan x="0" dy="16">     |-------------------|      </tspan>
+  <tspan x="0" dy="16">     |  .-----. .-----.  |      </tspan>
+  <tspan x="0" dy="16">     |  | (o) | | === |  |      </tspan>
+  <tspan x="0" dy="16">     |  | === | | [&gt;] |  |      </tspan>
+  <tspan x="0" dy="16">     |  `-----' `-----'  |      </tspan>
+  <tspan x="0" dy="16">     | WIREFRAME &amp; PROTO |      </tspan>
+  <tspan x="0" dy="16">     `-------------------'</tspan>
+</text>
+</svg>
