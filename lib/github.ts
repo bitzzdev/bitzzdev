@@ -32,12 +32,18 @@ export async function getPublicRepos(): Promise<GithubRepo[]> {
   }
 }
 
+export const CURATED_REPO_NAMES = ["tiv", "oha", "bitzdots", "hyprconfig", "minegpt"];
+
 export function filterRepos(data: GithubRepo[]): GithubRepo[] {
-  return data
-    .filter(
-      (repo) =>
-        !repo.fork &&
-        repo.full_name !== `${GITHUB_USERNAME}/${GITHUB_USERNAME}`
-    )
-    .sort((a, b) => (a.pushed_at < b.pushed_at ? 1 : a.pushed_at > b.pushed_at ? -1 : 0));
+  // Filter for curated repos specified: tiv, oha, bitzdots, hyprconfig, minegpt
+  const curated = data.filter((repo) =>
+    CURATED_REPO_NAMES.includes(repo.name.toLowerCase())
+  );
+
+  // Maintain consistent priority ordering: tiv, oha, bitzdots, hyprconfig, minegpt
+  return curated.sort((a, b) => {
+    const idxA = CURATED_REPO_NAMES.indexOf(a.name.toLowerCase());
+    const idxB = CURATED_REPO_NAMES.indexOf(b.name.toLowerCase());
+    return (idxA !== -1 ? idxA : 999) - (idxB !== -1 ? idxB : 999);
+  });
 }

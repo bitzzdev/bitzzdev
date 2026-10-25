@@ -48,30 +48,44 @@ export default function AsciiWorkGrid({ initialRepos }: { initialRepos: GithubRe
   }
 
   return (
-    <div className="grid">
-      {repos.map((repo, idx) => {
-        // Unique piece for each card without repetition
-        const sceneConfig =
-          idx < PROJECT_BANNER_CONFIGS.length
-            ? PROJECT_BANNER_CONFIGS[idx]
-            : PROJECT_BANNER_CONFIGS[idx % PROJECT_BANNER_CONFIGS.length];
+    <div className="work-wrap">
+      <div className="grid">
+        {repos.map((repo, idx) => {
+          // Unique piece for each card without repetition
+          const sceneConfig =
+            idx < PROJECT_BANNER_CONFIGS.length
+              ? PROJECT_BANNER_CONFIGS[idx]
+              : PROJECT_BANNER_CONFIGS[idx % PROJECT_BANNER_CONFIGS.length];
 
-        return (
-          <a
-            key={repo.id}
-            href={repo.html_url}
-            target="_blank"
-            rel="noreferrer"
-            className="card"
-          >
-            <div className="well scene">
-              <AsciiScene config={sceneConfig} label={sceneConfig.name} />
-            </div>
-            <span className="name">{repo.name.replace(/-/g, " ")}</span>
-            <span className="note">{repo.description || repo.language || "Public repository on GitHub"}</span>
-          </a>
-        );
-      })}
+          return (
+            <a
+              key={repo.id}
+              href={repo.html_url}
+              target="_blank"
+              rel="noreferrer"
+              className="card"
+            >
+              <div className="well scene">
+                <AsciiScene config={sceneConfig} label={sceneConfig.name} />
+              </div>
+              <span className="name">{repo.name.replace(/-/g, " ")}</span>
+              <span className="note">{repo.description || repo.language || "Public repository on GitHub"}</span>
+            </a>
+          );
+        })}
+      </div>
+
+      {/* View All Repositories on GitHub CTA */}
+      <div className="view-all-repos-wrap">
+        <a
+          href={`https://github.com/${GITHUB_USERNAME}?tab=repositories`}
+          target="_blank"
+          rel="noreferrer"
+          className="view-all-repos-btn"
+        >
+          <span>[view all repositories on github &rarr;]</span>
+        </a>
+      </div>
     </div>
   );
 }
