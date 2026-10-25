@@ -931,16 +931,14 @@ table.data-table td:first-child {
 
 :root[data-theme="dark"] .mini-skill-icon[src*="github"],
 :root[data-theme="dark"] .mini-skill-icon[src*="zed"],
-:root[data-theme="dark"] .mini-skill-icon[src*="fish"],
-:root[data-theme="dark"] .mini-skill-icon[src*="hyprland"] {
+:root[data-theme="dark"] .mini-skill-icon[src*="fish"] {
   filter: invert(1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .mini-skill-icon[src*="github"],
   :root:not([data-theme="light"]) .mini-skill-icon[src*="zed"],
-  :root:not([data-theme="light"]) .mini-skill-icon[src*="fish"],
-  :root:not([data-theme="light"]) .mini-skill-icon[src*="hyprland"] {
+  :root:not([data-theme="light"]) .mini-skill-icon[src*="fish"] {
     filter: invert(1);
   }
 }
