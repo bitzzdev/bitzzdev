@@ -133,76 +133,72 @@ export default async function Home() {
             </p>
 
             {/* Side-by-Side: me.png and Quick Info Card */}
-            <div className="about-hero-row">
-              <div className="about-image-column">
-                <AboutHalftoneImage />
-              </div>
+            {/* Interactive Halftone Reveal Effect for me.png */}
+            <AboutHalftoneImage />
 
-              <div className="about-dossier-column">
-                <div className="dossier-box">
-                  <p className="dossier-lead">
-                    <strong>Dev Borah</strong> (legal identity: <em>Bitupan Borah</em>) is a software developer and open-source creator from Lakhimpur, Assam, India. Dedicated to low-latency web platforms, Linux tooling, and systems programming.
-                  </p>
+            {/* Full-width Quick Info Dossier Box with Compact Skills */}
+            <div className="dossier-box">
+              <p className="dossier-lead">
+                <strong>Dev Borah</strong> (legal identity: <em>Bitupan Borah</em>) is a software developer and open-source creator from Lakhimpur, Assam, India. Dedicated to low-latency web platforms, Linux tooling, and systems programming.
+              </p>
 
-                  <div className="dossier-grid">
-                    <div className="dossier-item">
-                      <span className="dossier-label">Primary Name</span>
-                      <span className="dossier-val">Dev Borah</span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">Legal Name</span>
-                      <span className="dossier-val">Bitupan Borah</span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">Location</span>
-                      <span className="dossier-val">Lakhimpur, Assam, India</span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">Date of Birth</span>
-                      <span className="dossier-val">Aug 25, 2008 (25/08/2008)</span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">GitHub</span>
-                      <span className="dossier-val">
-                        <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">@bitzzdev</a>
-                      </span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">LinkedIn</span>
-                      <span className="dossier-val">
-                        <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">dev-borah-39a37242b</a>
-                      </span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">Instagram</span>
-                      <span className="dossier-val">
-                        <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a>
-                      </span>
-                    </div>
-                    <div className="dossier-item">
-                      <span className="dossier-label">Canonical Web</span>
-                      <span className="dossier-val">
-                        <a href="https://bitz.is-a.dev">bitz.is-a.dev</a>
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="dossier-edu">
-                    <span className="dossier-label">Academic Path</span>
-                    <div className="edu-entry">
-                      <span className="edu-badge">Completed Feb 2026</span>
-                      <span>High School &mdash; Lakhimpur, Assam, India</span>
-                    </div>
-                    <div className="edu-entry">
-                      <span className="edu-badge">Current Status</span>
-                      <span>Higher Secondary with Computer Science (CS) &mdash; Lakhimpur, Assam</span>
-                    </div>
-                  </div>
-
-                  {/* Compact Himon-style Skills inside Quick Info Card */}
-                  <MinimalSkillsList />
+              <div className="dossier-grid">
+                <div className="dossier-item">
+                  <span className="dossier-label">Primary Name</span>
+                  <span className="dossier-val">Dev Borah</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Legal Name</span>
+                  <span className="dossier-val">Bitupan Borah</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Location</span>
+                  <span className="dossier-val">Lakhimpur, Assam, India</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Date of Birth</span>
+                  <span className="dossier-val">Aug 25, 2008 (25/08/2008)</span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">GitHub</span>
+                  <span className="dossier-val">
+                    <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">@bitzzdev</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">LinkedIn</span>
+                  <span className="dossier-val">
+                    <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">dev-borah-39a37242b</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Instagram</span>
+                  <span className="dossier-val">
+                    <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">Canonical Web</span>
+                  <span className="dossier-val">
+                    <a href="https://bitz.is-a.dev">bitz.is-a.dev</a>
+                  </span>
                 </div>
               </div>
+
+              <div className="dossier-edu">
+                <span className="dossier-label">Academic Path</span>
+                <div className="edu-entry">
+                  <span className="edu-badge">Completed Feb 2026</span>
+                  <span>High School &mdash; Lakhimpur, Assam, India</span>
+                </div>
+                <div className="edu-entry">
+                  <span className="edu-badge">Current Status</span>
+                  <span>Higher Secondary with Computer Science (CS) &mdash; Lakhimpur, Assam</span>
+                </div>
+              </div>
+
+              {/* Compact Himon-style Skills inside Quick Info Card */}
+              <MinimalSkillsList />
             </div>
 
             <p className="muted">
