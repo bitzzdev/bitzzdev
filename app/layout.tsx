@@ -40,14 +40,52 @@ const personJsonLd = {
     "addressCountry": "India"
   },
   "url": CANONICAL_URL,
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "High School (Lakhimpur, Assam)",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lakhimpur",
+        "addressRegion": "Assam",
+        "addressCountry": "India"
+      }
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "High School Diploma / Secondary Education",
+      "name": "High School Completion (Completed Feb 2026)",
+      "dateCreated": "2026-02",
+      "recognizedBy": {
+        "@type": "EducationalOrganization",
+        "name": "Secondary Education Board, Lakhimpur, Assam, India"
+      }
+    }
+  ],
+  "affiliation": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Higher Secondary (Computer Science)",
+      "description": "Currently pursuing Higher Secondary education with Computer Science in Lakhimpur, Assam, India",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lakhimpur",
+        "addressRegion": "Assam",
+        "addressCountry": "India"
+      }
+    }
+  ],
   "image": `${CANONICAL_URL}/me.png`,
   "jobTitle": "Software Developer & Web Developer",
-  "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
+  "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India. Completed High School in Feb 2026 and currently pursuing Higher Secondary with Computer Science while specializing in high-performance web applications and systems engineering.",
   "sameAs": [
     "https://github.com/bitzzdev",
     "https://instagram.com/bitz.dev",
     "https://bitzzdev.vercel.app",
-    "https://bitzdev.vercel.app"
+    "https://bitzdev.vercel.app",
+    "https://www.linkedin.com/in/dev-borah-39a37242b"
   ],
   "knowsAbout": [
     "Software Development",
@@ -127,6 +165,10 @@ export const metadata: Metadata = {
     "next.js developer",
     "react developer",
     "open source creator",
+    "Dev Borah LinkedIn",
+    "Dev Borah Lakhimpur",
+    "Bitupan Borah Lakhimpur",
+    "software developer lakhimpur assam",
   ],
   authors: [{ name: "Dev Borah", url: CANONICAL_URL }],
   creator: "Dev Borah",

@@ -36,7 +36,8 @@
         "https://github.com/bitzzdev",
         "https://instagram.com/bitz.dev",
         "https://bitzzdev.vercel.app",
-        "https://bitzdev.vercel.app"
+        "https://bitzdev.vercel.app",
+        "https://www.linkedin.com/in/dev-borah-39a37242b"
       ],
       "knowsAbout": [
         "Software Development",
@@ -53,14 +54,55 @@
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://bitz.is-a.dev"
-      }
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "High School (Lakhimpur, Assam)",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lakhimpur",
+            "addressRegion": "Assam",
+            "addressCountry": "India"
+          }
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "High School Diploma / Secondary Education",
+          "name": "High School Completion",
+          "dateCreated": "2026-02",
+          "recognizedBy": {
+            "@type": "EducationalOrganization",
+            "name": "Secondary Education Board, Lakhimpur, Assam, India"
+          }
+        }
+      ],
+      "affiliation": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Higher Secondary with Computer Science",
+          "description": "Currently pursuing Higher Secondary education with specialization in Computer Science (CS) in Lakhimpur, Assam, India",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lakhimpur",
+            "addressRegion": "Assam",
+            "addressCountry": "India"
+          }
+        }
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://bitz.is-a.dev/#website",
       "url": "https://bitz.is-a.dev",
       "name": "bitz.is-a.dev — Dev Borah (Bitupan Borah)",
-      "alternateName": ["bitz.is-a.dev", "Dev Borah Portfolio", "Bitupan Borah Portfolio"],
+      "alternateName": [
+        "bitz.is-a.dev",
+        "Dev Borah Portfolio",
+        "Bitupan Borah Portfolio"
+      ],
       "description": "Official personal portfolio of Dev Borah (Bitupan Borah), software developer & web developer in Assam, India.",
       "publisher": {
         "@id": "https://bitz.is-a.dev/#person"

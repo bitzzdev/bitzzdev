@@ -45,6 +45,7 @@ export default async function Home() {
 
         <div className="asks">
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
+          <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">[linkedin]</a>
           <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
         </div>
@@ -77,6 +78,7 @@ export default async function Home() {
           <h1>Dev Borah (Bitupan Borah) — Software &amp; Web Developer</h1>
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
+            <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">[linkedin]</a>
             <ThemeToggle />
           </span>
         </div>
@@ -135,8 +137,10 @@ export default async function Home() {
               <div><strong>Primary / Professional Name:</strong> Dev Borah (Dev)</div>
               <div><strong>Legal / Alternate Name:</strong> Bitupan Borah</div>
               <div><strong>Born:</strong> August 25, 2008 (DOB: 25/08/2008)</div>
-              <div><strong>Origin &amp; Location:</strong> Assam, India</div>
+              <div><strong>Origin &amp; Location:</strong> Lakhimpur, Assam, India</div>
+              <div><strong>Education:</strong> High School (Completed Feb 2026, Lakhimpur, Assam) &bull; Currently Pursuing Higher Secondary with Computer Science (CS) in Lakhimpur</div>
               <div><strong>GitHub:</strong> <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">github.com/bitzzdev</a> (@bitzzdev)</div>
+              <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">linkedin.com/in/dev-borah-39a37242b</a></div>
               <div><strong>Instagram:</strong> <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">@bitz.dev</a></div>
               <div><strong>Official Site:</strong> <a href="https://bitz.is-a.dev">https://bitz.is-a.dev</a></div>
               <div><strong>Specialization:</strong> Software &amp; Web Development, Open Source, Frontend Engineering &amp; Web Performance</div>
@@ -323,6 +327,7 @@ export default async function Home() {
           </div>
           <div className="foot-links">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
+            <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">[linkedin]</a>
             <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
             <a href="#work">[top]</a>
