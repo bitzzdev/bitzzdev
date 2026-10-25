@@ -231,6 +231,21 @@ a:focus-visible, .button:focus-visible > span {
   word-break: break-word;
 }
 
+@media (hover: hover) {
+  .side nav ul a:hover {
+    background: var(--ink);
+    color: var(--bg);
+    outline: 1px solid var(--ink);
+  }
+}
+
+.side nav ul a:focus-visible {
+  background: var(--ink);
+  color: var(--bg);
+  outline: 1px dotted var(--ink);
+  outline-offset: 2px;
+}
+
 .side nav ul a.active {
   background: var(--ink);
   color: var(--bg);
