@@ -87,10 +87,11 @@ export default async function Home() {
         {/* Big ascii hero banner */}
         <div className="hero-link">
           <div
-            className="well big"
+            className="well big hero-well"
             style={{
-              "--cols": 66,
-              "--rows": 16,
+              "--cols": 200,
+              "--rows": 100,
+              "--cell": 1,
             } as React.CSSProperties}
           >
             <CpuAsciiArt />

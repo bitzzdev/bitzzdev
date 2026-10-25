@@ -327,6 +327,36 @@ a:focus-visible, .button:focus-visible > span {
   container-type: inline-size;
 }
 
+.well.hero-well {
+  aspect-ratio: calc(200 / 100) !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  background: #0b0a16 !important;
+  border: 1px solid var(--border);
+}
+
+.well.hero-well > div,
+.well.hero-well .hero-scene {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  position: relative !important;
+}
+
+.well.hero-well canvas {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 2 / 1 !important;
+  display: block !important;
+  object-fit: cover !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 pre.art,
 .well pre,
 .well pre.art {

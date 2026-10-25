@@ -1,13 +1,19 @@
 "use client";
 
-import { Ascii } from "ascii.rest/react";
-import { kyotoDusk } from "ascii.rest/pieces";
+import AsciiScene from "@/components/AsciiScene";
+
+const HERO_CONFIG = {
+  name: "kyoto dusk",
+  slug: "kyoto-dusk",
+  load: () => import("@/lib/ascii-pieces/kyoto-dusk.js"),
+};
 
 export default function CpuAsciiArt() {
   return (
-    <Ascii
-      piece={kyotoDusk}
-      className="art"
+    <AsciiScene
+      config={HERO_CONFIG}
+      label="kyoto dusk"
+      className="hero-scene"
     />
   );
 }
