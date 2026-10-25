@@ -25,6 +25,7 @@
       },
       "address": {
         "@type": "PostalAddress",
+        "addressLocality": "Lakhimpur",
         "addressRegion": "Assam",
         "addressCountry": "India"
       },
@@ -95,6 +96,43 @@
             "addressRegion": "Assam",
             "addressCountry": "India"
           }
+        }
+      ],
+      "creator": [
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "NexUI",
+          "codeRepository": "https://github.com/bitzzdev/NexUI",
+          "programmingLanguage": "Java",
+          "description": "Customizable modern HUD and dynamic UI ecosystem for Minecraft."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "tiv",
+          "codeRepository": "https://github.com/bitzzdev/tiv",
+          "programmingLanguage": "C",
+          "description": "Minimal GTK-based GUI image viewer for Linux with keyboard navigation."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "oha",
+          "codeRepository": "https://github.com/bitzzdev/oha",
+          "programmingLanguage": "C",
+          "description": "Terminal-based fullscreen text editor written in C with syntax highlighting."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "bitzdots",
+          "codeRepository": "https://github.com/bitzzdev/bitzzdev",
+          "programmingLanguage": "Shell",
+          "description": "Lean Arch Linux Hyprland dotfiles with automatic wallust theming."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "MineGPT",
+          "codeRepository": "https://github.com/bitzzdev/MineGPT",
+          "programmingLanguage": "Java",
+          "description": "In-game AI assistant for Minecraft supporting multi-provider LLMs."
         }
       ]
     },

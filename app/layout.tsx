@@ -36,6 +36,7 @@ const personJsonLd = {
   },
   "address": {
     "@type": "PostalAddress",
+    "addressLocality": "Lakhimpur",
     "addressRegion": "Assam",
     "addressCountry": "India"
   },
@@ -86,6 +87,43 @@ const personJsonLd = {
     "https://bitzzdev.vercel.app",
     "https://bitzdev.vercel.app",
     "https://www.linkedin.com/in/dev-borah-39a37242b"
+  ],
+  "creator": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "NexUI",
+      "codeRepository": "https://github.com/bitzzdev/NexUI",
+      "programmingLanguage": "Java",
+      "description": "Customizable modern HUD and dynamic UI ecosystem for Minecraft."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "tiv",
+      "codeRepository": "https://github.com/bitzzdev/tiv",
+      "programmingLanguage": "C",
+      "description": "Minimal GTK-based GUI image viewer for Linux with keyboard navigation."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "oha",
+      "codeRepository": "https://github.com/bitzzdev/oha",
+      "programmingLanguage": "C",
+      "description": "Terminal-based fullscreen text editor written in C with syntax highlighting."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "bitzdots",
+      "codeRepository": "https://github.com/bitzzdev/bitzzdev",
+      "programmingLanguage": "Shell",
+      "description": "Lean Arch Linux Hyprland dotfiles with automatic wallust theming."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "MineGPT",
+      "codeRepository": "https://github.com/bitzzdev/MineGPT",
+      "programmingLanguage": "Java",
+      "description": "In-game AI assistant for Minecraft supporting multi-provider LLMs."
+    }
   ],
   "knowsAbout": [
     "C++",
@@ -150,7 +188,7 @@ export const metadata: Metadata = {
     template: "%s | Dev Borah",
   },
   description:
-    "Official website of Dev Borah (Bitupan Borah / @bitz.dev / @bitzzdev), a software developer and open-source creator from Assam, India building high-performance web applications.",
+    "Official website and developer portfolio of Dev Borah (Bitupan Borah / @bitz.dev / @bitzzdev) — software developer and open-source creator from Lakhimpur, Assam, India. Creator of NexUI, tiv, and oha; specialized in C, C++, Python, JavaScript, and Linux.",
   keywords: [
     "Bitupan Borah",
     "Dev Borah",
@@ -174,6 +212,18 @@ export const metadata: Metadata = {
     "Dev Borah Lakhimpur",
     "Bitupan Borah Lakhimpur",
     "software developer lakhimpur assam",
+    "Dev Borah NexUI",
+    "Bitupan Borah NexUI",
+    "Dev Borah projects",
+    "Bitupan Borah projects",
+    "tiv image viewer",
+    "oha text editor",
+    "bitzdots hyprland",
+    "hyprconfig",
+    "C developer Lakhimpur",
+    "C++ developer India",
+    "Linux developer Assam",
+    "systems developer India",
   ],
   authors: [{ name: "Dev Borah", url: CANONICAL_URL }],
   creator: "Dev Borah",

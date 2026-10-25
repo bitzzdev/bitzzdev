@@ -82,9 +82,9 @@ bitz@archlinux ~ $ fastfetch --pipe
 <div align="center">
 
 ```text
-[LANGUAGES]    TypeScript  •  JavaScript  •  Java  •  Kotlin  •  Python  •  Bash  •  GLSL
-[FRAMEWORKS]   Next.js 15  •  React 19    •  Node.js •  TailwindCSS  •  Fabric API
-[ECOSYSTEM]    Arch Linux  •  Hyprland    •  Docker  •  Git / GitHub •  Vercel
+[LANGUAGES]    C++  •  C  •  Python  •  JavaScript  •  TypeScript  •  Bash
+[SYSTEMS & OS] Arch Linux  •  Linux Kernel  •  Hyprland  •  Fish Shell
+[DEV & TOOLS]  Zed Editor  •  Neovim  •  Git  •  GitHub  •  Next.js
 ```
 
 <br>
