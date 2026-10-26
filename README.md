@@ -26,7 +26,7 @@
 [![Website](https://img.shields.io/badge/PORTFOLIO-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev/)
 [![GitHub](https://img.shields.io/badge/GITHUB-bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-dev--borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/dev-borah-39a37242b)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-dev--borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/bitzzdev/)
 [![Profile Views](https://komarev.com/ghpvc/?username=bitzzdev&style=for-the-badge&color=000000&labelColor=111111&label=SYS_HITS)](https://github.com/bitzzdev)
 
 </div>
@@ -69,7 +69,7 @@ bitz@archlinux ~ $ fastfetch --pipe
 │ Canonical Website         │ https://bitz.is-a.dev                                  │
 │ Location                  │ Lakhimpur, Assam, India                                │
 │ Education                 │ High School (Feb 2026) • HS (Computer Science) Pursuing│
-│ LinkedIn                  │ https://www.linkedin.com/in/dev-borah-39a37242b        │
+│ LinkedIn                  │ https://www.linkedin.com/in/bitzzdev/        │
 │ Core Competencies         │ Full-Stack Web, Systems Tooling, UI/UX, Performance    │
 │ Primary Focus             │ Developer Experience, Low-Latency Web, Native Mods     │
 └───────────────────────────┴────────────────────────────────────────────────────────┘
@@ -195,7 +195,7 @@ Have an inquiry, an open-source collaboration idea, or an interesting engineerin
 [![Official Website](https://img.shields.io/badge/Website-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-@bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
 [![Instagram](https://img.shields.io/badge/Instagram-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dev_Borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/dev-borah-39a37242b)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dev_Borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/bitzzdev/)
 
 <br><br>
 

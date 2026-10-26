@@ -46,7 +46,7 @@ export default async function Home() {
 
         <div className="asks">
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
-          <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">[linkedin]</a>
+          <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
           <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
         </div>
@@ -79,7 +79,7 @@ export default async function Home() {
           <h1>Dev Borah (Bitupan Borah) — Software &amp; Web Developer</h1>
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
-            <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">[linkedin]</a>
+            <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
             <ThemeToggle />
           </span>
         </div>
@@ -169,7 +169,7 @@ export default async function Home() {
                 <div className="dossier-item">
                   <span className="dossier-label">LinkedIn</span>
                   <span className="dossier-val">
-                    <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">dev-borah-39a37242b</a>
+                    <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">bitzzdev</a>
                   </span>
                 </div>
                 <div className="dossier-item">
@@ -386,7 +386,7 @@ export default async function Home() {
           </div>
           <div className="foot-links">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
-            <a href="https://www.linkedin.com/in/dev-borah-39a37242b" target="_blank" rel="noreferrer">[linkedin]</a>
+            <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
             <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
             <a href="#work">[top]</a>

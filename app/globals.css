@@ -234,16 +234,19 @@ a:focus-visible, .button:focus-visible > span {
 
 @media (hover: hover) {
   .side .asks a:hover {
-    background: var(--ink);
-    color: var(--bg);
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    outline: 1px solid var(--ink);
+    text-decoration-line: none;
   }
 }
 
 .side .asks a:focus-visible {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--ink) !important;
+  color: var(--bg) !important;
   outline: 1px dotted var(--ink);
   outline-offset: 2px;
+  text-decoration-line: none;
 }
 
 .side nav {
