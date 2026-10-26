@@ -501,11 +501,21 @@ pre.art,
 }
 
 /* ═══ TABLES / METRICS ═══ */
+.table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 table.data-table {
   width: 100%;
   border-collapse: collapse;
   margin: 1.5rem 0;
   font-size: 0.875rem;
+  table-layout: auto;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 table.data-table th,
@@ -513,8 +523,8 @@ table.data-table td {
   border-bottom: 1px dotted var(--muted);
   text-align: left;
   vertical-align: top;
-  padding: 0.65rem 1.5rem 0.65rem 0;
-  line-height: 1.6;
+  padding: 0.65rem 1rem 0.65rem 0;
+  line-height: 1.55;
 }
 
 table.data-table th {
@@ -529,6 +539,59 @@ table.data-table td:first-child {
   color: var(--ink);
   font-weight: 500;
   white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  table.data-table {
+    display: block;
+    width: 100%;
+    margin: 1.25rem 0;
+  }
+
+  table.data-table thead {
+    display: none;
+  }
+
+  table.data-table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  table.data-table tr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.85rem 1rem;
+    background: var(--well);
+    border: 1px solid var(--border);
+  }
+
+  table.data-table td {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  table.data-table td:first-child {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+  }
+
+  table.data-table td:nth-child(2) {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0.15rem 0 0.35rem;
+  }
+
+  table.data-table td:nth-child(3) {
+    font-size: 0.8125rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
 }
 
 /* ═══ SERVICES LIST ═══ */

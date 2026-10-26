@@ -298,7 +298,8 @@ export default async function Home() {
             <h2>performance benchmarks</h2>
             <span className="count">verified stats</span>
           </div>
-          <table className="data-table">
+          <div className="table-wrap">
+            <table className="data-table">
             <thead>
               <tr>
                 <th>metric</th>
@@ -328,7 +329,8 @@ export default async function Home() {
                 <td>Direct communication channels, rapid iteration cycles.</td>
               </tr>
             </tbody>
-          </table>
+            </table>
+          </div>
         </section>
 
         {/* ═══ TESTIMONIALS SECTION ═══ */}
