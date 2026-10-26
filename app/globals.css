@@ -232,6 +232,20 @@ a:focus-visible, .button:focus-visible > span {
   color: var(--muted);
 }
 
+@media (hover: hover) {
+  .side .asks a:hover {
+    background: var(--ink);
+    color: var(--bg);
+  }
+}
+
+.side .asks a:focus-visible {
+  background: var(--ink);
+  color: var(--bg);
+  outline: 1px dotted var(--ink);
+  outline-offset: 2px;
+}
+
 .side nav {
   display: flex;
   flex-direction: column;
