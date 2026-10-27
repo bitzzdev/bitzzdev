@@ -107,7 +107,8 @@ const personJsonLd = {
     "https://instagram.com/bitz.dev",
     "https://bitzzdev.vercel.app",
     "https://bitzdev.vercel.app",
-    "https://www.linkedin.com/in/bitzzdev/"
+    "https://www.linkedin.com/in/bitzzdev/",
+    "https://orcid.org/0009-0004-2013-2999"
   ],
   "creator": [
     {

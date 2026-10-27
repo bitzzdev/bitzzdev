@@ -47,6 +47,7 @@ export default async function Home() {
         <div className="asks">
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
           <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
+          <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
           <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
         </div>
@@ -80,6 +81,7 @@ export default async function Home() {
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
+            <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
             <ThemeToggle />
           </span>
         </div>
@@ -170,6 +172,12 @@ export default async function Home() {
                   <span className="dossier-label">LinkedIn</span>
                   <span className="dossier-val">
                     <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">bitzzdev</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">ORCID</span>
+                  <span className="dossier-val">
+                    <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">0009-0004-2013-2999</a>
                   </span>
                 </div>
                 <div className="dossier-item">
@@ -387,6 +395,7 @@ export default async function Home() {
           <div className="foot-links">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
+            <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
             <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
             <a href="#work">[top]</a>
