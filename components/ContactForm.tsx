@@ -20,7 +20,7 @@ export default function ContactForm() {
       `Hi Dev,\n\n${message}\n\n---\nSender: ${name}\nEmail: ${email}`
     );
 
-    const mailtoUrl = `mailto:bitupanborah1k@gmail.com?subject=${subject}&body=${bodyContent}`;
+    const mailtoUrl = `mailto:bitzzdev@gmail.com?subject=${subject}&body=${bodyContent}`;
 
     window.location.href = mailtoUrl;
     setStatus("success");

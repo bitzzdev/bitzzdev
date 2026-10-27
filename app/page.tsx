@@ -48,7 +48,7 @@ export default async function Home() {
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
           <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
           <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
-          <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
+          <a href="mailto:bitzzdev@gmail.com">[email]</a>
           <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
         </div>
 
@@ -382,7 +382,7 @@ export default async function Home() {
           </div>
           <p className="muted" style={{ marginBottom: "1rem" }}>
             Have a project in mind, an existing codebase in need of optimization, or a contract to discuss?
-            Transmit your briefing below or ping directly at <a href="mailto:bitupanborah1k@gmail.com">bitupanborah1k@gmail.com</a>.
+            Transmit your briefing below or ping directly at <a href="mailto:bitzzdev@gmail.com">bitzzdev@gmail.com</a>.
           </p>
           <ContactForm />
         </section>
@@ -396,7 +396,7 @@ export default async function Home() {
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
             <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
             <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
-            <a href="mailto:bitupanborah1k@gmail.com">[email]</a>
+            <a href="mailto:bitzzdev@gmail.com">[email]</a>
             <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">[instagram]</a>
             <a href="#work">[top]</a>
           </div>

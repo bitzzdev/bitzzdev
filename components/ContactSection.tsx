@@ -20,7 +20,7 @@ export default function ContactSection() {
     }
     const subject = encodeURIComponent(`New Project Inquiry: ${project}`);
     const body = encodeURIComponent(`Name: ${name}\n\nEmail: ${email}\n\nProject Type: ${project}\n\nMessage:\n${message}`);
-    window.open(`mailto:bitupanborah1k@gmail.com?subject=${subject}&body=${body}`, "_blank");
+    window.open(`mailto:bitzzdev@gmail.com?subject=${subject}&body=${body}`, "_blank");
     form.reset();
     setSuccess(true);
     setTimeout(() => setSuccess(false), 5000);
@@ -49,7 +49,7 @@ export default function ContactSection() {
               <div>
                 <div className="contact-label">Email</div>
                 <div className="contact-value">
-                  <a href="mailto:bitupanborah1k@gmail.com">bitupanborah1k@gmail.com</a>
+                  <a href="mailto:bitzzdev@gmail.com">bitzzdev@gmail.com</a>
                 </div>
               </div>
             </div>
