@@ -133,15 +133,16 @@ a, .button > span {
 
 @media (hover: hover) {
   a:hover, .button:hover > span {
-    background: var(--ink);
-    color: var(--bg);
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    outline: 1px solid var(--ink);
     text-decoration-line: none;
   }
 }
 
 a:focus-visible, .button:focus-visible > span {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--ink) !important;
+  color: var(--bg) !important;
   outline: 1px dotted var(--ink);
   outline-offset: 2px;
   text-decoration-line: none;
@@ -218,6 +219,23 @@ a:focus-visible, .button:focus-visible > span {
   gap: 0.25rem 2ch;
   margin: 0.75rem 0 2rem;
   font-size: 0.875em;
+}
+
+@media (hover: hover) {
+  .side .quick-links a:hover {
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    outline: 1px solid var(--ink);
+    text-decoration-line: none;
+  }
+}
+
+.side .quick-links a:focus-visible {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  outline: 1px dotted var(--ink);
+  outline-offset: 2px;
+  text-decoration-line: none;
 }
 
 .side .asks {
@@ -330,6 +348,23 @@ a:focus-visible, .button:focus-visible > span {
   color: var(--muted);
 }
 
+@media (hover: hover) {
+  .notice .go:hover {
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    outline: 1px solid var(--ink);
+    text-decoration-line: none;
+  }
+}
+
+.notice .go:focus-visible {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  outline: 1px dotted var(--ink);
+  outline-offset: 2px;
+  text-decoration-line: none;
+}
+
 .top {
   display: flex;
   align-items: baseline;
@@ -350,6 +385,23 @@ a:focus-visible, .button:focus-visible > span {
   align-items: center;
   gap: 2ch;
   font-size: 0.875rem;
+}
+
+@media (hover: hover) {
+  .top .tools a:hover {
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    outline: 1px solid var(--ink);
+    text-decoration-line: none;
+  }
+}
+
+.top .tools a:focus-visible {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  outline: 1px dotted var(--ink);
+  outline-offset: 2px;
+  text-decoration-line: none;
 }
 
 /* ═══ HERO / WELL ═══ */
@@ -731,6 +783,23 @@ table.data-table td:first-child {
   display: flex;
   gap: 2ch;
   flex-wrap: wrap;
+}
+
+@media (hover: hover) {
+  .foot-links a:hover {
+    background: var(--ink) !important;
+    color: var(--bg) !important;
+    outline: 1px solid var(--ink);
+    text-decoration-line: none;
+  }
+}
+
+.foot-links a:focus-visible {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  outline: 1px dotted var(--ink);
+  outline-offset: 2px;
+  text-decoration-line: none;
 }
 
 /* ═══ ABOUT HALFTONE IMAGE ═══ */
