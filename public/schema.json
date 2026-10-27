@@ -15,6 +15,7 @@
       ],
       "birthDate": "2008-08-25",
       "gender": "Male",
+      "email": "bitzzdev@gmail.com",
       "nationality": {
         "@type": "Country",
         "name": "India"
@@ -32,7 +33,7 @@
       "url": "https://bitz.is-a.dev",
       "image": "https://bitz.is-a.dev/me.png",
       "jobTitle": "Software Developer & Web Developer",
-      "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Assam, India specializing in high-performance web applications and systems engineering.",
+      "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India. Completed High School in Feb 2026 and currently pursuing Higher Secondary with Computer Science while specializing in high-performance web applications and systems engineering.",
       "sameAs": [
         "https://github.com/bitzzdev",
         "https://instagram.com/bitz.dev",
@@ -42,10 +43,14 @@
         "https://orcid.org/0009-0004-2013-2999"
       ],
       "knowsAbout": [
+        "TypeScript",
+        "Next.js",
+        "React",
         "C++",
         "C (Programming Language)",
         "Python",
         "JavaScript",
+        "Java",
         "Arch Linux",
         "Linux",
         "Hyprland",
@@ -56,7 +61,8 @@
         "Git",
         "GitHub",
         "Systems Programming",
-        "Command Line Interface (CLI)"
+        "Command Line Interface (CLI)",
+        "Web Performance Optimization"
       ],
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -78,7 +84,7 @@
         {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "High School Diploma / Secondary Education",
-          "name": "High School Completion",
+          "name": "High School Completion (Completed Feb 2026)",
           "dateCreated": "2026-02",
           "recognizedBy": {
             "@type": "EducationalOrganization",
@@ -89,8 +95,8 @@
       "affiliation": [
         {
           "@type": "EducationalOrganization",
-          "name": "Higher Secondary with Computer Science",
-          "description": "Currently pursuing Higher Secondary education with specialization in Computer Science (CS) in Lakhimpur, Assam, India",
+          "name": "Higher Secondary (Computer Science)",
+          "description": "Currently pursuing Higher Secondary education with Computer Science in Lakhimpur, Assam, India",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Lakhimpur",
@@ -134,6 +140,13 @@
           "codeRepository": "https://github.com/bitzzdev/MineGPT",
           "programmingLanguage": "Java",
           "description": "In-game AI assistant for Minecraft supporting multi-provider LLMs."
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "name": "hyprconfig",
+          "codeRepository": "https://github.com/bitzzdev/hyprconfig",
+          "programmingLanguage": "Shell",
+          "description": "Dynamic Arch Linux Hyprland workstation configuration and tooling."
         }
       ]
     },
@@ -152,6 +165,18 @@
         "@id": "https://bitz.is-a.dev/#person"
       },
       "inLanguage": "en"
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://bitz.is-a.dev/#profilepage",
+      "url": "https://bitz.is-a.dev",
+      "name": "Dev Borah (Bitupan Borah) — Software Developer Profile",
+      "isPartOf": {
+        "@id": "https://bitz.is-a.dev/#website"
+      },
+      "mainEntity": {
+        "@id": "https://bitz.is-a.dev/#person"
+      }
     }
   ]
 }

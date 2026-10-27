@@ -32,8 +32,8 @@ const paperMono = localFont({
 
 const CANONICAL_URL = "https://bitz.is-a.dev";
 
+// Remove @context from individual nodes when bundled inside schemaGraph @graph
 const personJsonLd = {
-  "@context": "https://schema.org",
   "@type": "Person",
   "@id": `${CANONICAL_URL}/#person`,
   "name": "Bitupan Borah",
@@ -100,6 +100,7 @@ const personJsonLd = {
     }
   ],
   "image": `${CANONICAL_URL}/me.png`,
+  "email": "bitzzdev@gmail.com",
   "jobTitle": "Software Developer & Web Developer",
   "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India. Completed High School in Feb 2026 and currently pursuing Higher Secondary with Computer Science while specializing in high-performance web applications and systems engineering.",
   "sameAs": [
@@ -145,13 +146,24 @@ const personJsonLd = {
       "codeRepository": "https://github.com/bitzzdev/MineGPT",
       "programmingLanguage": "Java",
       "description": "In-game AI assistant for Minecraft supporting multi-provider LLMs."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "hyprconfig",
+      "codeRepository": "https://github.com/bitzzdev/hyprconfig",
+      "programmingLanguage": "Shell",
+      "description": "Dynamic Arch Linux Hyprland workstation configuration and tooling."
     }
   ],
   "knowsAbout": [
+    "TypeScript",
+    "Next.js",
+    "React",
     "C++",
     "C (Programming Language)",
     "Python",
     "JavaScript",
+    "Java",
     "Arch Linux",
     "Linux",
     "Hyprland",
@@ -162,7 +174,8 @@ const personJsonLd = {
     "Git",
     "GitHub",
     "Systems Programming",
-    "Command Line Interface (CLI)"
+    "Command Line Interface (CLI)",
+    "Web Performance Optimization"
   ],
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -171,7 +184,6 @@ const personJsonLd = {
 };
 
 const websiteJsonLd = {
-  "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${CANONICAL_URL}/#website`,
   "url": CANONICAL_URL,
@@ -185,7 +197,6 @@ const websiteJsonLd = {
 };
 
 const profilePageJsonLd = {
-  "@context": "https://schema.org",
   "@type": "ProfilePage",
   "@id": `${CANONICAL_URL}/#profilepage`,
   "url": CANONICAL_URL,
