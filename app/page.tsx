@@ -14,25 +14,15 @@ export default async function Home() {
       {/* ═══ SIDEBAR ═══ */}
       <aside className="side">
         <a className="brand" href="/">
-          bitz.is-a.dev
+          Bitz
         </a>
         <p className="by">
           by{" "}
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">
-            @bitzzdev
+            Dev Borah
           </a>
-          /
-          <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">
-            @bitz.dev
-          </a>
-          /
-          <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">
-            Dev
-          </a>
-          /
-          <a href="https://instagram.com/bitz.dev" target="_blank" rel="noreferrer">
-            Bitupan
-          </a>
+          {" "}
+          <span className="muted">(@bitzzdev)</span>
         </p>
 
         <div className="quick-links">
@@ -350,7 +340,7 @@ export default async function Home() {
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
             <div className="quote-box">
               <p>
-                &ldquo;Bitupan&apos;s work was exceptional. He rewrote our entire web interface using custom-tailored elements.
+                &ldquo;Dev&apos;s work was exceptional. He rewrote our entire web interface using custom-tailored elements.
                 Our loading speeds went from 4.2 seconds to under 0.8 seconds, and organic checkouts spiked by 35% within the first month itself.&rdquo;
               </p>
               <div className="quote-author">— Johnathan S., SaaS Founder, Austin TX</div>
@@ -366,7 +356,7 @@ export default async function Home() {
 
             <div className="quote-box">
               <p>
-                &ldquo;Professional, transparent, and incredibly fast. Bitupan delivered a complex dashboard architecture
+                &ldquo;Professional, transparent, and incredibly fast. Dev delivered a complex dashboard architecture
                 in half the estimated time without compromising a single feature.&rdquo;
               </p>
               <div className="quote-author">— Marcus Thorne, CTO, FinTech Global</div>

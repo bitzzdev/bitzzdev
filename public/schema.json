@@ -4,12 +4,13 @@
     {
       "@type": "Person",
       "@id": "https://bitz.is-a.dev/#person",
-      "name": "Bitupan Borah",
-      "givenName": "Bitupan",
+      "name": "Dev Borah",
+      "givenName": "Dev",
       "familyName": "Borah",
+      "additionalName": "Bitupan",
       "alternateName": [
-        "Dev Borah",
-        "Dev",
+        "Bitupan Borah",
+        "Bitz",
         "bitz.dev",
         "bitzzdev"
       ],
@@ -33,14 +34,12 @@
       "url": "https://bitz.is-a.dev",
       "image": "https://bitz.is-a.dev/me.png",
       "jobTitle": "Software Developer & Web Developer",
-      "description": "Dev Borah (Bitupan Borah), also known as @bitz.dev and @bitzzdev, is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India. Completed High School in Feb 2026 and currently pursuing Higher Secondary with Computer Science while specializing in high-performance web applications and systems engineering.",
+      "description": "Dev Borah (legal name Bitupan Borah, known online as Bitz, @bitz.dev, and @bitzzdev) is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India.",
       "sameAs": [
         "https://github.com/bitzzdev",
-        "https://instagram.com/bitz.dev",
-        "https://bitzzdev.vercel.app",
-        "https://bitzdev.vercel.app",
         "https://www.linkedin.com/in/bitzzdev/",
-        "https://orcid.org/0009-0004-2013-2999"
+        "https://orcid.org/0009-0004-2013-2999",
+        "https://instagram.com/bitz.dev"
       ],
       "knowsAbout": [
         "TypeScript",
@@ -65,8 +64,8 @@
         "Web Performance Optimization"
       ],
       "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://bitz.is-a.dev"
+        "@type": "ProfilePage",
+        "@id": "https://bitz.is-a.dev/#profilepage"
       },
       "alumniOf": [
         {
@@ -151,16 +150,30 @@
       ]
     },
     {
+      "@type": "Brand",
+      "@id": "https://bitz.is-a.dev/#brand",
+      "name": "Bitz",
+      "alternateName": [
+        "bitz.dev",
+        "bitzzdev"
+      ],
+      "url": "https://bitz.is-a.dev",
+      "logo": "https://bitz.is-a.dev/favicon.png",
+      "founder": {
+        "@id": "https://bitz.is-a.dev/#person"
+      }
+    },
+    {
       "@type": "WebSite",
       "@id": "https://bitz.is-a.dev/#website",
       "url": "https://bitz.is-a.dev",
-      "name": "bitz.is-a.dev — Dev Borah (Bitupan Borah)",
+      "name": "Bitz — Dev Borah",
       "alternateName": [
         "bitz.is-a.dev",
         "Dev Borah Portfolio",
         "Bitupan Borah Portfolio"
       ],
-      "description": "Official personal portfolio of Dev Borah (Bitupan Borah), software developer & web developer in Assam, India.",
+      "description": "Official personal website and developer portfolio of Dev Borah (Bitupan Borah), software developer & web developer.",
       "publisher": {
         "@id": "https://bitz.is-a.dev/#person"
       },
@@ -170,9 +183,12 @@
       "@type": "ProfilePage",
       "@id": "https://bitz.is-a.dev/#profilepage",
       "url": "https://bitz.is-a.dev",
-      "name": "Dev Borah (Bitupan Borah) — Software Developer Profile",
+      "name": "Dev Borah (Bitupan Borah) — Software & Web Developer",
       "isPartOf": {
         "@id": "https://bitz.is-a.dev/#website"
+      },
+      "about": {
+        "@id": "https://bitz.is-a.dev/#person"
       },
       "mainEntity": {
         "@id": "https://bitz.is-a.dev/#person"

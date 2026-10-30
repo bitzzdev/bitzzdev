@@ -10,7 +10,7 @@ export default function AboutHalftoneImage() {
   return (
     <figure
       className="about-image-wrap"
-      aria-label="Portrait of Bitupan Borah (Dev Borah)"
+      aria-label="Portrait of Dev Borah (Bitupan Borah)"
     >
       <div className="about-image-card">
         <HalftoneReveal
@@ -27,7 +27,7 @@ export default function AboutHalftoneImage() {
         <noscript>
           <img
             src="/me.png"
-            alt="Bitupan Borah (Dev Borah) — Software & Web Developer"
+            alt="Dev Borah (Bitupan Borah) — Software & Web Developer"
             width={460}
             height={460}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -35,7 +35,7 @@ export default function AboutHalftoneImage() {
         </noscript>
       </div>
       <figcaption className="sr-only">
-        Portrait photograph of software developer Bitupan Borah (Dev Borah)
+        Portrait photograph of software developer Dev Borah (Bitupan Borah)
       </figcaption>
     </figure>
   );

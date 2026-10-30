@@ -7,12 +7,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/",
       },
-      {
-        userAgent: "Googlebot",
-        allow: "/",
-      },
     ],
     sitemap: "https://bitz.is-a.dev/sitemap.xml",
-    host: "https://bitz.is-a.dev",
   };
 }
