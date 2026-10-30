@@ -1,10 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    if (status === "success") {
+      const timer = setTimeout(() => {
+        setStatus("idle");
+      }, 3500);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,6 +33,7 @@ export default function ContactForm() {
 
     window.location.href = mailtoUrl;
     setStatus("success");
+    form.reset();
   };
 
   return (
