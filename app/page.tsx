@@ -14,7 +14,7 @@ export default async function Home() {
       {/* ═══ SIDEBAR ═══ */}
       <aside className="side">
         <a className="brand" href="/">
-          Bitz
+          bitz.is-a.dev/
         </a>
         <p className="by">
           by{" "}
