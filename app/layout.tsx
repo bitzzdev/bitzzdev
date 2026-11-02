@@ -170,6 +170,7 @@ const personJsonLd = {
     "Hyprland",
     "Fish Shell",
     "Bash Scripting",
+    "Google Cloud Shell",
     "Zed Editor",
     "Neovim",
     "Git",

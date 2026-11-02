@@ -85,7 +85,7 @@ bitz@archlinux ~ $ fastfetch --pipe
 
 ```text
 [LANGUAGES]    C++  •  C  •  Python  •  JavaScript  •  TypeScript  •  Bash
-[SYSTEMS & OS] Arch Linux  •  Linux Kernel  •  Hyprland  •  Fish Shell
+[SYSTEMS & OS] Arch Linux  •  Linux Kernel  •  Hyprland  •  Fish Shell  •  Google Cloud Shell
 [DEV & TOOLS]  Zed Editor  •  Neovim  •  Git  •  GitHub  •  Next.js
 ```
 
