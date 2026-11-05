@@ -108,6 +108,8 @@ const personJsonLd = {
   "description": "Dev Borah (legal name Bitupan Borah, known online as Bitz, @bitz.dev, and @bitzzdev) is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India.",
   "sameAs": [
     "https://github.com/bitzzdev",
+    "https://x.com/bitzzdev",
+    "https://twitter.com/bitzzdev",
     "https://www.linkedin.com/in/bitzzdev/",
     "https://orcid.org/0009-0004-2013-2999",
     "https://instagram.com/bitz.dev"
@@ -272,6 +274,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@bitzzdev",
+    creator: "@bitzzdev",
     title: "Dev Borah (Bitupan Borah) — Software & Web Developer",
     description:
       "Official portfolio of Dev Borah (Bitupan Borah / @bitz.dev / @bitzzdev) — software developer in Assam, India.",

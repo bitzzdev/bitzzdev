@@ -25,6 +25,7 @@
 
 [![Website](https://img.shields.io/badge/PORTFOLIO-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev/)
 [![GitHub](https://img.shields.io/badge/GITHUB-bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
+[![X](https://img.shields.io/badge/X-@bitzzdev-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=111111)](https://x.com/bitzzdev)
 [![Instagram](https://img.shields.io/badge/INSTAGRAM-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-dev--borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/bitzzdev/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--2013--2999-000000?style=for-the-badge&logo=orcid&logoColor=white&labelColor=111111)](https://orcid.org/0009-0004-2013-2999)
@@ -66,7 +67,7 @@ bitz@archlinux ~ $ fastfetch --pipe
 ├───────────────────────────┼────────────────────────────────────────────────────────┤
 │ Primary Name              │ Dev Borah                                              │
 │ Legal / Alternate Name    │ Bitupan Borah                                          │
-│ Online Handles            │ @bitz.dev (Instagram) • @bitzzdev (GitHub)            │
+│ Online Handles            │ @bitzzdev (X/GitHub) • @bitz.dev (Instagram)           │
 │ Canonical Website         │ https://bitz.is-a.dev                                  │
 │ Location                  │ Lakhimpur, Assam, India                                │
 │ Education                 │ High School (Feb 2026) • HS (Computer Science) Pursuing│
@@ -196,6 +197,7 @@ Have an inquiry, an open-source collaboration idea, or an interesting engineerin
 
 [![Official Website](https://img.shields.io/badge/Website-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-@bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
+[![X](https://img.shields.io/badge/X-@bitzzdev-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=111111)](https://x.com/bitzzdev)
 [![Instagram](https://img.shields.io/badge/Instagram-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Dev_Borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/bitzzdev/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--2013--2999-000000?style=for-the-badge&logo=orcid&logoColor=white&labelColor=111111)](https://orcid.org/0009-0004-2013-2999)

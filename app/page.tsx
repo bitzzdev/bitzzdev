@@ -36,6 +36,7 @@ export default async function Home() {
 
         <div className="asks">
           <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
+          <a href="https://x.com/bitzzdev" target="_blank" rel="noreferrer">[x]</a>
           <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
           <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
           <a href="mailto:bitzzdev@gmail.com">[email]</a>
@@ -70,6 +71,7 @@ export default async function Home() {
           <h1>Dev Borah (Bitupan Borah) — Software &amp; Web Developer</h1>
           <span className="tools">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
+            <a href="https://x.com/bitzzdev" target="_blank" rel="noreferrer">[x]</a>
             <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
             <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
             <ThemeToggle />
@@ -156,6 +158,12 @@ export default async function Home() {
                   <span className="dossier-label">GitHub</span>
                   <span className="dossier-val">
                     <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">@bitzzdev</a>
+                  </span>
+                </div>
+                <div className="dossier-item">
+                  <span className="dossier-label">X / Twitter</span>
+                  <span className="dossier-val">
+                    <a href="https://x.com/bitzzdev" target="_blank" rel="noreferrer">@bitzzdev</a>
                   </span>
                 </div>
                 <div className="dossier-item">
@@ -384,6 +392,7 @@ export default async function Home() {
           </div>
           <div className="foot-links">
             <a href="https://github.com/bitzzdev" target="_blank" rel="noreferrer">[github]</a>
+            <a href="https://x.com/bitzzdev" target="_blank" rel="noreferrer">[x]</a>
             <a href="https://www.linkedin.com/in/bitzzdev/" target="_blank" rel="noreferrer">[linkedin]</a>
             <a href="https://orcid.org/0009-0004-2013-2999" target="_blank" rel="noreferrer">[orcid]</a>
             <a href="mailto:bitzzdev@gmail.com">[email]</a>
