@@ -62,18 +62,9 @@ My personal site, built with Next.js and TypeScript, bringing together a minimal
 
 <div align="center">
 
-<a href="https://github.com/bitzzdev">
-<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=bitzzdev&show_icons=true&hide_border=true&theme=github_dark" alt="GitHub profile statistics" />
-</a>
-<a href="https://github.com/bitzzdev">
-<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=bitzzdev&layout=compact&hide_border=true&theme=github_dark" alt="Most used languages" />
-</a>
-
-<br />
-
-<a href="https://github.com/bitzzdev">
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=0d1117&color=c9d1d9&line=6e7681&point=ffffff&area=true&hide_border=true" alt="GitHub contribution activity graph" />
-</a>
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/bitzzdev?label=Followers&style=flat-square&logo=github&color=161b22&labelColor=161b22&logoColor=white" />
+<img alt="Public repositories" src="https://img.shields.io/badge/Public%20Repos-6%2B-161b22?style=flat-square&logo=github&logoColor=white" />
+<img alt="Profile views" src="https://komarev.com/ghpvc/?username=bitzzdev&style=flat-square&color=161b22&label=Profile+views" />
 
 </div>
 
