@@ -62,10 +62,18 @@ My personal site, built with Next.js and TypeScript, bringing together a minimal
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=bitzzdev&show_icons=true&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=c9d1d9&icon_color=8b949e&rank_icon=github" alt="GitHub profile statistics" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bitzzdev&layout=compact&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=c9d1d9" alt="Most used languages" />
+<a href="https://github.com/bitzzdev">
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=bitzzdev&show_icons=true&hide_border=true&theme=github_dark" alt="GitHub profile statistics" />
+</a>
+<a href="https://github.com/bitzzdev">
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=bitzzdev&layout=compact&hide_border=true&theme=github_dark" alt="Most used languages" />
+</a>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=00000000&color=8b949e&line=6e7681&point=c9d1d9&area=true&hide_border=true" alt="GitHub contribution activity graph" />
+<br />
+
+<a href="https://github.com/bitzzdev">
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=0d1117&color=c9d1d9&line=6e7681&point=ffffff&area=true&hide_border=true" alt="GitHub contribution activity graph" />
+</a>
 
 </div>
 
