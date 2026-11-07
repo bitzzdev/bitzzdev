@@ -13,26 +13,39 @@ export default function AboutHalftoneImage() {
       aria-label="Portrait of Dev Borah (Bitupan Borah)"
     >
       <div className="about-image-card">
-        <HalftoneReveal
+        {/*
+          Primary server-rendered image element visible to search engine bots (Googlebot, Bingbot),
+          AI search indexers, and browsers. It ensures `me.png` is prominently indexed with high relevance.
+        */}
+        <img
           src="/me.png"
-          mode="mono"
-          shape="dot"
-          cellSize={6}
-          angle={45}
-          inkColor="#f4f1ea"
-          paperColor="#120f17"
-          revealRadius={160}
+          alt="Dev Borah (Bitupan Borah) — Software & Web Developer"
+          width={480}
+          height={480}
+          fetchPriority="high"
+          decoding="async"
+          className="about-image-photo"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block",
+          }}
         />
-        {/* Semantic fallback image for search crawlers and screen readers */}
-        <noscript>
-          <img
+        <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%" }}>
+          <HalftoneReveal
             src="/me.png"
-            alt="Dev Borah (Bitupan Borah) — Software & Web Developer"
-            width={460}
-            height={460}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            mode="mono"
+            shape="dot"
+            cellSize={6}
+            angle={45}
+            inkColor="#f4f1ea"
+            paperColor="#120f17"
+            revealRadius={160}
           />
-        </noscript>
+        </div>
       </div>
       <figcaption className="sr-only">
         Portrait photograph of software developer Dev Borah (Bitupan Borah)

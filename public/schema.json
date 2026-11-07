@@ -32,7 +32,15 @@
         "addressCountry": "India"
       },
       "url": "https://bitz.is-a.dev",
-      "image": "https://bitz.is-a.dev/me.png",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://bitz.is-a.dev/#primaryimage",
+        "url": "https://bitz.is-a.dev/me.png",
+        "contentUrl": "https://bitz.is-a.dev/me.png",
+        "caption": "Dev Borah (Bitupan Borah) — Software & Web Developer",
+        "width": 1215,
+        "height": 1295
+      },
       "jobTitle": "Software Developer & Web Developer",
       "description": "Dev Borah (legal name Bitupan Borah, known online as Bitz, @bitz.dev, and @bitzzdev) is a software developer, web developer, and open-source creator from Lakhimpur, Assam, India.",
       "sameAs": [
@@ -195,6 +203,9 @@
       },
       "mainEntity": {
         "@id": "https://bitz.is-a.dev/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://bitz.is-a.dev/#primaryimage"
       }
     }
   ]

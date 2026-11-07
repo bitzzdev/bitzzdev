@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { mount } from "@/lib/ascii-pieces/mount.js";
 import { registerScene } from "@/lib/scene-scheduler";
 import type { SceneConfig } from "@/lib/ascii-pieces";
@@ -57,8 +56,6 @@ export default function AsciiScene({ config, label, className = "art", style }: 
     };
   }, [config]);
 
-  const posterSrc = `/ascii-posters/${config.slug}.webp`;
-
   return (
     <div
       ref={containerRef}
@@ -72,26 +69,8 @@ export default function AsciiScene({ config, label, className = "art", style }: 
       }}
     >
       {/* 
-        Instant WebP Poster:
-        Always remains visible as a solid fallback under the canvas so it NEVER flashes black.
-      */}
-      <Image
-        src={posterSrc}
-        alt={label || config.name}
-        fill
-        sizes="(max-width: 768px) 100vw, 400px"
-        priority
-        style={{
-          objectFit: "fill",
-          opacity: hasRenderedFrame ? 0 : 1,
-          transition: "opacity 0.2s ease-out",
-          pointerEvents: "none",
-        }}
-      />
-
-      {/* 
         Live Canvas:
-        Only fades in after the first frame has successfully painted, preventing any blank/black flash.
+        Only fades in after the first frame has successfully painted.
       */}
       <canvas
         ref={canvasRef}
