@@ -1,213 +1,80 @@
 <div align="center">
 
-```text
- ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄        ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄ 
-▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░▌      ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░▌       ▐░▌
-▐░█▀▀▀▀▀▀▀▀█▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌░▌     ▐░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌
-▐░▌        ▐░▌▐░▌          ▐░▌▐░▌    ▐░▌▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌   ▄   ▐░▌
-▐░▌        ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▌   ▐░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░▌  ▐░▌  ▐░▌
-▐░▌        ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░▌       ▐░▌▐░▌ ▐░▌░▌ ▐░▌
-▐░▌        ▐░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌   ▐░▌ ▐░▌▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌▐░▌▐░▌ ▐░▌▐░▌
-▐░▌        ▐░▌▐░▌          ▐░▌    ▐░▌▐░▌▐░▌       ▐░▌          ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌▐░▌▐░▌  ▐░▐░▌
-▐░█▄▄▄▄▄▄▄▄█▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▐░▌   ▐░▐░▌
-▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌      ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░░▌    ▐░░░▌
- ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀      ▀▀▀ 
-```
+# Dev Borah
 
-### `DEV BORAH` • `BITUPAN BORAH` • `bitz.dev`
-**Software Developer & Open Source Creator**
+**Software developer · Open-source creator · Assam, India**
 
-<br>
+I build thoughtful software across web, systems, and developer tooling.
 
-<a href="https://bitz.is-a.dev"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=2800&pause=1000&color=FFFFFF&center=true&vCenter=true&width=620&lines=Dev+Borah+(Bitupan+Borah);Full-Stack+%26+Systems+Engineering;Building+Pulse%2C+NexUI%2C+and+open-source+tools;archlinux+%2B+neovim+%2B+typescript;https%3A%2F%2Fbitz.is-a.dev" alt="Typing SVG" /></a>
-
-<br><br>
-
-[![Website](https://img.shields.io/badge/PORTFOLIO-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev/)
-[![GitHub](https://img.shields.io/badge/GITHUB-bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
-[![X](https://img.shields.io/badge/X-@bitzzdev-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=111111)](https://x.com/bitzzdev)
-[![Instagram](https://img.shields.io/badge/INSTAGRAM-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-dev--borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/bitzzdev/)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--2013--2999-000000?style=for-the-badge&logo=orcid&logoColor=white&labelColor=111111)](https://orcid.org/0009-0004-2013-2999)
-[![Profile Views](https://komarev.com/ghpvc/?username=bitzzdev&style=for-the-badge&color=000000&labelColor=111111&label=SYS_HITS)](https://github.com/bitzzdev)
+[![Website](https://img.shields.io/badge/Website-bitz.is--a.dev-161b22?style=flat-square&logo=googlechrome&logoColor=white)](https://bitz.is-a.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-bitzzdev-161b22?style=flat-square&logo=github&logoColor=white)](https://github.com/bitzzdev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dev%20Borah-161b22?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bitzzdev/)
+[![X](https://img.shields.io/badge/X-@bitzzdev-161b22?style=flat-square&logo=x&logoColor=white)](https://x.com/bitzzdev)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--2013--2999-161b22?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0004-2013-2999)
 
 </div>
 
-<br>
+---
 
-```console
-bitz@archlinux ~ $ fastfetch --pipe
-                  -`                    bitz@bitz.is-a.dev
-                 .o+`                   ------------------
-                `ooo/                   IDENTITY : Dev Borah (Bitupan Borah)
-               `+oooo:                  ALIASES  : bitz.dev / bitzzdev
-              `+oooooo:                 ROLE     : Software Developer & Builder
-              -+oooooo+:                ORIGIN   : Lakhimpur, Assam, India
-            `/:-:++oooo+:               STACK    : TypeScript, Next.js, Java, Linux
-           `/++++/+++++++:              KERNEL   : x86_64 Linux (Arch)
-          `/++++++++++++++:             EDITOR   : Neovim / Zed / Cursor
-         `/+++ooooooooooooo/`           STATUS   : Compiling ideas into production
-        ./ooosssso++osssssso+`          UPTIME   : 24/7 building mode
-       .oossssso-````/ossssss+`         
-      -osssssso.      :ssssssso.        "Turning 'what if' into 'wait, it works.'"
-     :osssssss/        ossso+++.        
-    /ossssssss/        +ssssooo/-       
-  `/ossssso+/:-        -:/+osssso+-     
- `+sso+:-`                 `.-/+oso:    
-`++:.                           `-/+/   
-```
+## About
 
-<br>
+I’m Dev (Bitupan) Borah, a developer from Lakhimpur, Assam. I’m interested in building reliable, polished software—from web experiences to systems tools and client-side mods—with an emphasis on performance and usability.
 
-## `// 01. DOSSIER & IDENTITY`
+**Focus:** Full-stack development · Developer experience · Performance · UI/UX · Native mods
 
-```text
-┌───────────────────────────┬────────────────────────────────────────────────────────┐
-│ KEY                       │ VALUE                                                  │
-├───────────────────────────┼────────────────────────────────────────────────────────┤
-│ Primary Name              │ Dev Borah                                              │
-│ Legal / Alternate Name    │ Bitupan Borah                                          │
-│ Online Handles            │ @bitzzdev (X/GitHub) • @bitz.dev (Instagram)           │
-│ Canonical Website         │ https://bitz.is-a.dev                                  │
-│ Location                  │ Lakhimpur, Assam, India                                │
-│ Education                 │ High School (Feb 2026) • HS (Computer Science) Pursuing│
-│ LinkedIn                  │ https://www.linkedin.com/in/bitzzdev/                  │
-│ ORCID                     │ https://orcid.org/0009-0004-2013-2999                  │
-│ Core Competencies         │ Full-Stack Web, Systems Tooling, UI/UX, Performance    │
-│ Primary Focus             │ Developer Experience, Low-Latency Web, Native Mods     │
-└───────────────────────────┴────────────────────────────────────────────────────────┘
-```
-
-<br>
-
-## `// 02. HARDWARE & ARSENAL`
+## Technologies
 
 <div align="center">
 
-```text
-[LANGUAGES]    C++  •  C  •  Python  •  JavaScript  •  TypeScript  •  Bash
-[SYSTEMS & OS] Arch Linux  •  Linux Kernel  •  Hyprland  •  Fish Shell  •  Google Cloud Shell
-[DEV & TOOLS]  Zed Editor  •  Neovim  •  Git  •  GitHub  •  Next.js
-```
-
-<br>
-
-<img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,tailwind,nodejs,java,kotlin,py,bash,linux,docker,git,neovim,vscode&theme=dark" alt="Tech Stack" />
+![TypeScript](https://img.shields.io/badge/TypeScript-161b22?style=flat-square&logo=typescript&logoColor=3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-161b22?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![Java](https://img.shields.io/badge/Java-161b22?style=flat-square&logo=openjdk&logoColor=ED8B00)
+![Python](https://img.shields.io/badge/Python-161b22?style=flat-square&logo=python&logoColor=3776AB)
+![C++](https://img.shields.io/badge/C%2B%2B-161b22?style=flat-square&logo=cplusplus&logoColor=00599C)
+![Linux](https://img.shields.io/badge/Linux-161b22?style=flat-square&logo=linux&logoColor=FCC624)
+![Next.js](https://img.shields.io/badge/Next.js-161b22?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-161b22?style=flat-square&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-161b22?style=flat-square&logo=tailwindcss&logoColor=06B6D4)
+![Git](https://img.shields.io/badge/Git-161b22?style=flat-square&logo=git&logoColor=F05032)
 
 </div>
 
-<br>
+## Selected work
 
-## `// 03. FEATURED WORK & REPOSITORIES`
+### [Pulse](https://github.com/bitzzdev/Pulse)
+A real-time performance project exploring adaptive rendering and resource management for smoother frame pacing on constrained hardware.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+`Java` · `Fabric` · `Performance`
 
-### ⚡ [Pulse](https://github.com/bitzzdev/Pulse)
-> **Real-Time Adaptive Performance Engine**
+### [NexUI](https://github.com/bitzzdev/NexUI)
+A modular client UI framework focused on flexible layouts, fluid transitions, and considered interface design.
 
-Dynamic rendering and resource management architecture designed to keep frame pacing butter-smooth across constrained hardware environments.
+`Java` · `Fabric` · `UI/UX`
 
-`Java` `Fabric` `Systems` `Performance`
+### [Portfolio](https://github.com/bitzzdev/bitzzdev)
+My personal site, built with Next.js and TypeScript, bringing together a minimal visual system and interactive details.
 
-</td>
-<td width="50%" valign="top">
+`Next.js` · `React` · `TypeScript` · `Tailwind CSS`
 
-### 🧩 [NexUI](https://github.com/bitzzdev/NexUI)
-> **Next-Generation Dynamic UI Framework**
+[Browse all public repositories →](https://github.com/bitzzdev?tab=repositories)
 
-Re-architecting client HUDs and menu ecosystems with fluid transitions, modular layouts, and modern design semantics.
-
-`Java` `Fabric` `UI/UX` `Client Mod`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🌐 [bitz.is-a.dev](https://github.com/bitzzdev/bitzzdev)
-> **The Cyber-Minimalist Terminal Portfolio**
-
-High-performance Next.js 15 portfolio featuring ASCII rendering, halftone shaders, zero-layout-shift micro-interactions, and JSON-LD Knowledge Graph indexing.
-
-`Next.js 15` `React 19` `Tailwind` `TypeScript`
-
-</td>
-<td width="50%" valign="top">
-
-### 🧊 [Stasis](https://github.com/bitzzdev)
-> **State Management & Freeze Utilities**
-
-Deterministic runtime snapshotting and freeze hooks for asynchronous pipelines and client state boundaries.
-
-`TypeScript` `State Machine` `Architecture`
-
-</td>
-</tr>
-</table>
+## GitHub activity
 
 <div align="center">
 
-[**EXPLORE ALL PUBLIC REPOSITORIES ON GITHUB →**](https://github.com/bitzzdev?tab=repositories)
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=bitzzdev&show_icons=true&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=c9d1d9&icon_color=8b949e&rank_icon=github" alt="GitHub profile statistics" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bitzzdev&layout=compact&hide_border=true&bg_color=00000000&title_color=8b949e&text_color=c9d1d9" alt="Most used languages" />
+
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=00000000&color=8b949e&line=6e7681&point=c9d1d9&area=true&hide_border=true" alt="GitHub contribution activity graph" />
 
 </div>
 
-<br>
+## Connect
 
-## `// 04. TELEMETRY & GITHUB METRICS`
-
-<div align="center">
-
-<img src="https://github-readme-stats-sigma-five.vercel.app/api?username=bitzzdev&show_icons=true&theme=tokyonight&bg_color=000000&border_color=222222&text_color=aaaaaa&title_color=ffffff&icon_color=ffffff&hide_border=false" width="48%" alt="GitHub Stats" />
-<img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=bitzzdev&layout=compact&theme=tokyonight&bg_color=000000&border_color=222222&text_color=aaaaaa&title_color=ffffff&hide_border=false" width="48%" alt="Top Languages" />
-
-<br><br>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=bitzzdev&hide_border=false&border=222222&background=000000&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&sideLabels=aaaaaa&dates=777777&sideNums=ffffff&currStreakNum=ffffff" width="96%" alt="Streak Stats" />
-
-<br><br>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bitzzdev&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=false&border_color=222222" width="96%" alt="Activity Graph" />
-
-</div>
-
-<br>
-
-## `// 05. CORE PHILOSOPHY`
-
-```text
- ┌───┐       ┌────┐       ┌───┐       ┌──────┐
- │ 01 │ ───> │ 02 │ ───> │ 03│ ───> │  04  │
- └───┘       └────┘       └───┘       └──────┘
- CONCEIVE    PROTOTYPE    OPTIMIZE    SHIP IT
-```
-
-> *"Minimalism isn't the lack of something. It's the perfect amount of everything."*
-
-<br>
-
-## `// 06. UPLINK & VERIFICATION`
+For collaboration, project inquiries, or a good engineering challenge, reach me through [my website](https://bitz.is-a.dev) or [LinkedIn](https://www.linkedin.com/in/bitzzdev/).
 
 <div align="center">
 
-Have an inquiry, an open-source collaboration idea, or an interesting engineering problem?
-
-<br>
-
-[![Official Website](https://img.shields.io/badge/Website-bitz.is--a.dev-000000?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111111)](https://bitz.is-a.dev)
-[![GitHub](https://img.shields.io/badge/GitHub-@bitzzdev-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=111111)](https://github.com/bitzzdev)
-[![X](https://img.shields.io/badge/X-@bitzzdev-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=111111)](https://x.com/bitzzdev)
-[![Instagram](https://img.shields.io/badge/Instagram-@bitz.dev-000000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=111111)](https://instagram.com/bitz.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dev_Borah-000000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111111)](https://www.linkedin.com/in/bitzzdev/)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--2013--2999-000000?style=for-the-badge&logo=orcid&logoColor=white&labelColor=111111)](https://orcid.org/0009-0004-2013-2999)
-
-<br><br>
-
-```text
-──────────────────────────────────────────────────────────────────────────────────────────
-[SYSTEM LOG] HOST: bitz.is-a.dev | SIGNATURE: 0xDEV_BORAH | END TRANSMISSION
-──────────────────────────────────────────────────────────────────────────────────────────
-```
+[Website](https://bitz.is-a.dev) · [GitHub](https://github.com/bitzzdev) · [X](https://x.com/bitzzdev) · [Instagram](https://instagram.com/bitz.dev) · [LinkedIn](https://www.linkedin.com/in/bitzzdev/)
 
 </div>
